@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-09-02T13:58:23 EEST" name="Default suite" finished-at="2025-09-02T13:58:23 EEST" duration-ms="43">
+    <groups>
+    </groups>
+    <test started-at="2025-09-02T13:58:23 EEST" name="Default test" finished-at="2025-09-02T13:58:23 EEST" duration-ms="43">
+      <class name="eSkooly.eSkooly.automation.AppTest">
+        <test-method signature="testApp()[pri:0, instance:eSkooly.eSkooly.automation.AppTest@765d7657]" started-at="2025-09-02T13:58:23 EEST" name="testApp" finished-at="2025-09-02T13:58:23 EEST" duration-ms="8" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testApp -->
+      </class> <!-- eSkooly.eSkooly.automation.AppTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
