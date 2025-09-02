@@ -1,8 +1,8 @@
-package base;
+package testWorkflows;
 
 import org.testng.annotations.Test;
 
-public class BaseTest {
+public class TestAddStudent {
   @Test
   public void f() {
   }
