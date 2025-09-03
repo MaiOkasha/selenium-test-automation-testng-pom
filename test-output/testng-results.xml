@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="5" passed="5" failed="0" skipped="0">
+<testng-results ignored="0" total="28" passed="28" failed="0" skipped="0">
   <reporter-output>
     <line>
       <![CDATA[Opeining browser]]>
@@ -20,6 +20,30 @@
       <![CDATA[Clicking All Employees]]>
     </line>
     <line>
+      <![CDATA[Clicking edit]]>
+    </line>
+    <line>
+      <![CDATA[updating employee form]]>
+    </line>
+    <line>
+      <![CDATA[Clicking update button]]>
+    </line>
+    <line>
+      <![CDATA[Clicking menu]]>
+    </line>
+    <line>
+      <![CDATA[Clicking All Employees]]>
+    </line>
+    <line>
+      <![CDATA[Clicking view button ]]>
+    </line>
+    <line>
+      <![CDATA[Clicking menu]]>
+    </line>
+    <line>
+      <![CDATA[Clicking All Employees]]>
+    </line>
+    <line>
       <![CDATA[Enering employye name]]>
     </line>
     <line>
@@ -31,21 +55,288 @@
     <line>
       <![CDATA[Enering invalid name]]>
     </line>
+    <line>
+      <![CDATA[Clicking username from List]]>
+    </line>
+    <line>
+      <![CDATA[Deleteing Employee]]>
+    </line>
+    <line>
+      <![CDATA[Deleteing Confirmation]]>
+    </line>
+    <line>
+      <![CDATA[clicking main menu]]>
+    </line>
+    <line>
+      <![CDATA[Selecting Employee Section]]>
+    </line>
+    <line>
+      <![CDATA[Filling form]]>
+    </line>
+    <line>
+      <![CDATA[Clicking Submit]]>
+    </line>
+    <line>
+      <![CDATA[clicking main menu]]>
+    </line>
+    <line>
+      <![CDATA[Selecting Employee Section]]>
+    </line>
+    <line>
+      <![CDATA[Filling form]]>
+    </line>
+    <line>
+      <![CDATA[Clicking Submit]]>
+    </line>
+    <line>
+      <![CDATA[clicking main menu]]>
+    </line>
+    <line>
+      <![CDATA[Selecting Employee Section]]>
+    </line>
+    <line>
+      <![CDATA[Filling form]]>
+    </line>
+    <line>
+      <![CDATA[Clicking Submit]]>
+    </line>
+    <line>
+      <![CDATA[clicking main menu]]>
+    </line>
+    <line>
+      <![CDATA[Selecting Employee Section]]>
+    </line>
+    <line>
+      <![CDATA[Filling form]]>
+    </line>
+    <line>
+      <![CDATA[Clicking Submit]]>
+    </line>
+    <line>
+      <![CDATA[clicking main menu]]>
+    </line>
+    <line>
+      <![CDATA[Selecting Employee Section]]>
+    </line>
+    <line>
+      <![CDATA[Filling form]]>
+    </line>
+    <line>
+      <![CDATA[Clicking Submit]]>
+    </line>
+    <line>
+      <![CDATA[clicking main menu]]>
+    </line>
+    <line>
+      <![CDATA[Selecting Employee Section]]>
+    </line>
+    <line>
+      <![CDATA[Filling form]]>
+    </line>
+    <line>
+      <![CDATA[Clicking Submit]]>
+    </line>
+    <line>
+      <![CDATA[clicking main menu]]>
+    </line>
+    <line>
+      <![CDATA[Selecting Employee Section]]>
+    </line>
+    <line>
+      <![CDATA[Filling form]]>
+    </line>
+    <line>
+      <![CDATA[Clicking Submit]]>
+    </line>
+    <line>
+      <![CDATA[clicking main menu]]>
+    </line>
+    <line>
+      <![CDATA[Selecting Employee Section]]>
+    </line>
+    <line>
+      <![CDATA[Filling form]]>
+    </line>
+    <line>
+      <![CDATA[Clicking Submit]]>
+    </line>
+    <line>
+      <![CDATA[clicking main menu]]>
+    </line>
+    <line>
+      <![CDATA[Selecting Employee Section]]>
+    </line>
+    <line>
+      <![CDATA[Filling form]]>
+    </line>
+    <line>
+      <![CDATA[Clicking Submit]]>
+    </line>
+    <line>
+      <![CDATA[clicking main menu]]>
+    </line>
+    <line>
+      <![CDATA[Selecting Employee Section]]>
+    </line>
+    <line>
+      <![CDATA[Filling form]]>
+    </line>
+    <line>
+      <![CDATA[Clicking Submit]]>
+    </line>
+    <line>
+      <![CDATA[Clicking menu]]>
+    </line>
+    <line>
+      <![CDATA[Clicking All Employees]]>
+    </line>
+    <line>
+      <![CDATA[clicking main menu]]>
+    </line>
+    <line>
+      <![CDATA[Selecting Employee Section]]>
+    </line>
+    <line>
+      <![CDATA[Filling form]]>
+    </line>
+    <line>
+      <![CDATA[Clicking Submit]]>
+    </line>
+    <line>
+      <![CDATA[clicking main menu]]>
+    </line>
+    <line>
+      <![CDATA[Selecting Employee Section]]>
+    </line>
+    <line>
+      <![CDATA[Filling form]]>
+    </line>
+    <line>
+      <![CDATA[Clicking Submit]]>
+    </line>
+    <line>
+      <![CDATA[Clicking menu]]>
+    </line>
+    <line>
+      <![CDATA[Clicking All Employees]]>
+    </line>
+    <line>
+      <![CDATA[clicking main menu]]>
+    </line>
+    <line>
+      <![CDATA[Selecting Employee Section]]>
+    </line>
+    <line>
+      <![CDATA[Filling form]]>
+    </line>
+    <line>
+      <![CDATA[Clicking Submit]]>
+    </line>
+    <line>
+      <![CDATA[clicking main menu]]>
+    </line>
+    <line>
+      <![CDATA[Selecting Employee Section]]>
+    </line>
+    <line>
+      <![CDATA[Filling form]]>
+    </line>
+    <line>
+      <![CDATA[Clicking Submit]]>
+    </line>
+    <line>
+      <![CDATA[clicking main menu]]>
+    </line>
+    <line>
+      <![CDATA[Selecting Employee Section]]>
+    </line>
+    <line>
+      <![CDATA[Filling form]]>
+    </line>
+    <line>
+      <![CDATA[Clicking Submit]]>
+    </line>
+    <line>
+      <![CDATA[Clicking menu]]>
+    </line>
+    <line>
+      <![CDATA[Clicking All Employees]]>
+    </line>
+    <line>
+      <![CDATA[Clicking main menu]]>
+    </line>
+    <line>
+      <![CDATA[Clicking Employee section]]>
+    </line>
+    <line>
+      <![CDATA[Clicking Job letter section]]>
+    </line>
+    <line>
+      <![CDATA[Selecting Employee]]>
+    </line>
+    <line>
+      <![CDATA[Printing Employee job letter]]>
+    </line>
+    <line>
+      <![CDATA[Switching window ]]>
+    </line>
+    <line>
+      <![CDATA[Opeining Main Menu]]>
+    </line>
+    <line>
+      <![CDATA[Opeining clicking employee list]]>
+    </line>
+    <line>
+      <![CDATA[Opeining Manage logn section]]>
+    </line>
+    <line>
+      <![CDATA[Reload List to view all]]>
+    </line>
+    <line>
+      <![CDATA[Saving Login Inofrmation of Employees ]]>
+    </line>
+    <line>
+      <![CDATA[Changing view Settings ]]>
+    </line>
+    <line>
+      <![CDATA[Searching for Employee account ]]>
+    </line>
+    <line>
+      <![CDATA[Changing Username and password of  Employee account ]]>
+    </line>
+    <line>
+      <![CDATA[Saving changes for Employee account ]]>
+    </line>
+    <line>
+      <![CDATA[Logging Out]]>
+    </line>
+    <line>
+      <![CDATA[Opeining browser]]>
+    </line>
+    <line>
+      <![CDATA[Entring username]]>
+    </line>
+    <line>
+      <![CDATA[Entring password]]>
+    </line>
+    <line>
+      <![CDATA[Clicking login]]>
+    </line>
   </reporter-output>
-  <suite started-at="2025-09-03T19:34:00 EEST" name="Default suite" finished-at="2025-09-03T19:34:17 EEST" duration-ms="17492">
+  <suite started-at="2025-09-04T02:21:27 EEST" name="Default suite" finished-at="2025-09-04T02:23:53 EEST" duration-ms="146396">
     <groups>
     </groups>
-    <test started-at="2025-09-03T19:34:00 EEST" name="Default test" finished-at="2025-09-03T19:34:17 EEST" duration-ms="17492">
+    <test started-at="2025-09-04T02:21:27 EEST" name="Default test" finished-at="2025-09-04T02:23:53 EEST" duration-ms="146396">
       <class name="testWorkflows.Employee_Test">
-        <test-method is-config="true" signature="setup()[pri:0, instance:testWorkflows.Employee_Test@24313fcc]" started-at="2025-09-03T19:34:00 EEST" name="setup" finished-at="2025-09-03T19:34:04 EEST" duration-ms="3876" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:testWorkflows.Employee_Test@131ef10]" started-at="2025-09-04T02:21:27 EEST" name="setup" finished-at="2025-09-04T02:21:31 EEST" duration-ms="3954" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method is-config="true" signature="setUpEmployeeSection()[pri:0, instance:testWorkflows.Employee_Test@24313fcc]" started-at="2025-09-03T19:34:04 EEST" name="setUpEmployeeSection" finished-at="2025-09-03T19:34:04 EEST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="setUpEmployeeSection()[pri:0, instance:testWorkflows.Employee_Test@131ef10]" started-at="2025-09-04T02:21:31 EEST" name="setUpEmployeeSection" finished-at="2025-09-04T02:21:31 EEST" duration-ms="2" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpEmployeeSection -->
-        <test-method signature="Login()[pri:1, instance:testWorkflows.Employee_Test@24313fcc]" started-at="2025-09-03T19:34:04 EEST" name="Login" finished-at="2025-09-03T19:34:06 EEST" duration-ms="2549" status="PASS">
+        <test-method signature="Login()[pri:1, instance:testWorkflows.Employee_Test@131ef10]" started-at="2025-09-04T02:21:31 EEST" name="Login" finished-at="2025-09-04T02:21:34 EEST" duration-ms="2560" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Opeining browser]]>
@@ -61,7 +352,39 @@
             </line>
           </reporter-output>
         </test-method> <!-- Login -->
-        <test-method signature="search()[pri:4, instance:testWorkflows.Employee_Test@24313fcc]" started-at="2025-09-03T19:34:06 EEST" name="search" finished-at="2025-09-03T19:34:08 EEST" duration-ms="1983" status="PASS">
+        <test-method signature="Update_Emp_info()[pri:2, instance:testWorkflows.Employee_Test@131ef10]" started-at="2025-09-04T02:21:34 EEST" name="Update_Emp_info" finished-at="2025-09-04T02:21:43 EEST" duration-ms="8918" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Clicking menu]]>
+            </line>
+            <line>
+              <![CDATA[Clicking All Employees]]>
+            </line>
+            <line>
+              <![CDATA[Clicking edit]]>
+            </line>
+            <line>
+              <![CDATA[updating employee form]]>
+            </line>
+            <line>
+              <![CDATA[Clicking update button]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- Update_Emp_info -->
+        <test-method signature="view_employeeinfo()[pri:3, instance:testWorkflows.Employee_Test@131ef10]" started-at="2025-09-04T02:21:43 EEST" name="view_employeeinfo" finished-at="2025-09-04T02:21:47 EEST" duration-ms="3974" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Clicking menu]]>
+            </line>
+            <line>
+              <![CDATA[Clicking All Employees]]>
+            </line>
+            <line>
+              <![CDATA[Clicking view button ]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- view_employeeinfo -->
+        <test-method signature="search()[pri:4, instance:testWorkflows.Employee_Test@131ef10]" started-at="2025-09-04T02:21:47 EEST" name="search" finished-at="2025-09-04T02:21:50 EEST" duration-ms="3300" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Clicking menu]]>
@@ -74,11 +397,11 @@
             </line>
           </reporter-output>
         </test-method> <!-- search -->
-        <test-method signature="allbutton()[pri:5, instance:testWorkflows.Employee_Test@24313fcc]" started-at="2025-09-03T19:34:08 EEST" name="allbutton" finished-at="2025-09-03T19:34:10 EEST" duration-ms="2114" status="PASS">
+        <test-method signature="allbutton()[pri:5, instance:testWorkflows.Employee_Test@131ef10]" started-at="2025-09-04T02:21:50 EEST" name="allbutton" finished-at="2025-09-04T02:21:52 EEST" duration-ms="1805" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- allbutton -->
-        <test-method signature="Search_with_invalid_Data()[pri:6, instance:testWorkflows.Employee_Test@24313fcc]" started-at="2025-09-03T19:34:10 EEST" name="Search_with_invalid_Data" finished-at="2025-09-03T19:34:12 EEST" duration-ms="2056" status="PASS">
+        <test-method signature="Search_with_invalid_Data()[pri:6, instance:testWorkflows.Employee_Test@131ef10]" started-at="2025-09-04T02:21:52 EEST" name="Search_with_invalid_Data" finished-at="2025-09-04T02:21:55 EEST" duration-ms="3385" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Clicking menu]]>
@@ -89,13 +412,1594 @@
             <line>
               <![CDATA[Enering invalid name]]>
             </line>
+            <line>
+              <![CDATA[Clicking username from List]]>
+            </line>
           </reporter-output>
         </test-method> <!-- Search_with_invalid_Data -->
-        <test-method signature="delete_emp_byname()[pri:7, instance:testWorkflows.Employee_Test@24313fcc]" started-at="2025-09-03T19:34:12 EEST" name="delete_emp_byname" finished-at="2025-09-03T19:34:14 EEST" duration-ms="1659" status="PASS">
+        <test-method signature="delete_emp_byname()[pri:7, instance:testWorkflows.Employee_Test@131ef10]" started-at="2025-09-04T02:21:55 EEST" name="delete_emp_byname" finished-at="2025-09-04T02:21:57 EEST" duration-ms="2066" status="PASS">
           <reporter-output>
+            <line>
+              <![CDATA[Deleteing Employee]]>
+            </line>
+            <line>
+              <![CDATA[Deleteing Confirmation]]>
+            </line>
           </reporter-output>
         </test-method> <!-- delete_emp_byname -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testWorkflows.Employee_Test@24313fcc]" started-at="2025-09-03T19:34:14 EEST" name="tearDown" finished-at="2025-09-03T19:34:17 EEST" duration-ms="3213" status="PASS">
+        <test-method signature="addEmployeewithAll_Information_Vlaid(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:8, instance:testWorkflows.Employee_Test@131ef10]" started-at="2025-09-04T02:21:57 EEST" name="addEmployeewithAll_Information_Vlaid" data-provider="AllInfoData" finished-at="2025-09-04T02:22:03 EEST" duration-ms="5851" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Will Bodicum]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[187-507-8480]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Teacher]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[D:\Programming_learning\Axsos accademy\Automation\Project\Project_Maven\selenium-test-automation-testing-pom/assets_emp_photos/30.jpg]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[12/19/2020]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[101426]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[Saxon Aldwich]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[Male]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[14]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[789-442-6099]]>
+              </value>
+            </param>
+            <param index="10">
+              <value>
+                <![CDATA[Christianity]]>
+              </value>
+            </param>
+            <param index="11">
+              <value>
+                <![CDATA[saldwich0@squarespace.com]]>
+              </value>
+            </param>
+            <param index="12">
+              <value>
+                <![CDATA[Associate Degree]]>
+              </value>
+            </param>
+            <param index="13">
+              <value>
+                <![CDATA[AB]]>
+              </value>
+            </param>
+            <param index="14">
+              <value>
+                <![CDATA[2/27/1991]]>
+              </value>
+            </param>
+            <param index="15">
+              <value>
+                <![CDATA[PO Box 48303]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[clicking main menu]]>
+            </line>
+            <line>
+              <![CDATA[Selecting Employee Section]]>
+            </line>
+            <line>
+              <![CDATA[Filling form]]>
+            </line>
+            <line>
+              <![CDATA[Clicking Submit]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- addEmployeewithAll_Information_Vlaid -->
+        <test-method signature="addEmployeewithAll_Information_Vlaid(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:8, instance:testWorkflows.Employee_Test@131ef10]" started-at="2025-09-04T02:22:03 EEST" name="addEmployeewithAll_Information_Vlaid" data-provider="AllInfoData" finished-at="2025-09-04T02:22:07 EEST" duration-ms="4266" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Sherwynd Doone]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[455-802-3897]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Teacher]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[D:\Programming_learning\Axsos accademy\Automation\Project\Project_Maven\selenium-test-automation-testing-pom/assets_emp_photos/31.jpg]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[9/2/2024]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[66550]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[Darcee Rosencrantz]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[Female]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[10]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[083-014-6436]]>
+              </value>
+            </param>
+            <param index="10">
+              <value>
+                <![CDATA[Christianity]]>
+              </value>
+            </param>
+            <param index="11">
+              <value>
+                <![CDATA[drosencrantz1@fema.gov]]>
+              </value>
+            </param>
+            <param index="12">
+              <value>
+                <![CDATA[Bachelorâ€™s Degree]]>
+              </value>
+            </param>
+            <param index="13">
+              <value>
+                <![CDATA[O]]>
+              </value>
+            </param>
+            <param index="14">
+              <value>
+                <![CDATA[9/13/1992]]>
+              </value>
+            </param>
+            <param index="15">
+              <value>
+                <![CDATA[Apt 1488]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[clicking main menu]]>
+            </line>
+            <line>
+              <![CDATA[Selecting Employee Section]]>
+            </line>
+            <line>
+              <![CDATA[Filling form]]>
+            </line>
+            <line>
+              <![CDATA[Clicking Submit]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- addEmployeewithAll_Information_Vlaid -->
+        <test-method signature="addEmployeewithAll_Information_Vlaid(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:8, instance:testWorkflows.Employee_Test@131ef10]" started-at="2025-09-04T02:22:07 EEST" name="addEmployeewithAll_Information_Vlaid" data-provider="AllInfoData" finished-at="2025-09-04T02:22:12 EEST" duration-ms="4390" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Paulina Brazelton]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[829-980-2083]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Store Manager]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[D:\Programming_learning\Axsos accademy\Automation\Project\Project_Maven\selenium-test-automation-testing-pom/assets_emp_photos/32.jpg]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[7/13/2025]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[51991]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[Sybila Jewster]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[Female]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[11]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[108-532-1750]]>
+              </value>
+            </param>
+            <param index="10">
+              <value>
+                <![CDATA[Christianity]]>
+              </value>
+            </param>
+            <param index="11">
+              <value>
+                <![CDATA[sjewster2@nbcnews.com]]>
+              </value>
+            </param>
+            <param index="12">
+              <value>
+                <![CDATA[High School Diploma]]>
+              </value>
+            </param>
+            <param index="13">
+              <value>
+                <![CDATA[AB-]]>
+              </value>
+            </param>
+            <param index="14">
+              <value>
+                <![CDATA[8/14/1986]]>
+              </value>
+            </param>
+            <param index="15">
+              <value>
+                <![CDATA[Apt 1809]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[clicking main menu]]>
+            </line>
+            <line>
+              <![CDATA[Selecting Employee Section]]>
+            </line>
+            <line>
+              <![CDATA[Filling form]]>
+            </line>
+            <line>
+              <![CDATA[Clicking Submit]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- addEmployeewithAll_Information_Vlaid -->
+        <test-method signature="addEmployeewithAll_Information_Vlaid(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:8, instance:testWorkflows.Employee_Test@131ef10]" started-at="2025-09-04T02:22:12 EEST" name="addEmployeewithAll_Information_Vlaid" data-provider="AllInfoData" finished-at="2025-09-04T02:22:16 EEST" duration-ms="4239" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Greta Hasted]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[417-486-3236]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Teacher]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[D:\Programming_learning\Axsos accademy\Automation\Project\Project_Maven\selenium-test-automation-testing-pom/assets_emp_photos/33.jpg]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[9/4/2022]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[128129]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[Viki Ugo]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[Female]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[15]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[580-399-7593]]>
+              </value>
+            </param>
+            <param index="10">
+              <value>
+                <![CDATA[Islam]]>
+              </value>
+            </param>
+            <param index="11">
+              <value>
+                <![CDATA[vugo3@ed.gov]]>
+              </value>
+            </param>
+            <param index="12">
+              <value>
+                <![CDATA[Bachelorâ€™s Degree]]>
+              </value>
+            </param>
+            <param index="13">
+              <value>
+                <![CDATA[O]]>
+              </value>
+            </param>
+            <param index="14">
+              <value>
+                <![CDATA[6/19/1986]]>
+              </value>
+            </param>
+            <param index="15">
+              <value>
+                <![CDATA[12th Floor]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[clicking main menu]]>
+            </line>
+            <line>
+              <![CDATA[Selecting Employee Section]]>
+            </line>
+            <line>
+              <![CDATA[Filling form]]>
+            </line>
+            <line>
+              <![CDATA[Clicking Submit]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- addEmployeewithAll_Information_Vlaid -->
+        <test-method signature="addEmployeewithAll_Information_Vlaid(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:8, instance:testWorkflows.Employee_Test@131ef10]" started-at="2025-09-04T02:22:16 EEST" name="addEmployeewithAll_Information_Vlaid" data-provider="AllInfoData" finished-at="2025-09-04T02:22:20 EEST" duration-ms="4149" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Leyla Martinat]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[248-700-0672]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Principle]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[D:\Programming_learning\Axsos accademy\Automation\Project\Project_Maven\selenium-test-automation-testing-pom/assets_emp_photos/34.jpg]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[3/19/2022]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[145420]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[Jerry Jocelyn]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[Female]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[12]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[813-068-6271]]>
+              </value>
+            </param>
+            <param index="10">
+              <value>
+                <![CDATA[Islam]]>
+              </value>
+            </param>
+            <param index="11">
+              <value>
+                <![CDATA[jjocelyn4@lulu.com]]>
+              </value>
+            </param>
+            <param index="12">
+              <value>
+                <![CDATA[PhD Diploma]]>
+              </value>
+            </param>
+            <param index="13">
+              <value>
+                <![CDATA[A-]]>
+              </value>
+            </param>
+            <param index="14">
+              <value>
+                <![CDATA[7/12/1991]]>
+              </value>
+            </param>
+            <param index="15">
+              <value>
+                <![CDATA[19th Floor]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[clicking main menu]]>
+            </line>
+            <line>
+              <![CDATA[Selecting Employee Section]]>
+            </line>
+            <line>
+              <![CDATA[Filling form]]>
+            </line>
+            <line>
+              <![CDATA[Clicking Submit]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- addEmployeewithAll_Information_Vlaid -->
+        <test-method signature="addEmployeewithAll_Information_Vlaid(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:8, instance:testWorkflows.Employee_Test@131ef10]" started-at="2025-09-04T02:22:20 EEST" name="addEmployeewithAll_Information_Vlaid" data-provider="AllInfoData" finished-at="2025-09-04T02:22:24 EEST" duration-ms="4152" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Lennie Wilkie]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[367-665-4054]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Teacher]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[D:\Programming_learning\Axsos accademy\Automation\Project\Project_Maven\selenium-test-automation-testing-pom/assets_emp_photos/35.jpg]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[12/30/2021]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[142302]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[Ree Jaulmes]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[Female]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[11]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[694-781-3111]]>
+              </value>
+            </param>
+            <param index="10">
+              <value>
+                <![CDATA[Christianity]]>
+              </value>
+            </param>
+            <param index="11">
+              <value>
+                <![CDATA[rjaulmes5@typepad.com]]>
+              </value>
+            </param>
+            <param index="12">
+              <value>
+                <![CDATA[PhD Diploma]]>
+              </value>
+            </param>
+            <param index="13">
+              <value>
+                <![CDATA[A-]]>
+              </value>
+            </param>
+            <param index="14">
+              <value>
+                <![CDATA[11/10/1990]]>
+              </value>
+            </param>
+            <param index="15">
+              <value>
+                <![CDATA[12th Floor]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[clicking main menu]]>
+            </line>
+            <line>
+              <![CDATA[Selecting Employee Section]]>
+            </line>
+            <line>
+              <![CDATA[Filling form]]>
+            </line>
+            <line>
+              <![CDATA[Clicking Submit]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- addEmployeewithAll_Information_Vlaid -->
+        <test-method signature="addEmployeewithAll_Information_Vlaid(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:8, instance:testWorkflows.Employee_Test@131ef10]" started-at="2025-09-04T02:22:24 EEST" name="addEmployeewithAll_Information_Vlaid" data-provider="AllInfoData" finished-at="2025-09-04T02:22:28 EEST" duration-ms="4296" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Trudy Mullinger]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[593-268-7289]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Principle]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[D:\Programming_learning\Axsos accademy\Automation\Project\Project_Maven\selenium-test-automation-testing-pom/assets_emp_photos/36.jpg]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[7/12/2025]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[90491]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[Tabbie Ashby]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[Male]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[3]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[361-679-8935]]>
+              </value>
+            </param>
+            <param index="10">
+              <value>
+                <![CDATA[Islam]]>
+              </value>
+            </param>
+            <param index="11">
+              <value>
+                <![CDATA[tashby6@baidu.com]]>
+              </value>
+            </param>
+            <param index="12">
+              <value>
+                <![CDATA[Masterâ€™s Degree]]>
+              </value>
+            </param>
+            <param index="13">
+              <value>
+                <![CDATA[A-]]>
+              </value>
+            </param>
+            <param index="14">
+              <value>
+                <![CDATA[10/9/1999]]>
+              </value>
+            </param>
+            <param index="15">
+              <value>
+                <![CDATA[PO Box 45673]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[clicking main menu]]>
+            </line>
+            <line>
+              <![CDATA[Selecting Employee Section]]>
+            </line>
+            <line>
+              <![CDATA[Filling form]]>
+            </line>
+            <line>
+              <![CDATA[Clicking Submit]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- addEmployeewithAll_Information_Vlaid -->
+        <test-method signature="addEmployeewithAll_Information_Vlaid(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:8, instance:testWorkflows.Employee_Test@131ef10]" started-at="2025-09-04T02:22:28 EEST" name="addEmployeewithAll_Information_Vlaid" data-provider="AllInfoData" finished-at="2025-09-04T02:22:33 EEST" duration-ms="4196" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Merissa Claessens]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[508-553-6913]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Teacher]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[D:\Programming_learning\Axsos accademy\Automation\Project\Project_Maven\selenium-test-automation-testing-pom/assets_emp_photos/37.jpg]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[2/1/2021]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[57056]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[Kinnie Bertome]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[Male]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[5]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[680-035-6907]]>
+              </value>
+            </param>
+            <param index="10">
+              <value>
+                <![CDATA[Christianity]]>
+              </value>
+            </param>
+            <param index="11">
+              <value>
+                <![CDATA[kbertome7@harvard.edu]]>
+              </value>
+            </param>
+            <param index="12">
+              <value>
+                <![CDATA[PhD Diploma]]>
+              </value>
+            </param>
+            <param index="13">
+              <value>
+                <![CDATA[AB-]]>
+              </value>
+            </param>
+            <param index="14">
+              <value>
+                <![CDATA[7/14/1985]]>
+              </value>
+            </param>
+            <param index="15">
+              <value>
+                <![CDATA[Room 1011]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[clicking main menu]]>
+            </line>
+            <line>
+              <![CDATA[Selecting Employee Section]]>
+            </line>
+            <line>
+              <![CDATA[Filling form]]>
+            </line>
+            <line>
+              <![CDATA[Clicking Submit]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- addEmployeewithAll_Information_Vlaid -->
+        <test-method signature="addEmployeewithAll_Information_Vlaid(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:8, instance:testWorkflows.Employee_Test@131ef10]" started-at="2025-09-04T02:22:33 EEST" name="addEmployeewithAll_Information_Vlaid" data-provider="AllInfoData" finished-at="2025-09-04T02:22:37 EEST" duration-ms="4202" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Norman Anglish]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[381-245-9736]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Teacher]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[D:\Programming_learning\Axsos accademy\Automation\Project\Project_Maven\selenium-test-automation-testing-pom/assets_emp_photos/38.jpg]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[6/25/2021]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[126533]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[Rouvin Sandwith]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[Male]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[11]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[897-782-8891]]>
+              </value>
+            </param>
+            <param index="10">
+              <value>
+                <![CDATA[Christianity]]>
+              </value>
+            </param>
+            <param index="11">
+              <value>
+                <![CDATA[rsandwith8@aol.com]]>
+              </value>
+            </param>
+            <param index="12">
+              <value>
+                <![CDATA[Associate Degree]]>
+              </value>
+            </param>
+            <param index="13">
+              <value>
+                <![CDATA[B-]]>
+              </value>
+            </param>
+            <param index="14">
+              <value>
+                <![CDATA[10/24/1996]]>
+              </value>
+            </param>
+            <param index="15">
+              <value>
+                <![CDATA[Suite 60]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[clicking main menu]]>
+            </line>
+            <line>
+              <![CDATA[Selecting Employee Section]]>
+            </line>
+            <line>
+              <![CDATA[Filling form]]>
+            </line>
+            <line>
+              <![CDATA[Clicking Submit]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- addEmployeewithAll_Information_Vlaid -->
+        <test-method signature="addEmployeewithAll_Information_Vlaid(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:8, instance:testWorkflows.Employee_Test@131ef10]" started-at="2025-09-04T02:22:37 EEST" name="addEmployeewithAll_Information_Vlaid" data-provider="AllInfoData" finished-at="2025-09-04T02:22:41 EEST" duration-ms="4274" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Bram Mitford]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[688-692-8310]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Management Staff]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[D:\Programming_learning\Axsos accademy\Automation\Project\Project_Maven\selenium-test-automation-testing-pom/assets_emp_photos/39.jpg]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[1/18/2021]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[71735]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[Leeann Ellum]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[Female]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[1]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[212-776-7281]]>
+              </value>
+            </param>
+            <param index="10">
+              <value>
+                <![CDATA[Islam]]>
+              </value>
+            </param>
+            <param index="11">
+              <value>
+                <![CDATA[lellum9@sourceforge.net]]>
+              </value>
+            </param>
+            <param index="12">
+              <value>
+                <![CDATA[High School Diploma]]>
+              </value>
+            </param>
+            <param index="13">
+              <value>
+                <![CDATA[O]]>
+              </value>
+            </param>
+            <param index="14">
+              <value>
+                <![CDATA[4/16/1985]]>
+              </value>
+            </param>
+            <param index="15">
+              <value>
+                <![CDATA[Suite 89]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[clicking main menu]]>
+            </line>
+            <line>
+              <![CDATA[Selecting Employee Section]]>
+            </line>
+            <line>
+              <![CDATA[Filling form]]>
+            </line>
+            <line>
+              <![CDATA[Clicking Submit]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- addEmployeewithAll_Information_Vlaid -->
+        <test-method signature="check_valid()[pri:9, instance:testWorkflows.Employee_Test@131ef10]" started-at="2025-09-04T02:22:41 EEST" name="check_valid" finished-at="2025-09-04T02:22:43 EEST" duration-ms="2228" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Clicking menu]]>
+            </line>
+            <line>
+              <![CDATA[Clicking All Employees]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- check_valid -->
+        <test-method signature="addEmployeewithAll_Information_inVlaid(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:10, instance:testWorkflows.Employee_Test@131ef10]" started-at="2025-09-04T02:22:43 EEST" name="addEmployeewithAll_Information_inVlaid" data-provider="AllInfoData_Form_Full_invalid" finished-at="2025-09-04T02:22:49 EEST" duration-ms="5690" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Sherwynd Doonedddddddddddddddd]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[187-507-8480333333333333333333333333333333333333333333]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Teacher]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[D:\Programming_learning\Axsos accademy\Automation\Project\Project_Maven\selenium-test-automation-testing-pom/assets_emp_photos/30.jpg]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[12/19/2020]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[1.01E+15]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[Saxon Aldwichdddddddddddddddddddddddddddddddddddddddd]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[Male]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[122323234]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[789-442-60992323232222222222222]]>
+              </value>
+            </param>
+            <param index="10">
+              <value>
+                <![CDATA[Christianity]]>
+              </value>
+            </param>
+            <param index="11">
+              <value>
+                <![CDATA[saldwichddddddddddddddddddddddddddddddddddddd0@squarespace.com]]>
+              </value>
+            </param>
+            <param index="12">
+              <value>
+                <![CDATA[Associate Degredddddddddddddddde]]>
+              </value>
+            </param>
+            <param index="13">
+              <value>
+                <![CDATA[AB]]>
+              </value>
+            </param>
+            <param index="14">
+              <value>
+                <![CDATA[2/27/1991]]>
+              </value>
+            </param>
+            <param index="15">
+              <value>
+                <![CDATA[PO ddddddddddddddddddddddddddddwwwwwwwwwBox 48303]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[clicking main menu]]>
+            </line>
+            <line>
+              <![CDATA[Selecting Employee Section]]>
+            </line>
+            <line>
+              <![CDATA[Filling form]]>
+            </line>
+            <line>
+              <![CDATA[Clicking Submit]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- addEmployeewithAll_Information_inVlaid -->
+        <test-method signature="addEmployeewithAll_Information_inVlaid(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:10, instance:testWorkflows.Employee_Test@131ef10]" started-at="2025-09-04T02:22:49 EEST" name="addEmployeewithAll_Information_inVlaid" data-provider="AllInfoData_Form_Full_invalid" finished-at="2025-09-04T02:22:54 EEST" duration-ms="4608" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Will Bodicumdddddddddddddddddd]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[187-d232423-8480333333333333333333333333333333333333333333]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Teacher]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[D:\Programming_learning\Axsos accademy\Automation\Project\Project_Maven\selenium-test-automation-testing-pom/assets_emp_photos/30.jpg]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[12/19/2020]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[1.01E+15]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[Saxon Aldwichdddddddddddddddddddddddddddddddddddddddd]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[Male]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[122323234]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[789-442-60992323232222222222222]]>
+              </value>
+            </param>
+            <param index="10">
+              <value>
+                <![CDATA[Christianity]]>
+              </value>
+            </param>
+            <param index="11">
+              <value>
+                <![CDATA[saldwichddddddddddddddddddddddddddddddddddddd0@squarespace.com]]>
+              </value>
+            </param>
+            <param index="12">
+              <value>
+                <![CDATA[Associate Degredddddddddddddddde]]>
+              </value>
+            </param>
+            <param index="13">
+              <value>
+                <![CDATA[AB]]>
+              </value>
+            </param>
+            <param index="14">
+              <value>
+                <![CDATA[2/27/1991]]>
+              </value>
+            </param>
+            <param index="15">
+              <value>
+                <![CDATA[2323wewewewewe22e2e ddddddddddddddddddddddddddddwwwwwwwwwBox 48303]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[clicking main menu]]>
+            </line>
+            <line>
+              <![CDATA[Selecting Employee Section]]>
+            </line>
+            <line>
+              <![CDATA[Filling form]]>
+            </line>
+            <line>
+              <![CDATA[Clicking Submit]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- addEmployeewithAll_Information_inVlaid -->
+        <test-method signature="check_invlaid()[pri:11, instance:testWorkflows.Employee_Test@131ef10]" started-at="2025-09-04T02:22:54 EEST" name="check_invlaid" finished-at="2025-09-04T02:22:55 EEST" duration-ms="1798" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Clicking menu]]>
+            </line>
+            <line>
+              <![CDATA[Clicking All Employees]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- check_invlaid -->
+        <test-method signature="addEmployeewithAll_Information_dublicated(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:12, instance:testWorkflows.Employee_Test@131ef10]" started-at="2025-09-04T02:22:55 EEST" name="addEmployeewithAll_Information_dublicated" data-provider="AllInfoData_Form_Full_duplicated" finished-at="2025-09-04T02:23:01 EEST" duration-ms="5553" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Merissa Claessens]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[508-553-6913]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Teacher]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[D:\Programming_learning\Axsos accademy\Automation\Project\Project_Maven\selenium-test-automation-testing-pom/assets_emp_photos/37.jpg]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[2/1/2021]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[57056]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[Kinnie Bertome]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[Male]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[5]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[680-035-6907]]>
+              </value>
+            </param>
+            <param index="10">
+              <value>
+                <![CDATA[Christianity]]>
+              </value>
+            </param>
+            <param index="11">
+              <value>
+                <![CDATA[kbertome7@harvard.edu]]>
+              </value>
+            </param>
+            <param index="12">
+              <value>
+                <![CDATA[PhD Diploma]]>
+              </value>
+            </param>
+            <param index="13">
+              <value>
+                <![CDATA[AB-]]>
+              </value>
+            </param>
+            <param index="14">
+              <value>
+                <![CDATA[7/14/1985]]>
+              </value>
+            </param>
+            <param index="15">
+              <value>
+                <![CDATA[Room 1011]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[clicking main menu]]>
+            </line>
+            <line>
+              <![CDATA[Selecting Employee Section]]>
+            </line>
+            <line>
+              <![CDATA[Filling form]]>
+            </line>
+            <line>
+              <![CDATA[Clicking Submit]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- addEmployeewithAll_Information_dublicated -->
+        <test-method signature="addEmployeewithAll_Information_dublicated(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:12, instance:testWorkflows.Employee_Test@131ef10]" started-at="2025-09-04T02:23:01 EEST" name="addEmployeewithAll_Information_dublicated" data-provider="AllInfoData_Form_Full_duplicated" finished-at="2025-09-04T02:23:05 EEST" duration-ms="4223" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Norman Anglish]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[381-245-9736]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Teacher]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[D:\Programming_learning\Axsos accademy\Automation\Project\Project_Maven\selenium-test-automation-testing-pom/assets_emp_photos/38.jpg]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[6/25/2021]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[126533]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[Rouvin Sandwith]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[Male]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[11]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[897-782-8891]]>
+              </value>
+            </param>
+            <param index="10">
+              <value>
+                <![CDATA[Christianity]]>
+              </value>
+            </param>
+            <param index="11">
+              <value>
+                <![CDATA[rsandwith8@aol.com]]>
+              </value>
+            </param>
+            <param index="12">
+              <value>
+                <![CDATA[Associate Degree]]>
+              </value>
+            </param>
+            <param index="13">
+              <value>
+                <![CDATA[B-]]>
+              </value>
+            </param>
+            <param index="14">
+              <value>
+                <![CDATA[10/24/1996]]>
+              </value>
+            </param>
+            <param index="15">
+              <value>
+                <![CDATA[Suite 60]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[clicking main menu]]>
+            </line>
+            <line>
+              <![CDATA[Selecting Employee Section]]>
+            </line>
+            <line>
+              <![CDATA[Filling form]]>
+            </line>
+            <line>
+              <![CDATA[Clicking Submit]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- addEmployeewithAll_Information_dublicated -->
+        <test-method signature="addEmployeewithAll_Information_dublicated(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:12, instance:testWorkflows.Employee_Test@131ef10]" started-at="2025-09-04T02:23:05 EEST" name="addEmployeewithAll_Information_dublicated" data-provider="AllInfoData_Form_Full_duplicated" finished-at="2025-09-04T02:23:09 EEST" duration-ms="4062" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Bram Mitford]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[688-692-8310]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Management Staff]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[D:\Programming_learning\Axsos accademy\Automation\Project\Project_Maven\selenium-test-automation-testing-pom/assets_emp_photos/39.jpg]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[1/18/2021]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[71735]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[Leeann Ellum]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[Female]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[1]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[212-776-7281]]>
+              </value>
+            </param>
+            <param index="10">
+              <value>
+                <![CDATA[Islam]]>
+              </value>
+            </param>
+            <param index="11">
+              <value>
+                <![CDATA[lellum9@sourceforge.net]]>
+              </value>
+            </param>
+            <param index="12">
+              <value>
+                <![CDATA[High School Diploma]]>
+              </value>
+            </param>
+            <param index="13">
+              <value>
+                <![CDATA[O]]>
+              </value>
+            </param>
+            <param index="14">
+              <value>
+                <![CDATA[4/16/1985]]>
+              </value>
+            </param>
+            <param index="15">
+              <value>
+                <![CDATA[Suite 89]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[clicking main menu]]>
+            </line>
+            <line>
+              <![CDATA[Selecting Employee Section]]>
+            </line>
+            <line>
+              <![CDATA[Filling form]]>
+            </line>
+            <line>
+              <![CDATA[Clicking Submit]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- addEmployeewithAll_Information_dublicated -->
+        <test-method signature="check_dublicated()[pri:13, instance:testWorkflows.Employee_Test@131ef10]" started-at="2025-09-04T02:23:09 EEST" name="check_dublicated" finished-at="2025-09-04T02:23:11 EEST" duration-ms="1811" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Clicking menu]]>
+            </line>
+            <line>
+              <![CDATA[Clicking All Employees]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- check_dublicated -->
+        <test-method signature="Print_job_letter()[pri:14, instance:testWorkflows.Employee_Test@131ef10]" started-at="2025-09-04T02:23:11 EEST" name="Print_job_letter" finished-at="2025-09-04T02:23:21 EEST" duration-ms="9991" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Clicking main menu]]>
+            </line>
+            <line>
+              <![CDATA[Clicking Employee section]]>
+            </line>
+            <line>
+              <![CDATA[Clicking Job letter section]]>
+            </line>
+            <line>
+              <![CDATA[Selecting Employee]]>
+            </line>
+            <line>
+              <![CDATA[Printing Employee job letter]]>
+            </line>
+            <line>
+              <![CDATA[Switching window ]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- Print_job_letter -->
+        <test-method signature="Manage_login_Usernam_Password()[pri:15, instance:testWorkflows.Employee_Test@131ef10]" started-at="2025-09-04T02:23:21 EEST" name="Manage_login_Usernam_Password" finished-at="2025-09-04T02:23:42 EEST" duration-ms="20575" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Opeining Main Menu]]>
+            </line>
+            <line>
+              <![CDATA[Opeining clicking employee list]]>
+            </line>
+            <line>
+              <![CDATA[Opeining Manage logn section]]>
+            </line>
+            <line>
+              <![CDATA[Reload List to view all]]>
+            </line>
+            <line>
+              <![CDATA[Saving Login Inofrmation of Employees ]]>
+            </line>
+            <line>
+              <![CDATA[Changing view Settings ]]>
+            </line>
+            <line>
+              <![CDATA[Searching for Employee account ]]>
+            </line>
+            <line>
+              <![CDATA[Changing Username and password of  Employee account ]]>
+            </line>
+            <line>
+              <![CDATA[Saving changes for Employee account ]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- Manage_login_Usernam_Password -->
+        <test-method signature="Login_As_employee()[pri:16, instance:testWorkflows.Employee_Test@131ef10]" started-at="2025-09-04T02:23:42 EEST" name="Login_As_employee" finished-at="2025-09-04T02:23:50 EEST" duration-ms="8302" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Logging Out]]>
+            </line>
+            <line>
+              <![CDATA[Opeining browser]]>
+            </line>
+            <line>
+              <![CDATA[Entring username]]>
+            </line>
+            <line>
+              <![CDATA[Entring password]]>
+            </line>
+            <line>
+              <![CDATA[Clicking login]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- Login_As_employee -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testWorkflows.Employee_Test@131ef10]" started-at="2025-09-04T02:23:50 EEST" name="tearDown" finished-at="2025-09-04T02:23:53 EEST" duration-ms="3447" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
