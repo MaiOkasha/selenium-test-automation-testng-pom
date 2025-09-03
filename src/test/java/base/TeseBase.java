@@ -8,7 +8,7 @@ import org.testng.annotations.BeforeClass;
 public class TeseBase {
 
 	protected WebDriver driver;
-	protected String baseUrl;
+	protected String baseUrl = "https://www.eskooly.com/bb/signin.php";
 
 	@BeforeClass
 	public void setUp() {
@@ -17,11 +17,11 @@ public class TeseBase {
 		driver.get(baseUrl);
 	}
 
-	@AfterClass
-	public void tearDown() throws InterruptedException {
-		if (driver != null) {
-			Thread.sleep(3000);
-			driver.quit();
-		}
-	}
+//	@AfterClass
+//	public void tearDown() throws InterruptedException {
+//		if (driver != null) {
+//			Thread.sleep(3000);
+//			driver.quit();
+//		}
+//	}
 }

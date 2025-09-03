@@ -1,5 +1,11 @@
 package pages;
 
-public class StudentPage {
+public class StudentPage  {
+	
+	
+	
+	
+	
+	
 
 }
