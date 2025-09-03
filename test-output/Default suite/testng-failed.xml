@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="testWorkflows.TestAddStudentWorkflow">
+      <class name="testWorkflows.TestPromoteStudents">
         <methods>
           <include name="setUp"/>
+          <include name="testPromoteStudents" invocation-numbers="0"/>
           <include name="init"/>
-          <include name="testAddStudentWorkflow" invocation-numbers="0"/>
         </methods>
-      </class> <!-- testWorkflows.TestAddStudentWorkflow -->
+      </class> <!-- testWorkflows.TestPromoteStudents -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

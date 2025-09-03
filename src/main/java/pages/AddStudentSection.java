@@ -7,7 +7,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-public class StudentSectionPage {
+public class AddStudentSection {
 
 	private WebDriver driver;
 
@@ -15,7 +15,7 @@ public class StudentSectionPage {
 	By studentsTabLocator = By.xpath("//span[text()='Students']");
 	By addNewStudentLocator = By.xpath("//*[@id=\"addnewstudent\"]/a/span[2]");
 
-	public StudentSectionPage(WebDriver driver) {
+	public AddStudentSection(WebDriver driver) {
 		this.driver = driver;
 	}
 
