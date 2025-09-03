@@ -73,9 +73,9 @@ public class Employee_Test extends TestBase {
 	}
 	@Test(priority = 7)
 	public void delete_emp_byname() throws InterruptedException {
-		test.delete_Emp("Bartlett Churchman");
+		test.delete_Emp("Perry Kneeshaw");
 		
-		  Assert.assertFalse(test.isEmployeePresent("Bartlett Churchman"),"employee exist");
+		  Assert.assertFalse(test.isEmployeePresent("Perry Kneeshaw"),"employee exist");
 		  
 		
 	}
