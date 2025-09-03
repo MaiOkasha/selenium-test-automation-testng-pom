@@ -3,7 +3,7 @@ package pages;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
-public class LoginPage {
+public class AdminLoginPage {
 
 	private WebDriver driver;
 
@@ -12,7 +12,7 @@ public class LoginPage {
 	By passwordLocator = By.xpath("//input[@id=\"password\"]");
 	By loginBtn = By.xpath("//button[@id=\"submit\"]");
 
-	public LoginPage(WebDriver driver) {
+	public AdminLoginPage(WebDriver driver) {
 		this.driver = driver;
 	}
 

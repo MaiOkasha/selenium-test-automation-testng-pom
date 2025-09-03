@@ -7,25 +7,25 @@ import org.testng.annotations.Test;
 import base.TeseBase;
 import pages.AdmissionFormPage;
 import pages.AdmissionLetterPage;
-import pages.LoginPage;
-import pages.LogoutPage;
+import pages.AdminLoginPage;
+import pages.StudentLoginPage;
 import pages.StudentSectionPage;
 
 public class TestAddStudentWorkflow extends TeseBase {
 
-	private LoginPage loginPage;
+	private AdminLoginPage loginPage;
 	private StudentSectionPage studentSectionPage;
 	private AdmissionFormPage admissionFormPage;
 	private AdmissionLetterPage admissionLetterPage;
-	private LogoutPage logoutPage;
+	private StudentLoginPage studentLoginPage;
 
 	@BeforeClass
 	public void init() {
-		loginPage = new LoginPage(driver);
+		loginPage = new AdminLoginPage(driver);
 		studentSectionPage = new StudentSectionPage(driver);
 		admissionFormPage = new AdmissionFormPage(driver);
 		admissionLetterPage = new AdmissionLetterPage(driver);
-		logoutPage = new LogoutPage(driver);
+		studentLoginPage = new StudentLoginPage(driver);
 	}
 
 	// PreCondition For Test Cases
@@ -37,7 +37,8 @@ public class TestAddStudentWorkflow extends TeseBase {
 
 	// The First Test Case - TC _ St _ 001 - Add Student Workflow
 	@Test(priority = 2, dataProvider = "Student Data")
-	public void testAddStudentWorkflow(String studentName, int regNo, String className, String date, int discount) throws InterruptedException {
+	public void testAddStudentWorkflow(String studentName, int regNo, String className, String date, int discount)
+			throws InterruptedException {
 		studentSectionPage.clickMenu();
 		studentSectionPage.clickStudentsSection();
 		studentSectionPage.clickAddNewStudent();
@@ -47,12 +48,17 @@ public class TestAddStudentWorkflow extends TeseBase {
 		String password = admissionLetterPage.getPassword();
 		System.out.println(username);
 		System.out.println(password);
-		logoutPage.logout();
-		loginPage.login(username, password);
-		
+		driver.navigate().to(baseUrl);
+		studentLoginPage.login(username, password);
 	}
 
 	// Assert the message : Student has been added Successfully
+	// Try to use navigate to login page complete the workflow
+
+	// Try to navigate to all students to see
+
+	// TC _ St _ 006 Verify that a list of students can be filtered by class and
+	// printed.
 
 	@DataProvider(name = "Student Data")
 	public Object[][] getFormData() {
