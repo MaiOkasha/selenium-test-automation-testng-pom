@@ -9,6 +9,7 @@ import java.util.List;
 import java.util.NoSuchElementException;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -18,6 +19,7 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
+import org.testng.Reporter;
 import org.testng.annotations.*;
 
 public class Employees_Section {
@@ -36,22 +38,227 @@ public class Employees_Section {
 	 private By username = By.xpath("//*[@id=\"username\"]");
 	 private By password = By.xpath("//*[@id=\"password\"]");
 	 private By loginbtn = By.xpath("//*[@id=\"submit\"]");
-	 
+	 private By totalstudents = By.xpath("//*[text()=\"Total Students\"]");
 	 
 	 public void login(String user,String pass) throws InterruptedException {
-
-		   driver.findElement(username).sendKeys(user);
-		   driver.findElement(password).sendKeys(pass);
-		   driver.findElement(loginbtn).click();;
+		 	Reporter.log("Opeining browser");
+		 	Reporter.log("Entring username");
+		    driver.findElement(username).sendKeys(user);
+		    Reporter.log("Entring password");
+		    driver.findElement(password).sendKeys(pass);
+		    Reporter.log("Clicking login");
+		    driver.findElement(loginbtn).click();;
 		
 		}
-	 
+	public boolean login_assert() {
+		WebElement students=driver.findElement(totalstudents);
+		
+		
+		return students.isDisplayed();
+		
+	}
+	
+	
+public void allemployee_page() {
+		
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+		 wait.until(ExpectedConditions.visibilityOfElementLocated(menu)).click();
+		 driver.findElement(menu).click();
+		    Reporter.log("Clicking menu");
+
+		 WebElement employesselement=driver.findElement(employees);
+		 wait.until(ExpectedConditions.visibilityOfElementLocated(employees));
+		 action.moveToElement(employesselement).click().perform(); 
+		 Reporter.log("Clicking All Employees");
+		 driver.findElement(allemployees).click();
+		
+	}
+	
+	
+//	dont delete this line 
+//	String name, String phoneNum, String date, String rolef, String salaryf, String picturef,  String fatehrn, String id, String educationf, String genderf,  String religionf, String bloodf, String experiancef, String emalif,  String date_ofB, String homeAddress
+	public void edit_emp_info() throws InterruptedException {
+		allemployee_page();
+		
+		 Reporter.log("Clicking edit");
+		 driver.findElement(AllEmp_edit).click();
+		 Reporter.log("updating employee form");
+		 	driver.findElement(employeename).clear();
+		   driver.findElement(employeename).sendKeys("Patricio Kidstone");
+		   driver.findElement(phone).clear();
+		   driver.findElement(phone).sendKeys("367-665-4054");
+		   WebElement dateInput = driver.findElement(By.name("doa"));
+		   String dateValue = "2024-12-19"; 
+		   ((JavascriptExecutor) driver).executeScript("arguments[0].value = arguments[1];", dateInput, dateValue);
+
+
+		   Thread.sleep(1000);
+//		   driver.findElement(role).clear();
+		   driver.findElement(role).sendKeys("Teacher");
+		   driver.findElement(salary).clear();
+		   driver.findElement(salary).sendKeys("66550");
+//		   driver.findElement(Pictuer).clear();
+		   driver.findElement(Pictuer).sendKeys("D:\\Programming_learning\\Axsos accademy\\Automation\\Project\\Employees_Photos\\7.jpg");
+		   
+		   driver.findElement(father).clear();
+		   driver.findElement(father).sendKeys("Darcee Rosencrantz");
+		   driver.findElement(national_id).clear();
+		   driver.findElement(national_id).sendKeys("108-532-1750");
+		   driver.findElement(education).clear();
+		   driver.findElement(education).sendKeys("Associate Degree");
+//		   driver.findElement(gender).clear();
+		   driver.findElement(gender).sendKeys("Male");
+		 
+		 
+		 WebElement relgionfield =driver.findElement(religon);
+//		 relgionfield.clear();
+		 relgionfield.sendKeys("Islam");
+		 relgionfield.sendKeys(Keys.RETURN);
+//		 driver.findElement(blood_group).clear();
+		 driver.findElement(blood_group).sendKeys("A-");
+		 driver.findElement(experiance).clear();
+		 driver.findElement(experiance).sendKeys("11");
+		 driver.findElement(email).clear();
+		 driver.findElement(email).sendKeys("rjaulmes5@typepad.com");
+//		 driver.findElement(dateofbirth).clear();
+		 driver.findElement(dateofbirth).sendKeys("9/13/1992");
+		 driver.findElement(home_Address).clear();
+		 driver.findElement(home_Address).sendKeys("Apt 1488");
+		 Thread.sleep(1000);
+		 Reporter.log("Clicking update button");
+		 driver.findElement(submitbtn).click();
+		
+
+	}
+	
+	
+	public boolean checkupdate() {
+		WebElement empname =driver.findElement(employeename);
+		String employeeName = empname.getAttribute("value");
+		System.out.println(employeeName);
+		WebElement empfathername =driver.findElement(father);
+		String father = empfathername.getAttribute("value");
+		System.out.println(father);
+		
+
+		
+		
+		return employeeName.contains("Patricio Kidstone")&&father.contains("Darcee Rosencrantz");
+		
+	}
+
+	public void view_employee_info() {
+		allemployee_page();
+		 Reporter.log("Clicking view button ");
+		 driver.findElement(AllEmp_view).click();
+		
+	}
+	public boolean employee_view() {
+		 WebElement Getpdf=driver.findElement(By.xpath("//*[contains(text(),\" Get PDF\")]"));
+
+		return Getpdf.isDisplayed();
+	}
+	
+	
+	public void search_for_employye(String name) {
+		allemployee_page();	
+		 Reporter.log("Enering employye name");
+		 driver.findElement(AllEmp_searchbox).sendKeys(name);
+		 Actions actions = new Actions(driver);
+		 
+		// Move to the button, press arrow down, then enter
+		
+		 actions.sendKeys(Keys.ARROW_DOWN)
+		 .sendKeys(Keys.ARROW_DOWN) 
+		 .sendKeys(Keys.ENTER)        
+		 .build()
+		 .perform(); 
+
+		
+	}
+	
+	public boolean check_search(String name) {
+		 WebElement searchresult=driver.findElement(By.xpath("//*[text()=\'"+name+"']"));
+		return searchresult.isDisplayed();
+	}
+	
+	public void allbutton() {
+		driver.findElement(All_button).click();
+		
+		
+	}
+	
+	public boolean check_all_employyes_displayed() {
+		WebElement allemployees=driver.findElement(By.xpath("//div[contains(@class,'col-12')][contains(.,'- All Employees')]"));
+		return allemployees.isDisplayed();
+	}
+	
+	public void search_for_employye_with_invalid_data() {
+		allemployee_page();	
+		 Reporter.log("Enering invalid name");
+		 driver.findElement(AllEmp_searchbox).sendKeys("efedefw2323");
+		 Actions actions = new Actions(driver);
+		 
+		// Move to the button, press arrow down, then enter
+		
+		 actions.sendKeys(Keys.ARROW_DOWN)
+		 .sendKeys(Keys.ARROW_DOWN) 
+		 .sendKeys(Keys.ENTER)        
+		 .build()
+		 .perform(); 
+
+		
+	}
+	public boolean check_search_invalid() {
+		WebElement allemployees=driver.findElement(By.xpath("//div[contains(@class,'col-12')][contains(.,'- All Employees')]"));
+		return allemployees.isDisplayed();
+		
+	}
+	
+	
+ public void delete_Emp(String employeeToDelete ) throws InterruptedException {
+		
+		WebElement deleteButton = driver.findElement(By.xpath(
+		    "//div[@class='m-round'][.//span[text()='" + employeeToDelete + "']]//button[@name='edelete']"
+		));
+
+		
+		deleteButton.click();
+		
+		driver.switchTo().alert().accept();
+		       
+		   }
+ 	public boolean isEmployeePresent(String Delete_empolyee) {
+ 		 
+ 		  List<WebElement> employees = driver.findElements(By.xpath("//div[contains(@class,'m-round')]//span[text()='" + Delete_empolyee +"']"));
+ 		    return !employees.isEmpty(); 
+ 		
+ 		
+ 		
+ 	}
+		
+ 	
+	
+	
+	
+	
+
 	 
 	 
 	 
 //	 employeePage Basic information locators 
 	 private By menu = By.xpath("//*[@id=\"mobile-collapse\"]");
 	 private By allemployees = By.xpath("//*[text()=\"All Employees\"]");
+	 private By AllEmp_searchbox = By.xpath("//*[@id=\"tags1\"]");
+	 private By AllEmp_view = By.xpath("//button[@type='submit' and @name='eview']");
+	 private By AllEmp_edit = By.xpath("//form/button[2]");
+	 private By AllEmp_delete = By.xpath("//form/button[3]");
+	 private By dateofjoin = By.xpath("//input[@type='date' and @name='doa']");
+	 private By dateofbirth = By.xpath("//input[@type='date' and @name='dob']");
+	 private By All_button = By.xpath("//*[@class=\"btn b-link\"]");
+	
+	 
+//	 add new employee page locators
 	 private By employees = By.xpath("//*[text()=\"Employees\"]");
 	 private By addemployee = By.xpath("//*[@id=\"addnewteacher\"]");
 	 private By employeename = By.xpath("//*[@id=\"tname\"]");
@@ -188,7 +395,7 @@ public class Employees_Section {
 		   driver.findElement(calender).clear();
 		   driver.findElement(calender).sendKeys(date);
 		   driver.findElement(salary).sendKeys(salaryf);
-//		   String fatehrn, String genderf, String experiancef, String id, String religionf, String emalif, String educationf, String bloodf, String date_ofB, String homeAddress 
+		  
 		   
 		 driver.findElement(father).sendKeys(fatehrn);
 		 driver.findElement(gender).sendKeys(genderf);
@@ -215,70 +422,10 @@ public class Employees_Section {
 		 
 	 }
 	 
-	 public void deleteallEmp() throws InterruptedException {
-		 WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
-		    wait.until(ExpectedConditions.visibilityOfElementLocated(menu)).click();
-			driver.findElement(menu).click();
-			
-
-		
-		 WebElement employeeMenu = driver.findElement(By.xpath("//*[text()=\"Employees\"]"));
-		 action.moveToElement(employeeMenu).click().perform();
-		 driver.findElement(allemployees).click();
-		 List<WebElement> allRows = driver.findElements(By.xpath("//table[@id='employeeTable']//tr"));
-		 while (true) {
-		        try {
-		            // Locate the first employee's delete button
-		            WebElement deleteBtn = driver.findElement(By.xpath("//*[@id='pcoded']/div[2]/div[2]/div/div/div/div/div/div/div[3]/div[1]/form/button[3]"));
-		            
-		            // Click the delete button
-		            deleteBtn.click();
-
-		            // Handle confirmation alert
-		            wait.until(ExpectedConditions.alertIsPresent());
-		            driver.switchTo().alert().accept();
-
-		            // Wait for the row to be removed
-//		            Thread.sleep(1000);
-		        } catch (org.openqa.selenium.NoSuchElementException e) {
-		            System.out.println("All employees deleted!");
-		            break;
-		        }
-		    }
-		}
-	 public void deleteEmp_Byname(String employeeName) throws InterruptedException {
-		 WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
-		    wait.until(ExpectedConditions.visibilityOfElementLocated(menu)).click();
-			driver.findElement(menu).click();
-			
-
-		
-		 WebElement employeeMenu = driver.findElement(By.xpath("//*[text()=\"Employees\"]"));
-		 action.moveToElement(employeeMenu).click().perform();
-		 driver.findElement(allemployees).click();
-		 try {
-		        // Locate the row that contains the employee name
-		        WebElement employeeRow = driver.findElement(By.xpath(
-		            "//*[@id='pcoded']/div[2]/div[2]/div/div/div/div/div/div/div[3]//div[div/form/div[contains(text(),'" + employeeName + "')]]"
-		        ));
-		        
-		        // Locate the delete button inside that row
-		        WebElement deleteBtn = employeeRow.findElement(By.xpath(".//form/button[3]"));
-		        
-		        // Click delete
-		        deleteBtn.click();
-
-		        // Handle confirmation alert
-		        wait.until(ExpectedConditions.alertIsPresent());
-		        driver.switchTo().alert().accept();
-
-		        System.out.println(employeeName + " deleted successfully!");
-		        
-		    } catch (org.openqa.selenium.NoSuchElementException e) {
-		        System.out.println("Employee " + employeeName + " not found!");
-		    }
-		}
+	
+	 
 		    
+	
 		
 		  
 }

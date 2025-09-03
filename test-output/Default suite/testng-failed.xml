@@ -5,10 +5,11 @@
     <classes>
       <class name="testWorkflows.Employee_Test">
         <methods>
-          <include name="addEmployeewithAll_Information_Vlaid"/>
+          <include name="allbutton"/>
           <include name="tearDown"/>
           <include name="setup"/>
           <include name="setUpEmployeeSection"/>
+          <include name="delete_emp_byname"/>
         </methods>
       </class> <!-- testWorkflows.Employee_Test -->
     </classes>
