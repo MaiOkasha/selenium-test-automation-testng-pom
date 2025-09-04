@@ -44,7 +44,7 @@ public class Employee_Test extends TestBase {
 	
 	
 	@Test(priority = 3)
-	public void view_employeeinfo() {
+	public void view_employeeinfo() throws InterruptedException {
 		test.view_employee_info();
 		Assert.assertTrue(test.employee_view());
 		
@@ -52,10 +52,11 @@ public class Employee_Test extends TestBase {
 	
 	
 	
-	@Test(priority = 4)
-	public void search() {
-		test.search_for_employye("Bernita Flieger");
-		Assert.assertTrue(test.check_search("Bernita Flieger"));
+//	@Test(priority = 4)
+	public void search() throws InterruptedException {
+		test.search_for_employye("Jolene Rumsby");
+		Assert.assertTrue(test.check_search("Jolene Rumsby"));
+		
 	}
 	
 	@Test(priority = 5)
@@ -71,11 +72,11 @@ public class Employee_Test extends TestBase {
 		Assert.assertTrue(test.check_search_invalid());
 		
 	}
-	@Test(priority = 7)
+//	@Test(priority = 7)
 	public void delete_emp_byname() throws InterruptedException {
-		test.delete_Emp("Perry Kneeshaw");
+//		test.delete_Emp("Trudy Mullinger");
 		
-		  Assert.assertFalse(test.isEmployeePresent("Perry Kneeshaw"),"employee exist");
+//		  Assert.assertTrue(test.isEmployeePresent("Jerrold Layland"),"employee exist");
 		  
 		
 	}

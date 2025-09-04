@@ -5,25 +5,11 @@
     <classes>
       <class name="testWorkflows.Employee_Test">
         <methods>
-          <include name="addEmployeewithAll_Information_Vlaid" invocation-numbers="0 1 2 3 4 5 6 7 8 9"/>
-          <include name="allbutton"/>
           <include name="Search_with_invalid_Data"/>
-          <include name="addEmployeewithAll_Information_dublicated" invocation-numbers="0 1 2"/>
-          <include name="addEmployeewithAll_Information_inVlaid" invocation-numbers="0 1"/>
-          <include name="setup"/>
-          <include name="Print_job_letter"/>
-          <include name="setUpEmployeeSection"/>
-          <include name="Login"/>
-          <include name="Manage_login_Usernam_Password"/>
-          <include name="check_dublicated"/>
-          <include name="search"/>
-          <include name="check_invlaid"/>
           <include name="tearDown"/>
+          <include name="setup"/>
           <include name="Update_Emp_info"/>
-          <include name="view_employeeinfo"/>
-          <include name="check_valid"/>
-          <include name="Login_As_employee"/>
-          <include name="delete_emp_byname"/>
+          <include name="setUpEmployeeSection"/>
         </methods>
       </class> <!-- testWorkflows.Employee_Test -->
     </classes>

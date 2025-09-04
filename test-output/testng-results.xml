@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="28" passed="28" failed="0" skipped="0">
+<testng-results ignored="0" total="24" passed="22" failed="2" skipped="0">
   <reporter-output>
     <line>
       <![CDATA[Opeining browser]]>
@@ -30,39 +30,6 @@
     </line>
     <line>
       <![CDATA[Clicking menu]]>
-    </line>
-    <line>
-      <![CDATA[Clicking All Employees]]>
-    </line>
-    <line>
-      <![CDATA[Clicking view button ]]>
-    </line>
-    <line>
-      <![CDATA[Clicking menu]]>
-    </line>
-    <line>
-      <![CDATA[Clicking All Employees]]>
-    </line>
-    <line>
-      <![CDATA[Enering employye name]]>
-    </line>
-    <line>
-      <![CDATA[Clicking menu]]>
-    </line>
-    <line>
-      <![CDATA[Clicking All Employees]]>
-    </line>
-    <line>
-      <![CDATA[Enering invalid name]]>
-    </line>
-    <line>
-      <![CDATA[Clicking username from List]]>
-    </line>
-    <line>
-      <![CDATA[Deleteing Employee]]>
-    </line>
-    <line>
-      <![CDATA[Deleteing Confirmation]]>
     </line>
     <line>
       <![CDATA[clicking main menu]]>
@@ -323,20 +290,20 @@
       <![CDATA[Clicking login]]>
     </line>
   </reporter-output>
-  <suite started-at="2025-09-04T02:21:27 EEST" name="Default suite" finished-at="2025-09-04T02:23:53 EEST" duration-ms="146396">
+  <suite started-at="2025-09-04T21:42:09 EEST" name="Default suite" finished-at="2025-09-04T21:44:24 EEST" duration-ms="135027">
     <groups>
     </groups>
-    <test started-at="2025-09-04T02:21:27 EEST" name="Default test" finished-at="2025-09-04T02:23:53 EEST" duration-ms="146396">
+    <test started-at="2025-09-04T21:42:09 EEST" name="Default test" finished-at="2025-09-04T21:44:24 EEST" duration-ms="135027">
       <class name="testWorkflows.Employee_Test">
-        <test-method is-config="true" signature="setup()[pri:0, instance:testWorkflows.Employee_Test@131ef10]" started-at="2025-09-04T02:21:27 EEST" name="setup" finished-at="2025-09-04T02:21:31 EEST" duration-ms="3954" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:testWorkflows.Employee_Test@131ef10]" started-at="2025-09-04T21:42:09 EEST" name="setup" finished-at="2025-09-04T21:42:13 EEST" duration-ms="3872" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method is-config="true" signature="setUpEmployeeSection()[pri:0, instance:testWorkflows.Employee_Test@131ef10]" started-at="2025-09-04T02:21:31 EEST" name="setUpEmployeeSection" finished-at="2025-09-04T02:21:31 EEST" duration-ms="2" status="PASS">
+        <test-method is-config="true" signature="setUpEmployeeSection()[pri:0, instance:testWorkflows.Employee_Test@131ef10]" started-at="2025-09-04T21:42:13 EEST" name="setUpEmployeeSection" finished-at="2025-09-04T21:42:13 EEST" duration-ms="2" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpEmployeeSection -->
-        <test-method signature="Login()[pri:1, instance:testWorkflows.Employee_Test@131ef10]" started-at="2025-09-04T02:21:31 EEST" name="Login" finished-at="2025-09-04T02:21:34 EEST" duration-ms="2560" status="PASS">
+        <test-method signature="Login()[pri:1, instance:testWorkflows.Employee_Test@131ef10]" started-at="2025-09-04T21:42:13 EEST" name="Login" finished-at="2025-09-04T21:42:16 EEST" duration-ms="3168" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Opeining browser]]>
@@ -352,7 +319,74 @@
             </line>
           </reporter-output>
         </test-method> <!-- Login -->
-        <test-method signature="Update_Emp_info()[pri:2, instance:testWorkflows.Employee_Test@131ef10]" started-at="2025-09-04T02:21:34 EEST" name="Update_Emp_info" finished-at="2025-09-04T02:21:43 EEST" duration-ms="8918" status="PASS">
+        <test-method signature="Update_Emp_info()[pri:2, instance:testWorkflows.Employee_Test@131ef10]" started-at="2025-09-04T21:42:16 EEST" name="Update_Emp_info" finished-at="2025-09-04T21:42:24 EEST" duration-ms="8065" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//div[@class='m-round']//*[@name='eview']"}
+  (Session info: chrome=139.0.7258.155)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.20.0', revision: '866c76ca80'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.8'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [babb7b4f91c62bcb2ec7297c6f5f6ecd, findElement {value=//div[@class='m-round']//*[@name='eview'], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 139.0.7258.155, chrome: {chromedriverVersion: 139.0.7258.154 (9e0d6b2b47f..., userDataDir: C:\Users\badah\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63486}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63486/devtoo..., se:cdpVersion: 139.0.7258.155, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: babb7b4f91c62bcb2ec7297c6f5f6ecd]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//div[@class='m-round']//*[@name='eview']"}
+  (Session info: chrome=139.0.7258.155)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.20.0', revision: '866c76ca80'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.8'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [babb7b4f91c62bcb2ec7297c6f5f6ecd, findElement {value=//div[@class='m-round']//*[@name='eview'], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 139.0.7258.155, chrome: {chromedriverVersion: 139.0.7258.154 (9e0d6b2b47f..., userDataDir: C:\Users\badah\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63486}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63486/devtoo..., se:cdpVersion: 139.0.7258.155, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: babb7b4f91c62bcb2ec7297c6f5f6ecd
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
+at pages.Employees_Section.edit_emp_info(Employees_Section.java:146)
+at testWorkflows.Employee_Test.Update_Emp_info(Employee_Test.java:41)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
             <line>
               <![CDATA[Clicking menu]]>
@@ -371,67 +405,85 @@
             </line>
           </reporter-output>
         </test-method> <!-- Update_Emp_info -->
-        <test-method signature="view_employeeinfo()[pri:3, instance:testWorkflows.Employee_Test@131ef10]" started-at="2025-09-04T02:21:43 EEST" name="view_employeeinfo" finished-at="2025-09-04T02:21:47 EEST" duration-ms="3974" status="PASS">
+        <test-method signature="Search_with_invalid_Data()[pri:6, instance:testWorkflows.Employee_Test@131ef10]" started-at="2025-09-04T21:42:24 EEST" name="Search_with_invalid_Data" finished-at="2025-09-04T21:42:25 EEST" duration-ms="729" status="FAIL">
+          <exception class="org.openqa.selenium.StaleElementReferenceException">
+            <message>
+              <![CDATA[stale element reference: stale element not found
+  (Session info: chrome=139.0.7258.155)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Build info: version: '4.20.0', revision: '866c76ca80'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.8'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [babb7b4f91c62bcb2ec7297c6f5f6ecd, actions {actions=[org.openqa.selenium.interactions.Sequence@7772054c]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 139.0.7258.155, chrome: {chromedriverVersion: 139.0.7258.154 (9e0d6b2b47f..., userDataDir: C:\Users\badah\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63486}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63486/devtoo..., se:cdpVersion: 139.0.7258.155, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: babb7b4f91c62bcb2ec7297c6f5f6ecd]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found
+  (Session info: chrome=139.0.7258.155)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Build info: version: '4.20.0', revision: '866c76ca80'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.8'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [babb7b4f91c62bcb2ec7297c6f5f6ecd, actions {actions=[org.openqa.selenium.interactions.Sequence@7772054c]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 139.0.7258.155, chrome: {chromedriverVersion: 139.0.7258.154 (9e0d6b2b47f..., userDataDir: C:\Users\badah\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63486}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63486/devtoo..., se:cdpVersion: 139.0.7258.155, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: babb7b4f91c62bcb2ec7297c6f5f6ecd
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+at org.openqa.selenium.remote.RemoteWebDriver.perform(RemoteWebDriver.java:604)
+at org.openqa.selenium.interactions.Actions$BuiltAction.perform(Actions.java:603)
+at org.openqa.selenium.interactions.Actions.perform(Actions.java:568)
+at pages.Employees_Section.allemployee_page(Employees_Section.java:79)
+at pages.Employees_Section.search_for_employye_with_invalid_data(Employees_Section.java:234)
+at testWorkflows.Employee_Test.Search_with_invalid_Data(Employee_Test.java:71)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.StaleElementReferenceException -->
           <reporter-output>
             <line>
               <![CDATA[Clicking menu]]>
-            </line>
-            <line>
-              <![CDATA[Clicking All Employees]]>
-            </line>
-            <line>
-              <![CDATA[Clicking view button ]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- view_employeeinfo -->
-        <test-method signature="search()[pri:4, instance:testWorkflows.Employee_Test@131ef10]" started-at="2025-09-04T02:21:47 EEST" name="search" finished-at="2025-09-04T02:21:50 EEST" duration-ms="3300" status="PASS">
-          <reporter-output>
-            <line>
-              <![CDATA[Clicking menu]]>
-            </line>
-            <line>
-              <![CDATA[Clicking All Employees]]>
-            </line>
-            <line>
-              <![CDATA[Enering employye name]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- search -->
-        <test-method signature="allbutton()[pri:5, instance:testWorkflows.Employee_Test@131ef10]" started-at="2025-09-04T02:21:50 EEST" name="allbutton" finished-at="2025-09-04T02:21:52 EEST" duration-ms="1805" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- allbutton -->
-        <test-method signature="Search_with_invalid_Data()[pri:6, instance:testWorkflows.Employee_Test@131ef10]" started-at="2025-09-04T02:21:52 EEST" name="Search_with_invalid_Data" finished-at="2025-09-04T02:21:55 EEST" duration-ms="3385" status="PASS">
-          <reporter-output>
-            <line>
-              <![CDATA[Clicking menu]]>
-            </line>
-            <line>
-              <![CDATA[Clicking All Employees]]>
-            </line>
-            <line>
-              <![CDATA[Enering invalid name]]>
-            </line>
-            <line>
-              <![CDATA[Clicking username from List]]>
             </line>
           </reporter-output>
         </test-method> <!-- Search_with_invalid_Data -->
-        <test-method signature="delete_emp_byname()[pri:7, instance:testWorkflows.Employee_Test@131ef10]" started-at="2025-09-04T02:21:55 EEST" name="delete_emp_byname" finished-at="2025-09-04T02:21:57 EEST" duration-ms="2066" status="PASS">
-          <reporter-output>
-            <line>
-              <![CDATA[Deleteing Employee]]>
-            </line>
-            <line>
-              <![CDATA[Deleteing Confirmation]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- delete_emp_byname -->
-        <test-method signature="addEmployeewithAll_Information_Vlaid(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:8, instance:testWorkflows.Employee_Test@131ef10]" started-at="2025-09-04T02:21:57 EEST" name="addEmployeewithAll_Information_Vlaid" data-provider="AllInfoData" finished-at="2025-09-04T02:22:03 EEST" duration-ms="5851" status="PASS">
+        <test-method signature="addEmployeewithAll_Information_Vlaid(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:8, instance:testWorkflows.Employee_Test@131ef10]" started-at="2025-09-04T21:42:25 EEST" name="addEmployeewithAll_Information_Vlaid" data-provider="AllInfoData" finished-at="2025-09-04T21:42:30 EEST" duration-ms="4400" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[Will Bodicum]]>
+                <![CDATA[Arlinda Deshon]]>
               </value>
             </param>
             <param index="1">
@@ -525,11 +577,11 @@
             </line>
           </reporter-output>
         </test-method> <!-- addEmployeewithAll_Information_Vlaid -->
-        <test-method signature="addEmployeewithAll_Information_Vlaid(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:8, instance:testWorkflows.Employee_Test@131ef10]" started-at="2025-09-04T02:22:03 EEST" name="addEmployeewithAll_Information_Vlaid" data-provider="AllInfoData" finished-at="2025-09-04T02:22:07 EEST" duration-ms="4266" status="PASS">
+        <test-method signature="addEmployeewithAll_Information_Vlaid(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:8, instance:testWorkflows.Employee_Test@131ef10]" started-at="2025-09-04T21:42:30 EEST" name="addEmployeewithAll_Information_Vlaid" data-provider="AllInfoData" finished-at="2025-09-04T21:42:34 EEST" duration-ms="4464" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[Sherwynd Doone]]>
+                <![CDATA[Alysa Aimeric]]>
               </value>
             </param>
             <param index="1">
@@ -623,11 +675,11 @@
             </line>
           </reporter-output>
         </test-method> <!-- addEmployeewithAll_Information_Vlaid -->
-        <test-method signature="addEmployeewithAll_Information_Vlaid(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:8, instance:testWorkflows.Employee_Test@131ef10]" started-at="2025-09-04T02:22:07 EEST" name="addEmployeewithAll_Information_Vlaid" data-provider="AllInfoData" finished-at="2025-09-04T02:22:12 EEST" duration-ms="4390" status="PASS">
+        <test-method signature="addEmployeewithAll_Information_Vlaid(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:8, instance:testWorkflows.Employee_Test@131ef10]" started-at="2025-09-04T21:42:34 EEST" name="addEmployeewithAll_Information_Vlaid" data-provider="AllInfoData" finished-at="2025-09-04T21:42:38 EEST" duration-ms="4241" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[Paulina Brazelton]]>
+                <![CDATA[Dehlia Chapman]]>
               </value>
             </param>
             <param index="1">
@@ -637,7 +689,7 @@
             </param>
             <param index="2">
               <value>
-                <![CDATA[Store Manager]]>
+                <![CDATA[Teacher]]>
               </value>
             </param>
             <param index="3">
@@ -721,11 +773,11 @@
             </line>
           </reporter-output>
         </test-method> <!-- addEmployeewithAll_Information_Vlaid -->
-        <test-method signature="addEmployeewithAll_Information_Vlaid(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:8, instance:testWorkflows.Employee_Test@131ef10]" started-at="2025-09-04T02:22:12 EEST" name="addEmployeewithAll_Information_Vlaid" data-provider="AllInfoData" finished-at="2025-09-04T02:22:16 EEST" duration-ms="4239" status="PASS">
+        <test-method signature="addEmployeewithAll_Information_Vlaid(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:8, instance:testWorkflows.Employee_Test@131ef10]" started-at="2025-09-04T21:42:38 EEST" name="addEmployeewithAll_Information_Vlaid" data-provider="AllInfoData" finished-at="2025-09-04T21:42:43 EEST" duration-ms="4393" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[Greta Hasted]]>
+                <![CDATA[Nappie Bradnam]]>
               </value>
             </param>
             <param index="1">
@@ -819,11 +871,11 @@
             </line>
           </reporter-output>
         </test-method> <!-- addEmployeewithAll_Information_Vlaid -->
-        <test-method signature="addEmployeewithAll_Information_Vlaid(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:8, instance:testWorkflows.Employee_Test@131ef10]" started-at="2025-09-04T02:22:16 EEST" name="addEmployeewithAll_Information_Vlaid" data-provider="AllInfoData" finished-at="2025-09-04T02:22:20 EEST" duration-ms="4149" status="PASS">
+        <test-method signature="addEmployeewithAll_Information_Vlaid(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:8, instance:testWorkflows.Employee_Test@131ef10]" started-at="2025-09-04T21:42:43 EEST" name="addEmployeewithAll_Information_Vlaid" data-provider="AllInfoData" finished-at="2025-09-04T21:42:47 EEST" duration-ms="4416" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[Leyla Martinat]]>
+                <![CDATA[Penny Loudon]]>
               </value>
             </param>
             <param index="1">
@@ -833,7 +885,7 @@
             </param>
             <param index="2">
               <value>
-                <![CDATA[Principle]]>
+                <![CDATA[Teacher]]>
               </value>
             </param>
             <param index="3">
@@ -917,11 +969,11 @@
             </line>
           </reporter-output>
         </test-method> <!-- addEmployeewithAll_Information_Vlaid -->
-        <test-method signature="addEmployeewithAll_Information_Vlaid(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:8, instance:testWorkflows.Employee_Test@131ef10]" started-at="2025-09-04T02:22:20 EEST" name="addEmployeewithAll_Information_Vlaid" data-provider="AllInfoData" finished-at="2025-09-04T02:22:24 EEST" duration-ms="4152" status="PASS">
+        <test-method signature="addEmployeewithAll_Information_Vlaid(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:8, instance:testWorkflows.Employee_Test@131ef10]" started-at="2025-09-04T21:42:47 EEST" name="addEmployeewithAll_Information_Vlaid" data-provider="AllInfoData" finished-at="2025-09-04T21:42:51 EEST" duration-ms="4289" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[Lennie Wilkie]]>
+                <![CDATA[Erroll Scamerden]]>
               </value>
             </param>
             <param index="1">
@@ -1015,11 +1067,11 @@
             </line>
           </reporter-output>
         </test-method> <!-- addEmployeewithAll_Information_Vlaid -->
-        <test-method signature="addEmployeewithAll_Information_Vlaid(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:8, instance:testWorkflows.Employee_Test@131ef10]" started-at="2025-09-04T02:22:24 EEST" name="addEmployeewithAll_Information_Vlaid" data-provider="AllInfoData" finished-at="2025-09-04T02:22:28 EEST" duration-ms="4296" status="PASS">
+        <test-method signature="addEmployeewithAll_Information_Vlaid(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:8, instance:testWorkflows.Employee_Test@131ef10]" started-at="2025-09-04T21:42:51 EEST" name="addEmployeewithAll_Information_Vlaid" data-provider="AllInfoData" finished-at="2025-09-04T21:42:56 EEST" duration-ms="4377" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[Trudy Mullinger]]>
+                <![CDATA[Penny Loudon]]>
               </value>
             </param>
             <param index="1">
@@ -1029,7 +1081,7 @@
             </param>
             <param index="2">
               <value>
-                <![CDATA[Principle]]>
+                <![CDATA[Teacher]]>
               </value>
             </param>
             <param index="3">
@@ -1113,11 +1165,11 @@
             </line>
           </reporter-output>
         </test-method> <!-- addEmployeewithAll_Information_Vlaid -->
-        <test-method signature="addEmployeewithAll_Information_Vlaid(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:8, instance:testWorkflows.Employee_Test@131ef10]" started-at="2025-09-04T02:22:28 EEST" name="addEmployeewithAll_Information_Vlaid" data-provider="AllInfoData" finished-at="2025-09-04T02:22:33 EEST" duration-ms="4196" status="PASS">
+        <test-method signature="addEmployeewithAll_Information_Vlaid(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:8, instance:testWorkflows.Employee_Test@131ef10]" started-at="2025-09-04T21:42:56 EEST" name="addEmployeewithAll_Information_Vlaid" data-provider="AllInfoData" finished-at="2025-09-04T21:43:00 EEST" duration-ms="4412" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[Merissa Claessens]]>
+                <![CDATA[Dehlia Chapman]]>
               </value>
             </param>
             <param index="1">
@@ -1211,7 +1263,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- addEmployeewithAll_Information_Vlaid -->
-        <test-method signature="addEmployeewithAll_Information_Vlaid(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:8, instance:testWorkflows.Employee_Test@131ef10]" started-at="2025-09-04T02:22:33 EEST" name="addEmployeewithAll_Information_Vlaid" data-provider="AllInfoData" finished-at="2025-09-04T02:22:37 EEST" duration-ms="4202" status="PASS">
+        <test-method signature="addEmployeewithAll_Information_Vlaid(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:8, instance:testWorkflows.Employee_Test@131ef10]" started-at="2025-09-04T21:43:00 EEST" name="addEmployeewithAll_Information_Vlaid" data-provider="AllInfoData" finished-at="2025-09-04T21:43:04 EEST" duration-ms="4263" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -1309,7 +1361,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- addEmployeewithAll_Information_Vlaid -->
-        <test-method signature="addEmployeewithAll_Information_Vlaid(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:8, instance:testWorkflows.Employee_Test@131ef10]" started-at="2025-09-04T02:22:37 EEST" name="addEmployeewithAll_Information_Vlaid" data-provider="AllInfoData" finished-at="2025-09-04T02:22:41 EEST" duration-ms="4274" status="PASS">
+        <test-method signature="addEmployeewithAll_Information_Vlaid(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:8, instance:testWorkflows.Employee_Test@131ef10]" started-at="2025-09-04T21:43:04 EEST" name="addEmployeewithAll_Information_Vlaid" data-provider="AllInfoData" finished-at="2025-09-04T21:43:09 EEST" duration-ms="4280" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -1323,7 +1375,7 @@
             </param>
             <param index="2">
               <value>
-                <![CDATA[Management Staff]]>
+                <![CDATA[Teacher]]>
               </value>
             </param>
             <param index="3">
@@ -1407,7 +1459,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- addEmployeewithAll_Information_Vlaid -->
-        <test-method signature="check_valid()[pri:9, instance:testWorkflows.Employee_Test@131ef10]" started-at="2025-09-04T02:22:41 EEST" name="check_valid" finished-at="2025-09-04T02:22:43 EEST" duration-ms="2228" status="PASS">
+        <test-method signature="check_valid()[pri:9, instance:testWorkflows.Employee_Test@131ef10]" started-at="2025-09-04T21:43:09 EEST" name="check_valid" finished-at="2025-09-04T21:43:11 EEST" duration-ms="2600" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Clicking menu]]>
@@ -1417,7 +1469,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- check_valid -->
-        <test-method signature="addEmployeewithAll_Information_inVlaid(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:10, instance:testWorkflows.Employee_Test@131ef10]" started-at="2025-09-04T02:22:43 EEST" name="addEmployeewithAll_Information_inVlaid" data-provider="AllInfoData_Form_Full_invalid" finished-at="2025-09-04T02:22:49 EEST" duration-ms="5690" status="PASS">
+        <test-method signature="addEmployeewithAll_Information_inVlaid(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:10, instance:testWorkflows.Employee_Test@131ef10]" started-at="2025-09-04T21:43:11 EEST" name="addEmployeewithAll_Information_inVlaid" data-provider="AllInfoData_Form_Full_invalid" finished-at="2025-09-04T21:43:17 EEST" duration-ms="6109" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -1515,7 +1567,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- addEmployeewithAll_Information_inVlaid -->
-        <test-method signature="addEmployeewithAll_Information_inVlaid(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:10, instance:testWorkflows.Employee_Test@131ef10]" started-at="2025-09-04T02:22:49 EEST" name="addEmployeewithAll_Information_inVlaid" data-provider="AllInfoData_Form_Full_invalid" finished-at="2025-09-04T02:22:54 EEST" duration-ms="4608" status="PASS">
+        <test-method signature="addEmployeewithAll_Information_inVlaid(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:10, instance:testWorkflows.Employee_Test@131ef10]" started-at="2025-09-04T21:43:17 EEST" name="addEmployeewithAll_Information_inVlaid" data-provider="AllInfoData_Form_Full_invalid" finished-at="2025-09-04T21:43:22 EEST" duration-ms="4492" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -1613,7 +1665,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- addEmployeewithAll_Information_inVlaid -->
-        <test-method signature="check_invlaid()[pri:11, instance:testWorkflows.Employee_Test@131ef10]" started-at="2025-09-04T02:22:54 EEST" name="check_invlaid" finished-at="2025-09-04T02:22:55 EEST" duration-ms="1798" status="PASS">
+        <test-method signature="check_invlaid()[pri:11, instance:testWorkflows.Employee_Test@131ef10]" started-at="2025-09-04T21:43:22 EEST" name="check_invlaid" finished-at="2025-09-04T21:43:24 EEST" duration-ms="2001" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Clicking menu]]>
@@ -1623,7 +1675,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- check_invlaid -->
-        <test-method signature="addEmployeewithAll_Information_dublicated(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:12, instance:testWorkflows.Employee_Test@131ef10]" started-at="2025-09-04T02:22:55 EEST" name="addEmployeewithAll_Information_dublicated" data-provider="AllInfoData_Form_Full_duplicated" finished-at="2025-09-04T02:23:01 EEST" duration-ms="5553" status="PASS">
+        <test-method signature="addEmployeewithAll_Information_dublicated(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:12, instance:testWorkflows.Employee_Test@131ef10]" started-at="2025-09-04T21:43:24 EEST" name="addEmployeewithAll_Information_dublicated" data-provider="AllInfoData_Form_Full_duplicated" finished-at="2025-09-04T21:43:30 EEST" duration-ms="5979" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -1721,7 +1773,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- addEmployeewithAll_Information_dublicated -->
-        <test-method signature="addEmployeewithAll_Information_dublicated(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:12, instance:testWorkflows.Employee_Test@131ef10]" started-at="2025-09-04T02:23:01 EEST" name="addEmployeewithAll_Information_dublicated" data-provider="AllInfoData_Form_Full_duplicated" finished-at="2025-09-04T02:23:05 EEST" duration-ms="4223" status="PASS">
+        <test-method signature="addEmployeewithAll_Information_dublicated(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:12, instance:testWorkflows.Employee_Test@131ef10]" started-at="2025-09-04T21:43:30 EEST" name="addEmployeewithAll_Information_dublicated" data-provider="AllInfoData_Form_Full_duplicated" finished-at="2025-09-04T21:43:34 EEST" duration-ms="4219" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -1819,7 +1871,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- addEmployeewithAll_Information_dublicated -->
-        <test-method signature="addEmployeewithAll_Information_dublicated(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:12, instance:testWorkflows.Employee_Test@131ef10]" started-at="2025-09-04T02:23:05 EEST" name="addEmployeewithAll_Information_dublicated" data-provider="AllInfoData_Form_Full_duplicated" finished-at="2025-09-04T02:23:09 EEST" duration-ms="4062" status="PASS">
+        <test-method signature="addEmployeewithAll_Information_dublicated(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:12, instance:testWorkflows.Employee_Test@131ef10]" started-at="2025-09-04T21:43:34 EEST" name="addEmployeewithAll_Information_dublicated" data-provider="AllInfoData_Form_Full_duplicated" finished-at="2025-09-04T21:43:38 EEST" duration-ms="4226" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -1917,7 +1969,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- addEmployeewithAll_Information_dublicated -->
-        <test-method signature="check_dublicated()[pri:13, instance:testWorkflows.Employee_Test@131ef10]" started-at="2025-09-04T02:23:09 EEST" name="check_dublicated" finished-at="2025-09-04T02:23:11 EEST" duration-ms="1811" status="PASS">
+        <test-method signature="check_dublicated()[pri:13, instance:testWorkflows.Employee_Test@131ef10]" started-at="2025-09-04T21:43:38 EEST" name="check_dublicated" finished-at="2025-09-04T21:43:41 EEST" duration-ms="2123" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Clicking menu]]>
@@ -1927,7 +1979,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- check_dublicated -->
-        <test-method signature="Print_job_letter()[pri:14, instance:testWorkflows.Employee_Test@131ef10]" started-at="2025-09-04T02:23:11 EEST" name="Print_job_letter" finished-at="2025-09-04T02:23:21 EEST" duration-ms="9991" status="PASS">
+        <test-method signature="Print_job_letter()[pri:14, instance:testWorkflows.Employee_Test@131ef10]" started-at="2025-09-04T21:43:41 EEST" name="Print_job_letter" finished-at="2025-09-04T21:43:51 EEST" duration-ms="10381" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Clicking main menu]]>
@@ -1949,7 +2001,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- Print_job_letter -->
-        <test-method signature="Manage_login_Usernam_Password()[pri:15, instance:testWorkflows.Employee_Test@131ef10]" started-at="2025-09-04T02:23:21 EEST" name="Manage_login_Usernam_Password" finished-at="2025-09-04T02:23:42 EEST" duration-ms="20575" status="PASS">
+        <test-method signature="Manage_login_Usernam_Password()[pri:15, instance:testWorkflows.Employee_Test@131ef10]" started-at="2025-09-04T21:43:51 EEST" name="Manage_login_Usernam_Password" finished-at="2025-09-04T21:44:12 EEST" duration-ms="21442" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Opeining Main Menu]]>
@@ -1980,7 +2032,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- Manage_login_Usernam_Password -->
-        <test-method signature="Login_As_employee()[pri:16, instance:testWorkflows.Employee_Test@131ef10]" started-at="2025-09-04T02:23:42 EEST" name="Login_As_employee" finished-at="2025-09-04T02:23:50 EEST" duration-ms="8302" status="PASS">
+        <test-method signature="Login_As_employee()[pri:16, instance:testWorkflows.Employee_Test@131ef10]" started-at="2025-09-04T21:44:12 EEST" name="Login_As_employee" finished-at="2025-09-04T21:44:21 EEST" duration-ms="8440" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Logging Out]]>
@@ -1999,7 +2051,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- Login_As_employee -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testWorkflows.Employee_Test@131ef10]" started-at="2025-09-04T02:23:50 EEST" name="tearDown" finished-at="2025-09-04T02:23:53 EEST" duration-ms="3447" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testWorkflows.Employee_Test@131ef10]" started-at="2025-09-04T21:44:21 EEST" name="tearDown" finished-at="2025-09-04T21:44:24 EEST" duration-ms="3528" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

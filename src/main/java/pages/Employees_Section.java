@@ -91,10 +91,11 @@ public void allemployee_page() {
 		 Reporter.log("Clicking edit");
 		 driver.findElement(AllEmp_edit).click();
 		 Reporter.log("updating employee form");
+		 
 		 	driver.findElement(employeename).clear();
-		   driver.findElement(employeename).sendKeys("Cole Waterland");
+		   driver.findElement(employeename).sendKeys("Ahmad Badaha");
 		   driver.findElement(phone).clear();
-		   driver.findElement(phone).sendKeys("367-665-4054");
+		   driver.findElement(phone).sendKeys("0595024003");
 		   WebElement dateInput = driver.findElement(By.name("doa"));
 		   String dateValue = "2024-12-19"; 
 		   ((JavascriptExecutor) driver).executeScript("arguments[0].value = arguments[1];", dateInput, dateValue);
@@ -104,12 +105,16 @@ public void allemployee_page() {
 //		   driver.findElement(role).clear();
 		   driver.findElement(role).sendKeys("Teacher");
 		   driver.findElement(salary).clear();
-		   driver.findElement(salary).sendKeys("66550");
-//		   driver.findElement(Pictuer).clear();
-		   driver.findElement(Pictuer).sendKeys("D:\\Programming_learning\\Axsos accademy\\Automation\\Project\\Employees_Photos\\7.jpg");
+		   driver.findElement(salary).sendKeys("8500");
+		   String projectPath = System.getProperty("user.dir");
+		   String filePath = projectPath + "\\assets_emp_photos\\me.jpg";
+//
+		   WebElement upload = driver.findElement(By.xpath("//input[@type='file']"));
+		   upload.sendKeys(filePath);
+//		   driver.findElement(Pictuer).sendKeys("D:\\Programming_learning\\Axsos accademy\\Automation\\Project\\Employees_Photos\\20.jpg");
 		   
 		   driver.findElement(father).clear();
-		   driver.findElement(father).sendKeys("Darcee Rosencrantz");
+		   driver.findElement(father).sendKeys("Ali Badaha");
 		   driver.findElement(national_id).clear();
 		   driver.findElement(national_id).sendKeys("108-532-1750");
 		   driver.findElement(education).clear();
@@ -127,14 +132,18 @@ public void allemployee_page() {
 		 driver.findElement(experiance).clear();
 		 driver.findElement(experiance).sendKeys("11");
 		 driver.findElement(email).clear();
-		 driver.findElement(email).sendKeys("rjaulmes5@typepad.com");
+		 driver.findElement(email).sendKeys("badaha.22@gmail.com");
 //		 driver.findElement(dateofbirth).clear();
 		 driver.findElement(dateofbirth).sendKeys("9/13/1992");
 		 driver.findElement(home_Address).clear();
 		 driver.findElement(home_Address).sendKeys("Apt 1488");
-		 Thread.sleep(1000);
+//		 Thread.sleep(1000);
 		 Reporter.log("Clicking update button");
+		 WebElement update = driver.findElement(submitbtn);
+		 action.moveToElement(update);
 		 driver.findElement(submitbtn).click();
+//		 Thread.sleep(2000);
+//		 driver.findElement(AllEmp_view).click();
 		
 
 	}
@@ -143,22 +152,24 @@ public void allemployee_page() {
 	public boolean checkupdate() {
 		WebElement empname =driver.findElement(employeename);
 		String employeeName = empname.getAttribute("value");
-		System.out.println(employeeName);
+//		System.out.println(employeeName);
 		WebElement empfathername =driver.findElement(father);
 		String father = empfathername.getAttribute("value");
-		System.out.println(father);
+//		System.out.println(father);
 		
 
 		
 		
-		return employeeName.contains("Cole Waterland")&&father.contains("Darcee Rosencrantz");
+		return employeeName.contains("Ahmad Badaha")&&father.contains("Ali Badaha");
 		
 	}
 
-	public void view_employee_info() {
+	public void view_employee_info( ) throws InterruptedException {
 		allemployee_page();
-		 Reporter.log("Clicking view button ");
-		 driver.findElement(AllEmp_view).click();
+		
+//		 Reporter.log("Clicking view button ");
+		driver.findElement(By.xpath("//div[@class='m-round'][.//span[text()=\"Beth Josephsen\"]]//*[@name='eview']")).click();
+//		 driver.findElement(AllEmp_view).click();
 		
 	}
 	public boolean employee_view() {
@@ -168,19 +179,21 @@ public void allemployee_page() {
 	}
 	
 	
-	public void search_for_employye(String name) {
-		allemployee_page();	
-		 Reporter.log("Enering employye name");
+	public void search_for_employye(String name) throws InterruptedException {
+		allemployee_page();
+		Thread.sleep(1000);
+		 Reporter.log("Enering invalid name");
 		 driver.findElement(AllEmp_searchbox).sendKeys(name);
 		 Actions actions = new Actions(driver);
 		 
 		// Move to the button, press arrow down, then enter
-		
+		 Reporter.log("Clicking username from List");
 		 actions.sendKeys(Keys.ARROW_DOWN)
 		 .sendKeys(Keys.ARROW_DOWN) 
 		 .sendKeys(Keys.ENTER)        
 		 .build()
 		 .perform(); 
+		 
 
 		
 	}
@@ -200,11 +213,27 @@ public void allemployee_page() {
 		WebElement allemployees=driver.findElement(By.xpath("//div[contains(@class,'col-12')][contains(.,'- All Employees')]"));
 		return allemployees.isDisplayed();
 	}
+	public void search_for_employye_with_invalid_data2() {
+		allemployee_page();	
+		 Reporter.log("Enering invalid name");
+		 driver.findElement(AllEmp_searchbox).sendKeys("Ahmad Badaha");
+		 Actions actions = new Actions(driver);
+		 
+		// Move to the button, press arrow down, then enter
+		 Reporter.log("Clicking username from List");
+		 actions.sendKeys(Keys.ARROW_DOWN)
+		 .sendKeys(Keys.ARROW_DOWN) 
+		 .sendKeys(Keys.ENTER)        
+		 .build()
+		 .perform(); 
+
+		
+	}
 	
 	public void search_for_employye_with_invalid_data() {
 		allemployee_page();	
 		 Reporter.log("Enering invalid name");
-		 driver.findElement(AllEmp_searchbox).sendKeys("efedefw2323");
+		 driver.findElement(AllEmp_searchbox).sendKeys("aSAs");
 		 Actions actions = new Actions(driver);
 		 
 		// Move to the button, press arrow down, then enter
@@ -237,6 +266,28 @@ public void allemployee_page() {
 		       
 		   }
  
+ 	public void viewStudent(String Value) {
+ 		WebElement viewButton = driver.findElement(By.xpath(
+ 			    "//form[input[@value='" + Value +"']]//button[@name='sview']"
+ 			));
+ 		
+ 	}
+ 	
+ 	
+	public void editStudent(String Value) {
+ 		WebElement editButton = driver.findElement(By.xpath(
+ 			    "//form[input[@value='" + Value +"']]//button[@name='sedit']"
+ 			));
+ 		
+ 	}
+	
+	public void DeleteStudent(String Value) {
+ 		WebElement DeleteButton = driver.findElement(By.xpath(
+ 			    "//form[input[@value='" + Value +"']]//button[@name='sedit']"
+ 			));
+ 		
+ 	}
+ 
  	public boolean isEmployeePresent(String Delete_empolyee) {
  		 
  		  List<WebElement> employees = driver.findElements(By.xpath("//div[contains(@class,'m-round')]//span[text()='" + Delete_empolyee +"']"));
@@ -259,7 +310,7 @@ public void allemployee_page() {
 	 private By menu = By.xpath("//*[@id=\"mobile-collapse\"]");
 	 private By allemployees = By.xpath("//*[text()=\"All Employees\"]");
 	 private By AllEmp_searchbox = By.xpath("//*[@id=\"tags1\"]");
-	 private By AllEmp_view = By.xpath("//button[@type='submit' and @name='eview']");
+	 private By AllEmp_view = By.xpath("//div[@class='m-round']//*[@name='eview']");
 	 private By AllEmp_edit = By.xpath("//form/button[2]");
 	 private By AllEmp_delete = By.xpath("//form/button[3]");
 	 private By dateofjoin = By.xpath("//input[@type='date' and @name='doa']");
@@ -635,7 +686,7 @@ public void allemployee_page() {
 				 clickAtPosition(500,300);
 				 
 				 Reporter.log("Searching for Employee account ");
-				 driver.findElement(Search_employee).sendKeys("Camile Boarder");
+				 driver.findElement(Search_employee).sendKeys("Ahmad Badaha");
 				 Actions actions = new Actions(driver);
 				 
 				
@@ -648,7 +699,7 @@ public void allemployee_page() {
 					 .perform();
 					 Reporter.log("Changing Username and password of  Employee account ");
 					 driver.findElement(Manage_login_Username).clear();
-					 driver.findElement(Manage_login_Username).sendKeys("Aa00147235@@");
+					 driver.findElement(Manage_login_Username).sendKeys("badaha");
 					 driver.findElement(Manage_login_password).clear();
 					 driver.findElement(Manage_login_password).sendKeys("Aa00147235");
 					 Thread.sleep(1000);
@@ -696,7 +747,7 @@ public void allemployee_page() {
 		 	Reporter.log("Opeining browser");
 		 	driver.findElement(Select_employee).click();
 		 	Reporter.log("Entring username");
-		    driver.findElement(username).sendKeys("Aa00147235@@");
+		    driver.findElement(username).sendKeys("badaha");
 		    Reporter.log("Entring password");
 		    driver.findElement(password).sendKeys("Aa00147235");
 		    Reporter.log("Clicking login");
