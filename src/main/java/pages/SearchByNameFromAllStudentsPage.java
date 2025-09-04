@@ -1,11 +1,11 @@
 package pages;
 
 import java.time.Duration;
-import org.openqa.selenium.StaleElementReferenceException;
-import org.openqa.selenium.NoSuchElementException;
+import java.util.concurrent.TimeoutException;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
+import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.StaleElementReferenceException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -29,29 +29,23 @@ public class SearchByNameFromAllStudentsPage {
 	public SearchByNameFromAllStudentsPage(WebDriver driver) {
 		this.driver = driver;
 	}
-	
+
 	public void clickSearchBtn() {
-	    WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
 
-	    wait.ignoring(StaleElementReferenceException.class, NoSuchElementException.class)
-	        .until(d -> {
-	            try {
-	                WebElement btn = d.findElement(searchBtn);
-	                if (btn.isDisplayed() && btn.isEnabled()) {
-	                    btn.click();
-	                    return true;
-	                }
-	                return false;
-	            } catch (Exception e) {
-	                return false;
-	            }
-	        });
+		wait.ignoring(StaleElementReferenceException.class, NoSuchElementException.class).until(d -> {
+			try {
+				WebElement btn = d.findElement(searchBtn);
+				if (btn.isDisplayed() && btn.isEnabled()) {
+					btn.click();
+					return true;
+				}
+				return false;
+			} catch (Exception e) {
+				return false;
+			}
+		});
 	}
-
-
-	/*
-	 * public void clickSearchBtn() { driver.findElement(searchBtn).click(); }
-	 */
 
 	public void seachByName(String name) {
 		driver.findElement(searchStudentLocator).sendKeys(name);
@@ -63,27 +57,43 @@ public class SearchByNameFromAllStudentsPage {
 	public void getName() {
 		driver.findElement(nameLocator).getText();
 	}
+	
+	public void clickEditBtn() throws TimeoutException {
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
+        
+        // The wait.until() method itself throws TimeoutException,
+		// so the try-catch block must wrap this method call.
+		WebElement editBtn = wait.until(ExpectedConditions.elementToBeClickable(editBtnLocator));
+		editBtn.click();
+		System.out.println("Clicked 'Edit' button successfully.");
+    }
 
-	public void clickEditBtn() {
-		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(40));
-
-		wait.ignoring(StaleElementReferenceException.class).until(driver -> {
-			driver.findElement(editBtnLocator).click();
-			return true;
-		});
-
-		WebElement studentNameField = wait.ignoring(StaleElementReferenceException.class)
-				.until(d -> d.findElement(studentNameLocator));
-
-		studentNameField.clear();
-		studentNameField.sendKeys(" Lana Mohammed");
-		studentNameField.sendKeys(Keys.RETURN);
-	}
-
+	/*
+	 * public void clickEditBtn() throws InterruptedException { Thread.sleep(5000);
+	 * driver.findElement(editBtnLocator).click(); Thread.sleep(3000);
+	 * 
+	 * 
+	 * WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(40));
+	 * 
+	 * wait.ignoring(StaleElementReferenceException.class).until(driver -> {
+	 * driver.findElement(editBtnLocator).click(); return true; });
+	 * 
+	 * 
+	 * 
+	 * WebElement studentNameField =
+	 * wait.ignoring(StaleElementReferenceException.class) .until(d ->
+	 * d.findElement(studentNameLocator));
+	 * 
+	 * driver.findElement(editBtnLocator).clear(); Thread.sleep(3000);
+	 * 
+	 * driver.findElement(editBtnLocator).sendKeys(" Lana Mohammed");
+	 * Thread.sleep(3000);
+	 * 
+	 * driver.findElement(editBtnLocator).sendKeys(Keys.RETURN); }
+	 */
 	public void clickViewBtn() {
-		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(40));
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
 
-		// Retry using JS click to avoid hover-only issues and
 		// StaleElementReferenceException
 		wait.ignoring(StaleElementReferenceException.class).until(driver -> {
 			WebElement viewBtn = driver.findElement(viewBtnLocator);

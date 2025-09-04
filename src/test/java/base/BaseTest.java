@@ -5,7 +5,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 
-public class TeseBase {
+public class BaseTest {
 
 	protected WebDriver driver;
 	protected String baseUrl = "https://www.eskooly.com/bb/signin.php";

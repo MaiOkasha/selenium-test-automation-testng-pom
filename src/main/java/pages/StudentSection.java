@@ -3,6 +3,7 @@ package pages;
 import java.time.Duration;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
@@ -53,10 +54,30 @@ public class StudentSection {
 		allStudentsTab.click();
 	}
 
+	/*
+	 * public void clickPrintBasicList() { WebDriverWait wait = new
+	 * WebDriverWait(driver, Duration.ofSeconds(30)); WebElement printBasicListTab =
+	 * wait.until(ExpectedConditions.elementToBeClickable(printBasicListLocator));
+	 * printBasicListTab.click(); }
+	 */
+
 	public void clickPrintBasicList() {
-		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));
-		WebElement printBasicListTab = wait.until(ExpectedConditions.elementToBeClickable(printBasicListLocator));
-		printBasicListTab.click();
+
+		clickMenu();
+
+		for (int i = 0; i < 3; i++) {
+			try {
+				WebElement printBtn = driver.findElement(printBasicListLocator);
+				((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", printBtn);
+				((JavascriptExecutor) driver).executeScript("arguments[0].click();", printBtn);
+				break;
+			} catch (org.openqa.selenium.ElementClickInterceptedException e) {
+				try {
+					Thread.sleep(500);
+				} catch (InterruptedException ignored) {
+				}
+			}
+		}
 	}
 
 	/*

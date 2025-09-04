@@ -15,7 +15,6 @@ public class AdmissionFormPage {
 	By classNameLocator = By.cssSelector("#searchlist-selectized");
 	By discountInFeeLocator = By.xpath("//input[@name='discount' and @placeholder='In %']");
 	By successMsgLocator = By.xpath("//*[@id=\"message1\"]");
-	//By submitBtn = By.xpath("//button[contains(@style,'border-radius:20px') and contains(@style,'width:170px')]");
 
 	public AdmissionFormPage(WebDriver driver) {
 		this.driver = driver;
