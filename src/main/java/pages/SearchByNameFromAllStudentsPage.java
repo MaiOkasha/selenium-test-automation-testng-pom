@@ -24,7 +24,7 @@ public class SearchByNameFromAllStudentsPage {
 	By viewBtnLocator = By.xpath("//button[@name='sview']");
 	By editBtnLocator = By.xpath("//button[@name='sedit']");
 	By deleteBtnLocator = By.cssSelector("button[name='sdelete']");
-	By studentNameLocator = By.xpath("//*[@id=\"studentname\"]");
+	public By studentNameLocator = By.xpath("//*[@id=\"studentname\"]");
 
 	public SearchByNameFromAllStudentsPage(WebDriver driver) {
 		this.driver = driver;

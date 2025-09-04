@@ -9,6 +9,7 @@
           <include name="setUp"/>
           <include name="testPrintList"/>
           <include name="init"/>
+          <include name="testViewStudentReport" invocation-numbers="0"/>
         </methods>
       </class> <!-- testWorkflows.TestStudentsWorkflow -->
     </classes>

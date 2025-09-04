@@ -7,6 +7,8 @@ import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class PrintBasicListOfStudentsPage {
 
@@ -31,21 +33,47 @@ public class PrintBasicListOfStudentsPage {
 		search.sendKeys(Keys.RETURN);
 	}
 	
-	 public void printInFormat() {
-	        // Click Copy
-	        driver.findElement(coopyLocator).click();
+	
+	
+	/*
+	 * public void printInFormat() { // Click Copy
+	 * driver.findElement(coopyLocator).click();
+	 * 
+	 * // Click CSV driver.findElement(csvLocator).click();
+	 * 
+	 * // Click Excel driver.findElement(excelLocator).click();
+	 * 
+	 * // Scroll to PDF button and click using JavaScript WebElement pdfBtn =
+	 * driver.findElement(pdfLocator); ((JavascriptExecutor)
+	 * driver).executeScript("arguments[0].scrollIntoView(true);", pdfBtn);
+	 * ((JavascriptExecutor) driver).executeScript("arguments[0].click();", pdfBtn);
+	 * }
+	 */
+	
+	public void printInFormat() {
+	    WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
 
-	        // Click CSV
-	        driver.findElement(csvLocator).click();
+	    // Click Copy
+	    WebElement copyBtn = wait.until(ExpectedConditions.elementToBeClickable(coopyLocator));
+	    copyBtn.click();
 
-	        // Click Excel
-	        driver.findElement(excelLocator).click();
+	    // Click CSV
+	    WebElement csvBtn = wait.until(ExpectedConditions.elementToBeClickable(csvLocator));
+	    csvBtn.click();
 
-	        // Scroll to PDF button and click using JavaScript
-	        WebElement pdfBtn = driver.findElement(pdfLocator);
-	        ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", pdfBtn);
-	        ((JavascriptExecutor) driver).executeScript("arguments[0].click();", pdfBtn);
-	    }
+	    // Click Excel
+	    WebElement excelBtn = wait.until(ExpectedConditions.elementToBeClickable(excelLocator));
+	    excelBtn.click();
+
+	    // Scroll to PDF button and click using JavaScript
+	    WebElement pdfBtn = wait.until(ExpectedConditions.visibilityOfElementLocated(pdfLocator));
+	    ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", pdfBtn);
+
+	    // Optional: wait a tiny bit for animation
+	    try { Thread.sleep(500); } catch (InterruptedException e) { }
+
+	    ((JavascriptExecutor) driver).executeScript("arguments[0].click();", pdfBtn);
+	}
 	
 	/*
 	 * public void printInFormat() { driver.findElement(coopyLocator).click();
