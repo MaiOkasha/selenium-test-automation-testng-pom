@@ -143,20 +143,20 @@
       <![CDATA[Clicking login]]>
     </line>
   </reporter-output>
-  <suite started-at="2025-09-05T01:08:13 EEST" name="Default suite" finished-at="2025-09-05T01:11:11 EEST" duration-ms="178214">
+  <suite started-at="2025-09-05T01:22:46 EEST" name="Suite" finished-at="2025-09-05T01:25:29 EEST" duration-ms="162519">
     <groups>
     </groups>
-    <test started-at="2025-09-05T01:08:13 EEST" name="Default test" finished-at="2025-09-05T01:11:11 EEST" duration-ms="178214">
+    <test started-at="2025-09-05T01:22:46 EEST" name="Test" finished-at="2025-09-05T01:25:29 EEST" duration-ms="162519">
       <class name="testWorkflows.Employee_Test">
-        <test-method is-config="true" signature="setup()[pri:0, instance:testWorkflows.Employee_Test@131ef10]" started-at="2025-09-05T01:08:13 EEST" name="setup" finished-at="2025-09-05T01:08:17 EEST" duration-ms="3905" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:testWorkflows.Employee_Test@131ef10]" started-at="2025-09-05T01:22:46 EEST" name="setup" finished-at="2025-09-05T01:22:51 EEST" duration-ms="4853" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method is-config="true" signature="setUpEmployeeSection()[pri:0, instance:testWorkflows.Employee_Test@131ef10]" started-at="2025-09-05T01:08:17 EEST" name="setUpEmployeeSection" finished-at="2025-09-05T01:08:17 EEST" duration-ms="4" status="PASS">
+        <test-method is-config="true" signature="setUpEmployeeSection()[pri:0, instance:testWorkflows.Employee_Test@131ef10]" started-at="2025-09-05T01:22:51 EEST" name="setUpEmployeeSection" finished-at="2025-09-05T01:22:51 EEST" duration-ms="2" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpEmployeeSection -->
-        <test-method signature="Login()[pri:1, instance:testWorkflows.Employee_Test@131ef10]" started-at="2025-09-05T01:08:17 EEST" name="Login" finished-at="2025-09-05T01:08:20 EEST" duration-ms="2759" status="PASS">
+        <test-method signature="Login()[pri:1, instance:testWorkflows.Employee_Test@131ef10]" started-at="2025-09-05T01:22:51 EEST" name="Login" finished-at="2025-09-05T01:22:54 EEST" duration-ms="2534" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Opeining browser]]>
@@ -172,7 +172,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- Login -->
-        <test-method signature="Update_Emp_info()[pri:2, instance:testWorkflows.Employee_Test@131ef10]" started-at="2025-09-05T01:08:20 EEST" name="Update_Emp_info" finished-at="2025-09-05T01:08:29 EEST" duration-ms="8994" status="PASS">
+        <test-method signature="Update_Emp_info()[pri:2, instance:testWorkflows.Employee_Test@131ef10]" started-at="2025-09-05T01:22:54 EEST" name="Update_Emp_info" finished-at="2025-09-05T01:23:02 EEST" duration-ms="8275" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Clicking menu]]>
@@ -191,14 +191,14 @@
             </line>
           </reporter-output>
         </test-method> <!-- Update_Emp_info -->
-        <test-method signature="view_employeeinfo()[pri:3, instance:testWorkflows.Employee_Test@131ef10]" started-at="2025-09-05T01:08:29 EEST" name="view_employeeinfo" finished-at="2025-09-05T01:08:33 EEST" duration-ms="4527" status="PASS">
+        <test-method signature="view_employeeinfo()[pri:3, instance:testWorkflows.Employee_Test@131ef10]" started-at="2025-09-05T01:23:02 EEST" name="view_employeeinfo" finished-at="2025-09-05T01:23:06 EEST" duration-ms="4141" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Clicking view button ]]>
             </line>
           </reporter-output>
         </test-method> <!-- view_employeeinfo -->
-        <test-method signature="search()[pri:4, instance:testWorkflows.Employee_Test@131ef10]" started-at="2025-09-05T01:08:33 EEST" name="search" finished-at="2025-09-05T01:08:37 EEST" duration-ms="3657" status="PASS">
+        <test-method signature="search()[pri:4, instance:testWorkflows.Employee_Test@131ef10]" started-at="2025-09-05T01:23:06 EEST" name="search" finished-at="2025-09-05T01:23:10 EEST" duration-ms="3317" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Enering invalid name]]>
@@ -208,11 +208,11 @@
             </line>
           </reporter-output>
         </test-method> <!-- search -->
-        <test-method signature="allbutton()[pri:5, instance:testWorkflows.Employee_Test@131ef10]" started-at="2025-09-05T01:08:37 EEST" name="allbutton" finished-at="2025-09-05T01:08:40 EEST" duration-ms="2563" status="PASS">
+        <test-method signature="allbutton()[pri:5, instance:testWorkflows.Employee_Test@131ef10]" started-at="2025-09-05T01:23:10 EEST" name="allbutton" finished-at="2025-09-05T01:23:12 EEST" duration-ms="2287" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- allbutton -->
-        <test-method signature="Search_with_invalid_Data()[pri:6, instance:testWorkflows.Employee_Test@131ef10]" started-at="2025-09-05T01:08:40 EEST" name="Search_with_invalid_Data" finished-at="2025-09-05T01:08:43 EEST" duration-ms="2983" status="PASS">
+        <test-method signature="Search_with_invalid_Data()[pri:6, instance:testWorkflows.Employee_Test@131ef10]" started-at="2025-09-05T01:23:12 EEST" name="Search_with_invalid_Data" finished-at="2025-09-05T01:23:15 EEST" duration-ms="2741" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Enering invalid name]]>
@@ -222,7 +222,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- Search_with_invalid_Data -->
-        <test-method signature="delete_emp_byname()[pri:7, instance:testWorkflows.Employee_Test@131ef10]" started-at="2025-09-05T01:08:43 EEST" name="delete_emp_byname" finished-at="2025-09-05T01:08:46 EEST" duration-ms="3138" status="PASS">
+        <test-method signature="delete_emp_byname()[pri:7, instance:testWorkflows.Employee_Test@131ef10]" started-at="2025-09-05T01:23:15 EEST" name="delete_emp_byname" finished-at="2025-09-05T01:23:17 EEST" duration-ms="2793" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Deleteing Employee]]>
@@ -232,7 +232,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- delete_emp_byname -->
-        <test-method signature="addEmployeewithAll_Information_Vlaid(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:8, instance:testWorkflows.Employee_Test@131ef10]" started-at="2025-09-05T01:08:46 EEST" name="addEmployeewithAll_Information_Vlaid" data-provider="AllInfoData" finished-at="2025-09-05T01:08:52 EEST" duration-ms="6398" status="PASS">
+        <test-method signature="addEmployeewithAll_Information_Vlaid(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:8, instance:testWorkflows.Employee_Test@131ef10]" started-at="2025-09-05T01:23:17 EEST" name="addEmployeewithAll_Information_Vlaid" data-provider="AllInfoData" finished-at="2025-09-05T01:23:23 EEST" duration-ms="5722" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -321,7 +321,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- addEmployeewithAll_Information_Vlaid -->
-        <test-method signature="addEmployeewithAll_Information_Vlaid(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:8, instance:testWorkflows.Employee_Test@131ef10]" started-at="2025-09-05T01:08:52 EEST" name="addEmployeewithAll_Information_Vlaid" data-provider="AllInfoData" finished-at="2025-09-05T01:08:59 EEST" duration-ms="6611" status="PASS">
+        <test-method signature="addEmployeewithAll_Information_Vlaid(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:8, instance:testWorkflows.Employee_Test@131ef10]" started-at="2025-09-05T01:23:23 EEST" name="addEmployeewithAll_Information_Vlaid" data-provider="AllInfoData" finished-at="2025-09-05T01:23:29 EEST" duration-ms="5699" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -410,7 +410,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- addEmployeewithAll_Information_Vlaid -->
-        <test-method signature="addEmployeewithAll_Information_Vlaid(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:8, instance:testWorkflows.Employee_Test@131ef10]" started-at="2025-09-05T01:08:59 EEST" name="addEmployeewithAll_Information_Vlaid" data-provider="AllInfoData" finished-at="2025-09-05T01:09:05 EEST" duration-ms="6239" status="PASS">
+        <test-method signature="addEmployeewithAll_Information_Vlaid(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:8, instance:testWorkflows.Employee_Test@131ef10]" started-at="2025-09-05T01:23:29 EEST" name="addEmployeewithAll_Information_Vlaid" data-provider="AllInfoData" finished-at="2025-09-05T01:23:34 EEST" duration-ms="5402" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -499,7 +499,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- addEmployeewithAll_Information_Vlaid -->
-        <test-method signature="addEmployeewithAll_Information_Vlaid(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:8, instance:testWorkflows.Employee_Test@131ef10]" started-at="2025-09-05T01:09:05 EEST" name="addEmployeewithAll_Information_Vlaid" data-provider="AllInfoData" finished-at="2025-09-05T01:09:11 EEST" duration-ms="6456" status="PASS">
+        <test-method signature="addEmployeewithAll_Information_Vlaid(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:8, instance:testWorkflows.Employee_Test@131ef10]" started-at="2025-09-05T01:23:34 EEST" name="addEmployeewithAll_Information_Vlaid" data-provider="AllInfoData" finished-at="2025-09-05T01:23:40 EEST" duration-ms="5742" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -588,7 +588,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- addEmployeewithAll_Information_Vlaid -->
-        <test-method signature="addEmployeewithAll_Information_Vlaid(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:8, instance:testWorkflows.Employee_Test@131ef10]" started-at="2025-09-05T01:09:11 EEST" name="addEmployeewithAll_Information_Vlaid" data-provider="AllInfoData" finished-at="2025-09-05T01:09:18 EEST" duration-ms="6523" status="PASS">
+        <test-method signature="addEmployeewithAll_Information_Vlaid(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:8, instance:testWorkflows.Employee_Test@131ef10]" started-at="2025-09-05T01:23:40 EEST" name="addEmployeewithAll_Information_Vlaid" data-provider="AllInfoData" finished-at="2025-09-05T01:23:45 EEST" duration-ms="5573" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -677,7 +677,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- addEmployeewithAll_Information_Vlaid -->
-        <test-method signature="addEmployeewithAll_Information_Vlaid(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:8, instance:testWorkflows.Employee_Test@131ef10]" started-at="2025-09-05T01:09:18 EEST" name="addEmployeewithAll_Information_Vlaid" data-provider="AllInfoData" finished-at="2025-09-05T01:09:24 EEST" duration-ms="6393" status="PASS">
+        <test-method signature="addEmployeewithAll_Information_Vlaid(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:8, instance:testWorkflows.Employee_Test@131ef10]" started-at="2025-09-05T01:23:45 EEST" name="addEmployeewithAll_Information_Vlaid" data-provider="AllInfoData" finished-at="2025-09-05T01:23:51 EEST" duration-ms="5747" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -766,7 +766,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- addEmployeewithAll_Information_Vlaid -->
-        <test-method signature="addEmployeewithAll_Information_Vlaid(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:8, instance:testWorkflows.Employee_Test@131ef10]" started-at="2025-09-05T01:09:24 EEST" name="addEmployeewithAll_Information_Vlaid" data-provider="AllInfoData" finished-at="2025-09-05T01:09:31 EEST" duration-ms="6279" status="PASS">
+        <test-method signature="addEmployeewithAll_Information_Vlaid(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:8, instance:testWorkflows.Employee_Test@131ef10]" started-at="2025-09-05T01:23:51 EEST" name="addEmployeewithAll_Information_Vlaid" data-provider="AllInfoData" finished-at="2025-09-05T01:23:57 EEST" duration-ms="5398" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -855,7 +855,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- addEmployeewithAll_Information_Vlaid -->
-        <test-method signature="addEmployeewithAll_Information_Vlaid(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:8, instance:testWorkflows.Employee_Test@131ef10]" started-at="2025-09-05T01:09:31 EEST" name="addEmployeewithAll_Information_Vlaid" data-provider="AllInfoData" finished-at="2025-09-05T01:09:37 EEST" duration-ms="6287" status="PASS">
+        <test-method signature="addEmployeewithAll_Information_Vlaid(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:8, instance:testWorkflows.Employee_Test@131ef10]" started-at="2025-09-05T01:23:57 EEST" name="addEmployeewithAll_Information_Vlaid" data-provider="AllInfoData" finished-at="2025-09-05T01:24:02 EEST" duration-ms="5669" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -944,7 +944,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- addEmployeewithAll_Information_Vlaid -->
-        <test-method signature="addEmployeewithAll_Information_Vlaid(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:8, instance:testWorkflows.Employee_Test@131ef10]" started-at="2025-09-05T01:09:37 EEST" name="addEmployeewithAll_Information_Vlaid" data-provider="AllInfoData" finished-at="2025-09-05T01:09:44 EEST" duration-ms="6544" status="PASS">
+        <test-method signature="addEmployeewithAll_Information_Vlaid(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:8, instance:testWorkflows.Employee_Test@131ef10]" started-at="2025-09-05T01:24:02 EEST" name="addEmployeewithAll_Information_Vlaid" data-provider="AllInfoData" finished-at="2025-09-05T01:24:08 EEST" duration-ms="5717" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -1033,7 +1033,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- addEmployeewithAll_Information_Vlaid -->
-        <test-method signature="addEmployeewithAll_Information_Vlaid(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:8, instance:testWorkflows.Employee_Test@131ef10]" started-at="2025-09-05T01:09:44 EEST" name="addEmployeewithAll_Information_Vlaid" data-provider="AllInfoData" finished-at="2025-09-05T01:09:50 EEST" duration-ms="6249" status="PASS">
+        <test-method signature="addEmployeewithAll_Information_Vlaid(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:8, instance:testWorkflows.Employee_Test@131ef10]" started-at="2025-09-05T01:24:08 EEST" name="addEmployeewithAll_Information_Vlaid" data-provider="AllInfoData" finished-at="2025-09-05T01:24:14 EEST" duration-ms="5701" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -1122,11 +1122,11 @@
             </line>
           </reporter-output>
         </test-method> <!-- addEmployeewithAll_Information_Vlaid -->
-        <test-method signature="check_valid()[pri:9, instance:testWorkflows.Employee_Test@131ef10]" started-at="2025-09-05T01:09:50 EEST" name="check_valid" finished-at="2025-09-05T01:09:53 EEST" duration-ms="3065" status="PASS">
+        <test-method signature="check_valid()[pri:9, instance:testWorkflows.Employee_Test@131ef10]" started-at="2025-09-05T01:24:14 EEST" name="check_valid" finished-at="2025-09-05T01:24:17 EEST" duration-ms="2799" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- check_valid -->
-        <test-method signature="addEmployeewithAll_Information_inVlaid(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:10, instance:testWorkflows.Employee_Test@131ef10]" started-at="2025-09-05T01:09:53 EEST" name="addEmployeewithAll_Information_inVlaid" data-provider="AllInfoData_Form_Full_invalid" finished-at="2025-09-05T01:09:59 EEST" duration-ms="6267" status="PASS">
+        <test-method signature="addEmployeewithAll_Information_inVlaid(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:10, instance:testWorkflows.Employee_Test@131ef10]" started-at="2025-09-05T01:24:17 EEST" name="addEmployeewithAll_Information_inVlaid" data-provider="AllInfoData_Form_Full_invalid" finished-at="2025-09-05T01:24:22 EEST" duration-ms="5298" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -1215,7 +1215,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- addEmployeewithAll_Information_inVlaid -->
-        <test-method signature="addEmployeewithAll_Information_inVlaid(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:10, instance:testWorkflows.Employee_Test@131ef10]" started-at="2025-09-05T01:09:59 EEST" name="addEmployeewithAll_Information_inVlaid" data-provider="AllInfoData_Form_Full_invalid" finished-at="2025-09-05T01:10:06 EEST" duration-ms="6710" status="PASS">
+        <test-method signature="addEmployeewithAll_Information_inVlaid(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:10, instance:testWorkflows.Employee_Test@131ef10]" started-at="2025-09-05T01:24:22 EEST" name="addEmployeewithAll_Information_inVlaid" data-provider="AllInfoData_Form_Full_invalid" finished-at="2025-09-05T01:24:28 EEST" duration-ms="5873" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -1304,11 +1304,11 @@
             </line>
           </reporter-output>
         </test-method> <!-- addEmployeewithAll_Information_inVlaid -->
-        <test-method signature="check_invlaid()[pri:11, instance:testWorkflows.Employee_Test@131ef10]" started-at="2025-09-05T01:10:06 EEST" name="check_invlaid" finished-at="2025-09-05T01:10:09 EEST" duration-ms="2838" status="PASS">
+        <test-method signature="check_invlaid()[pri:11, instance:testWorkflows.Employee_Test@131ef10]" started-at="2025-09-05T01:24:28 EEST" name="check_invlaid" finished-at="2025-09-05T01:24:30 EEST" duration-ms="2344" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- check_invlaid -->
-        <test-method signature="addEmployeewithAll_Information_dublicated(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:12, instance:testWorkflows.Employee_Test@131ef10]" started-at="2025-09-05T01:10:09 EEST" name="addEmployeewithAll_Information_dublicated" data-provider="AllInfoData_Form_Full_duplicated" finished-at="2025-09-05T01:10:15 EEST" duration-ms="5998" status="PASS">
+        <test-method signature="addEmployeewithAll_Information_dublicated(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:12, instance:testWorkflows.Employee_Test@131ef10]" started-at="2025-09-05T01:24:30 EEST" name="addEmployeewithAll_Information_dublicated" data-provider="AllInfoData_Form_Full_duplicated" finished-at="2025-09-05T01:24:35 EEST" duration-ms="5162" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -1397,7 +1397,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- addEmployeewithAll_Information_dublicated -->
-        <test-method signature="addEmployeewithAll_Information_dublicated(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:12, instance:testWorkflows.Employee_Test@131ef10]" started-at="2025-09-05T01:10:15 EEST" name="addEmployeewithAll_Information_dublicated" data-provider="AllInfoData_Form_Full_duplicated" finished-at="2025-09-05T01:10:21 EEST" duration-ms="6333" status="PASS">
+        <test-method signature="addEmployeewithAll_Information_dublicated(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:12, instance:testWorkflows.Employee_Test@131ef10]" started-at="2025-09-05T01:24:35 EEST" name="addEmployeewithAll_Information_dublicated" data-provider="AllInfoData_Form_Full_duplicated" finished-at="2025-09-05T01:24:40 EEST" duration-ms="5279" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -1486,7 +1486,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- addEmployeewithAll_Information_dublicated -->
-        <test-method signature="addEmployeewithAll_Information_dublicated(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:12, instance:testWorkflows.Employee_Test@131ef10]" started-at="2025-09-05T01:10:21 EEST" name="addEmployeewithAll_Information_dublicated" data-provider="AllInfoData_Form_Full_duplicated" finished-at="2025-09-05T01:10:27 EEST" duration-ms="6001" status="PASS">
+        <test-method signature="addEmployeewithAll_Information_dublicated(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:12, instance:testWorkflows.Employee_Test@131ef10]" started-at="2025-09-05T01:24:40 EEST" name="addEmployeewithAll_Information_dublicated" data-provider="AllInfoData_Form_Full_duplicated" finished-at="2025-09-05T01:24:46 EEST" duration-ms="5395" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -1575,11 +1575,11 @@
             </line>
           </reporter-output>
         </test-method> <!-- addEmployeewithAll_Information_dublicated -->
-        <test-method signature="check_dublicated()[pri:13, instance:testWorkflows.Employee_Test@131ef10]" started-at="2025-09-05T01:10:27 EEST" name="check_dublicated" finished-at="2025-09-05T01:10:30 EEST" duration-ms="2738" status="PASS">
+        <test-method signature="check_dublicated()[pri:13, instance:testWorkflows.Employee_Test@131ef10]" started-at="2025-09-05T01:24:46 EEST" name="check_dublicated" finished-at="2025-09-05T01:24:48 EEST" duration-ms="2486" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- check_dublicated -->
-        <test-method signature="Print_job_letter()[pri:14, instance:testWorkflows.Employee_Test@131ef10]" started-at="2025-09-05T01:10:30 EEST" name="Print_job_letter" finished-at="2025-09-05T01:10:39 EEST" duration-ms="8868" status="PASS">
+        <test-method signature="Print_job_letter()[pri:14, instance:testWorkflows.Employee_Test@131ef10]" started-at="2025-09-05T01:24:48 EEST" name="Print_job_letter" finished-at="2025-09-05T01:24:57 EEST" duration-ms="8578" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Clicking Job letter section]]>
@@ -1595,7 +1595,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- Print_job_letter -->
-        <test-method signature="Manage_login_Usernam_Password()[pri:15, instance:testWorkflows.Employee_Test@131ef10]" started-at="2025-09-05T01:10:39 EEST" name="Manage_login_Usernam_Password" finished-at="2025-09-05T01:11:00 EEST" duration-ms="21056" status="PASS">
+        <test-method signature="Manage_login_Usernam_Password()[pri:15, instance:testWorkflows.Employee_Test@131ef10]" started-at="2025-09-05T01:24:57 EEST" name="Manage_login_Usernam_Password" finished-at="2025-09-05T01:25:17 EEST" duration-ms="20353" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Opeining Manage logn section]]>
@@ -1620,7 +1620,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- Manage_login_Usernam_Password -->
-        <test-method signature="Login_As_employee()[pri:16, instance:testWorkflows.Employee_Test@131ef10]" started-at="2025-09-05T01:11:00 EEST" name="Login_As_employee" finished-at="2025-09-05T01:11:08 EEST" duration-ms="8370" status="PASS">
+        <test-method signature="Login_As_employee()[pri:16, instance:testWorkflows.Employee_Test@131ef10]" started-at="2025-09-05T01:25:17 EEST" name="Login_As_employee" finished-at="2025-09-05T01:25:26 EEST" duration-ms="8244" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Logging Out]]>
@@ -1639,11 +1639,11 @@
             </line>
           </reporter-output>
         </test-method> <!-- Login_As_employee -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testWorkflows.Employee_Test@131ef10]" started-at="2025-09-05T01:11:08 EEST" name="tearDown" finished-at="2025-09-05T01:11:11 EEST" duration-ms="3360" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testWorkflows.Employee_Test@131ef10]" started-at="2025-09-05T01:25:26 EEST" name="tearDown" finished-at="2025-09-05T01:25:29 EEST" duration-ms="3309" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- testWorkflows.Employee_Test -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>

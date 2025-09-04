@@ -9,7 +9,6 @@
           <include name="setup"/>
           <include name="setUpEmployeeSection"/>
           <include name="Login_As_employee"/>
-          <include name="Manage_login_Usernam_Password"/>
         </methods>
       </class> <!-- testWorkflows.Employee_Test -->
     </classes>

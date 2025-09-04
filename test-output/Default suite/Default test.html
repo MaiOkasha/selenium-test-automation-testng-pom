@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Default test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>28/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>27/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Fri Sep 05 01:08:13 EEST 2025</td>
+<td>Started on:</td><td>Fri Sep 05 01:15:11 EEST 2025</td>
 </tr>
-<tr><td>Total time:</td><td>178 seconds (178214 ms)</td>
+<tr><td>Total time:</td><td>156 seconds (156402 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,6 +67,119 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='testWorkflows.Employee_Test.Login_As_employee()'><b>Login_As_employee</b><br>Test class: testWorkflows.Employee_Test</td>
+<td><div><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;span title=&quot;...&quot;&gt;Institute Name&lt;/span&gt; is not clickable at point (1404, 36). Other element would receive the click: &lt;div class=&quot;toast-title&quot;&gt;...&lt;/div&gt;
+  (Session info: chrome=139.0.7258.155)
+Build info: version: &apos;4.20.0&apos;, revision: &apos;866c76ca80&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.8&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [e517b8c7fda26d9f85266856241f63bf, clickElement {id=f.51F68A708C16B22899EBE5F92AB165BC.d.C6BF6FBC7BCEB0911199C0ACEB846F7D.e.46856}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 139.0.7258.155, chrome: {chromedriverVersion: 139.0.7258.154 (9e0d6b2b47f..., userDataDir: C:\Users\badah\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54280}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54280/devtoo..., se:cdpVersion: 139.0.7258.155, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (e517b8c7fda26d9f85266856241f63bf)] -&gt; xpath: //*[text()=&quot;Institute Name&quot;]]
+Session ID: e517b8c7fda26d9f85266856241f63bf
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+	at pages.Employees_Section.LogOut(Employees_Section.java:749)
+	at testWorkflows.Employee_Test.Login_As_employee(Employee_Test.java:165)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div><a href='#' onClick='toggleBox("stack-trace473800232", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace473800232'><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;span title=&quot;...&quot;&gt;Institute Name&lt;/span&gt; is not clickable at point (1404, 36). Other element would receive the click: &lt;div class=&quot;toast-title&quot;&gt;...&lt;/div&gt;
+  (Session info: chrome=139.0.7258.155)
+Build info: version: &apos;4.20.0&apos;, revision: &apos;866c76ca80&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.8&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [e517b8c7fda26d9f85266856241f63bf, clickElement {id=f.51F68A708C16B22899EBE5F92AB165BC.d.C6BF6FBC7BCEB0911199C0ACEB846F7D.e.46856}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 139.0.7258.155, chrome: {chromedriverVersion: 139.0.7258.154 (9e0d6b2b47f..., userDataDir: C:\Users\badah\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54280}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54280/devtoo..., se:cdpVersion: 139.0.7258.155, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (e517b8c7fda26d9f85266856241f63bf)] -&gt; xpath: //*[text()=&quot;Institute Name&quot;]]
+Session ID: e517b8c7fda26d9f85266856241f63bf
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+	at pages.Employees_Section.LogOut(Employees_Section.java:749)
+	at testWorkflows.Employee_Test.Login_As_employee(Employee_Test.java:165)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>3</td>
+<td>testWorkflows.Employee_Test@131ef10</td></tr>
+</table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
@@ -97,7 +210,7 @@ Clicking Submit<br/>
 </div>
 </td>
 <td></td>
-<td>6</td>
+<td>5</td>
 <td>testWorkflows.Employee_Test@131ef10</td></tr>
 <tr>
 <td title='testWorkflows.Employee_Test.addEmployeewithAll_Information_Vlaid()'><b>addEmployeewithAll_Information_Vlaid</b><br>Test class: testWorkflows.Employee_Test<br>Parameters: Penny Loudon, 593-268-7289, Teacher, D:\Programming_learning\Axsos accademy\Automation\Project\Project_Maven\selenium-test-automation-testing-pom/assets_emp_photos/36.jpg, 7/12/2025, 90491, Tabbie Ashby, Male, 3, 361-679-8935, Islam, tashby6@baidu.com, Masterâ€™s Degree, A-, 10/9/1999, PO Box 45673<br/>
@@ -109,7 +222,7 @@ Clicking Submit<br/>
 </div>
 </td>
 <td></td>
-<td>6</td>
+<td>5</td>
 <td>testWorkflows.Employee_Test@131ef10</td></tr>
 <tr>
 <td title='testWorkflows.Employee_Test.search()'><b>search</b><br>Test class: testWorkflows.Employee_Test<br/>
@@ -134,7 +247,7 @@ Clicking Submit<br/>
 </div>
 </td>
 <td></td>
-<td>6</td>
+<td>5</td>
 <td>testWorkflows.Employee_Test@131ef10</td></tr>
 <tr>
 <td title='testWorkflows.Employee_Test.addEmployeewithAll_Information_Vlaid()'><b>addEmployeewithAll_Information_Vlaid</b><br>Test class: testWorkflows.Employee_Test<br>Parameters: Bram Mitford, 688-692-8310, Teacher, D:\Programming_learning\Axsos accademy\Automation\Project\Project_Maven\selenium-test-automation-testing-pom/assets_emp_photos/39.jpg, 1/18/2021, 71735, Leeann Ellum, Female, 1, 212-776-7281, Islam, lellum9@sourceforge.net, High School Diploma, O, 4/16/1985, Suite 89<br/>
@@ -146,7 +259,7 @@ Clicking Submit<br/>
 </div>
 </td>
 <td></td>
-<td>6</td>
+<td>5</td>
 <td>testWorkflows.Employee_Test@131ef10</td></tr>
 <tr>
 <td title='testWorkflows.Employee_Test.addEmployeewithAll_Information_inVlaid()'><b>addEmployeewithAll_Information_inVlaid</b><br>Test class: testWorkflows.Employee_Test<br>Parameters: Sherwynd Doonedddddddddddddddd, 187-507-8480333333333333333333333333333333333333333333, Teacher, D:\Programming_learning\Axsos accademy\Automation\Project\Project_Maven\selenium-test-automation-testing-pom/assets_emp_photos/30.jpg, 12/19/2020, 1.01E+15, Saxon Aldwichdddddddddddddddddddddddddddddddddddddddd, Male, 122323234, 789-442-60992323232222222222222, Christianity, saldwichddddddddddddddddddddddddddddddddddddd0@squarespace.com, Associate Degredddddddddddddddde, AB, 2/27/1991, PO ddddddddddddddddddddddddddddwwwwwwwwwBox 48303<br/>
@@ -158,7 +271,7 @@ Clicking Submit<br/>
 </div>
 </td>
 <td></td>
-<td>6</td>
+<td>5</td>
 <td>testWorkflows.Employee_Test@131ef10</td></tr>
 <tr>
 <td title='testWorkflows.Employee_Test.view_employeeinfo()'><b>view_employeeinfo</b><br>Test class: testWorkflows.Employee_Test<br/>
@@ -182,7 +295,7 @@ Clicking Submit<br/>
 </div>
 </td>
 <td></td>
-<td>6</td>
+<td>5</td>
 <td>testWorkflows.Employee_Test@131ef10</td></tr>
 <tr>
 <td title='testWorkflows.Employee_Test.Search_with_invalid_Data()'><b>Search_with_invalid_Data</b><br>Test class: testWorkflows.Employee_Test<br/>
@@ -207,7 +320,7 @@ Clicking Submit<br/>
 </div>
 </td>
 <td></td>
-<td>6</td>
+<td>5</td>
 <td>testWorkflows.Employee_Test@131ef10</td></tr>
 <tr>
 <td title='testWorkflows.Employee_Test.addEmployeewithAll_Information_Vlaid()'><b>addEmployeewithAll_Information_Vlaid</b><br>Test class: testWorkflows.Employee_Test<br>Parameters: Arlinda Deshon, 187-507-8480, Teacher, D:\Programming_learning\Axsos accademy\Automation\Project\Project_Maven\selenium-test-automation-testing-pom/assets_emp_photos/30.jpg, 12/19/2020, 101426, Saxon Aldwich, Male, 14, 789-442-6099, Christianity, saldwich0@squarespace.com, Associate Degree, AB, 2/27/1991, PO Box 48303<br/>
@@ -219,7 +332,7 @@ Clicking Submit<br/>
 </div>
 </td>
 <td></td>
-<td>6</td>
+<td>5</td>
 <td>testWorkflows.Employee_Test@131ef10</td></tr>
 <tr>
 <td title='testWorkflows.Employee_Test.addEmployeewithAll_Information_Vlaid()'><b>addEmployeewithAll_Information_Vlaid</b><br>Test class: testWorkflows.Employee_Test<br>Parameters: Norman Anglish, 381-245-9736, Teacher, D:\Programming_learning\Axsos accademy\Automation\Project\Project_Maven\selenium-test-automation-testing-pom/assets_emp_photos/38.jpg, 6/25/2021, 126533, Rouvin Sandwith, Male, 11, 897-782-8891, Christianity, rsandwith8@aol.com, Associate Degree, B-, 10/24/1996, Suite 60<br/>
@@ -231,7 +344,7 @@ Clicking Submit<br/>
 </div>
 </td>
 <td></td>
-<td>6</td>
+<td>5</td>
 <td>testWorkflows.Employee_Test@131ef10</td></tr>
 <tr>
 <td title='testWorkflows.Employee_Test.Manage_login_Usernam_Password()'><b>Manage_login_Usernam_Password</b><br>Test class: testWorkflows.Employee_Test<br/>
@@ -249,7 +362,7 @@ Saving changes for Employee account <br/>
 </div>
 </td>
 <td></td>
-<td>21</td>
+<td>20</td>
 <td>testWorkflows.Employee_Test@131ef10</td></tr>
 <tr>
 <td title='testWorkflows.Employee_Test.addEmployeewithAll_Information_Vlaid()'><b>addEmployeewithAll_Information_Vlaid</b><br>Test class: testWorkflows.Employee_Test<br>Parameters: Dehlia Chapman, 829-980-2083, Teacher, D:\Programming_learning\Axsos accademy\Automation\Project\Project_Maven\selenium-test-automation-testing-pom/assets_emp_photos/32.jpg, 7/13/2025, 51991, Sybila Jewster, Female, 11, 108-532-1750, Christianity, sjewster2@nbcnews.com, High School Diploma, AB-, 8/14/1986, Apt 1809<br/>
@@ -261,7 +374,7 @@ Clicking Submit<br/>
 </div>
 </td>
 <td></td>
-<td>6</td>
+<td>5</td>
 <td>testWorkflows.Employee_Test@131ef10</td></tr>
 <tr>
 <td title='testWorkflows.Employee_Test.allbutton()'><b>allbutton</b><br>Test class: testWorkflows.Employee_Test</td>
@@ -279,7 +392,7 @@ Deleteing Confirmation<br/>
 </div>
 </td>
 <td></td>
-<td>3</td>
+<td>2</td>
 <td>testWorkflows.Employee_Test@131ef10</td></tr>
 <tr>
 <td title='testWorkflows.Employee_Test.check_invlaid()'><b>check_invlaid</b><br>Test class: testWorkflows.Employee_Test</td>
@@ -296,7 +409,7 @@ Clicking Submit<br/>
 </div>
 </td>
 <td></td>
-<td>6</td>
+<td>5</td>
 <td>testWorkflows.Employee_Test@131ef10</td></tr>
 <tr>
 <td title='testWorkflows.Employee_Test.addEmployeewithAll_Information_Vlaid()'><b>addEmployeewithAll_Information_Vlaid</b><br>Test class: testWorkflows.Employee_Test<br>Parameters: Nappie Bradnam, 417-486-3236, Teacher, D:\Programming_learning\Axsos accademy\Automation\Project\Project_Maven\selenium-test-automation-testing-pom/assets_emp_photos/33.jpg, 9/4/2022, 128129, Viki Ugo, Female, 15, 580-399-7593, Islam, vugo3@ed.gov, Bachelorâ€™s Degree, O, 6/19/1986, 12th Floor<br/>
@@ -308,7 +421,7 @@ Clicking Submit<br/>
 </div>
 </td>
 <td></td>
-<td>6</td>
+<td>5</td>
 <td>testWorkflows.Employee_Test@131ef10</td></tr>
 <tr>
 <td title='testWorkflows.Employee_Test.Print_job_letter()'><b>Print_job_letter</b><br>Test class: testWorkflows.Employee_Test<br/>
@@ -323,7 +436,7 @@ Switching window <br/>
 </div>
 </td>
 <td></td>
-<td>8</td>
+<td>9</td>
 <td>testWorkflows.Employee_Test@131ef10</td></tr>
 <tr>
 <td title='testWorkflows.Employee_Test.check_dublicated()'><b>check_dublicated</b><br>Test class: testWorkflows.Employee_Test</td>
@@ -333,7 +446,7 @@ Switching window <br/>
 <tr>
 <td title='testWorkflows.Employee_Test.check_valid()'><b>check_valid</b><br>Test class: testWorkflows.Employee_Test</td>
 <td></td>
-<td>3</td>
+<td>2</td>
 <td>testWorkflows.Employee_Test@131ef10</td></tr>
 <tr>
 <td title='testWorkflows.Employee_Test.Update_Emp_info()'><b>Update_Emp_info</b><br>Test class: testWorkflows.Employee_Test<br/>
@@ -376,23 +489,7 @@ Clicking Submit<br/>
 </div>
 </td>
 <td></td>
-<td>6</td>
-<td>testWorkflows.Employee_Test@131ef10</td></tr>
-<tr>
-<td title='testWorkflows.Employee_Test.Login_As_employee()'><b>Login_As_employee</b><br>Test class: testWorkflows.Employee_Test<br/>
-<a href="#Output-315902506" onClick='toggleBox("Output-315902506", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-315902506" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-315902506">
-Logging Out<br/>
-Opeining browser<br/>
-Entring username<br/>
-Entring password<br/>
-Clicking login<br/>
-</div>
-</td>
-<td></td>
-<td>8</td>
+<td>5</td>
 <td>testWorkflows.Employee_Test@131ef10</td></tr>
 <tr>
 <td title='testWorkflows.Employee_Test.addEmployeewithAll_Information_dublicated()'><b>addEmployeewithAll_Information_dublicated</b><br>Test class: testWorkflows.Employee_Test<br>Parameters: Norman Anglish, 381-245-9736, Teacher, D:\Programming_learning\Axsos accademy\Automation\Project\Project_Maven\selenium-test-automation-testing-pom/assets_emp_photos/38.jpg, 6/25/2021, 126533, Rouvin Sandwith, Male, 11, 897-782-8891, Christianity, rsandwith8@aol.com, Associate Degree, B-, 10/24/1996, Suite 60<br/>
@@ -404,7 +501,7 @@ Clicking Submit<br/>
 </div>
 </td>
 <td></td>
-<td>6</td>
+<td>5</td>
 <td>testWorkflows.Employee_Test@131ef10</td></tr>
 </table><p>
 </body>

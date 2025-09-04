@@ -54,8 +54,8 @@ public class Employee_Test extends TestBase {
 	
 	@Test(priority = 4)
 	public void search() throws InterruptedException {
-		test.search_for_employye("Jolene Rumsby");
-		Assert.assertTrue(test.check_search("Jolene Rumsby"));
+		test.search_for_employye("Martie Carslake");
+		Assert.assertTrue(test.check_search("Martie Carslake"));
 		
 	}
 	
