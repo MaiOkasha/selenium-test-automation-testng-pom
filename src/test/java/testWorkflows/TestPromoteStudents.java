@@ -18,7 +18,7 @@ public class TestPromoteStudents extends TeseBase {
 	public void init() {
 	    super.setUp(); 
 	    adminLoginPage = new AdminLoginPage(driver);
-	    studentSection = new StudentSection(driver);
+	    studentSection = new StudentSection(driver, null);
 	    promoteStudentPage = new PromoteStudentPage(driver);
 	}
 

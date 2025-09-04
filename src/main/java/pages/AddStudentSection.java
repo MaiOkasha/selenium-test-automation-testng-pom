@@ -13,6 +13,7 @@ public class AddStudentSection {
 
 	private By menuLocator = By.xpath("//*[@id=\"mobile-collapse\"]");
 	By studentsTabLocator = By.xpath("//span[text()='Students']");
+	
 	By addNewStudentLocator = By.xpath("//*[@id=\"addnewstudent\"]/a/span[2]");
 
 	public AddStudentSection(WebDriver driver) {

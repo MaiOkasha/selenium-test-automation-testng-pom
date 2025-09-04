@@ -2,6 +2,7 @@ package pages;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.slf4j.helpers.Reporter;
 
 public class AdminLoginPage {
 
@@ -37,6 +38,8 @@ public class AdminLoginPage {
 		enterEmail(email);
 		enterPassword(password);
 		clickLogin();
+		
+		
 	}
 
 }

@@ -1,21 +1,57 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+<testng-results ignored="0" total="7" passed="7" failed="0" skipped="0">
   <reporter-output>
+    <line>
+      <![CDATA[Admin Logged in Successfully !]]>
+    </line>
+    <line>
+      <![CDATA[Admin View All Student ]]>
+    </line>
+    <line>
+      <![CDATA[Admin Edit Student Data]]>
+    </line>
+    <line>
+      <![CDATA[Admin View Student Report]]>
+    </line>
+    <line>
+      <![CDATA[Navigated to Print Basic List page]]>
+    </line>
+    <line>
+      <![CDATA[Class selection input is displayed]]>
+    </line>
+    <line>
+      <![CDATA[Class selected: Grade 10]]>
+    </line>
+    <line>
+      <![CDATA[Copy button is displayed]]>
+    </line>
+    <line>
+      <![CDATA[CSV button is displayed]]>
+    </line>
+    <line>
+      <![CDATA[Excel button is displayed]]>
+    </line>
+    <line>
+      <![CDATA[PDF button is displayed]]>
+    </line>
+    <line>
+      <![CDATA[All print buttons clicked successfully (Copy, CSV, Excel, PDF)]]>
+    </line>
   </reporter-output>
-  <suite started-at="2025-09-04T02:10:58 EEST" name="Default suite" finished-at="2025-09-04T02:11:28 EEST" duration-ms="30148">
+  <suite started-at="2025-09-04T14:28:34 EEST" name="Default suite" finished-at="2025-09-04T14:29:16 EEST" duration-ms="42519">
     <groups>
     </groups>
-    <test started-at="2025-09-04T02:10:58 EEST" name="Default test" finished-at="2025-09-04T02:11:28 EEST" duration-ms="30148">
-      <class name="testWorkflows.TestAddStudentWorkflow">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:testWorkflows.TestAddStudentWorkflow@6c40365c]" started-at="2025-09-04T02:10:58 EEST" name="setUp" finished-at="2025-09-04T02:11:06 EEST" duration-ms="7670" status="PASS">
+    <test started-at="2025-09-04T14:28:34 EEST" name="Default test" finished-at="2025-09-04T14:29:16 EEST" duration-ms="42519">
+      <class name="testWorkflows.TestStudentsWorkflow">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testWorkflows.TestStudentsWorkflow@7c9d8e2]" started-at="2025-09-04T14:28:34 EEST" name="setUp" finished-at="2025-09-04T14:28:39 EEST" duration-ms="5593" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method is-config="true" signature="init()[pri:0, instance:testWorkflows.TestAddStudentWorkflow@6c40365c]" started-at="2025-09-04T02:11:06 EEST" name="init" finished-at="2025-09-04T02:11:06 EEST" duration-ms="2" status="PASS">
+        <test-method is-config="true" signature="init()[pri:0, instance:testWorkflows.TestStudentsWorkflow@7c9d8e2]" started-at="2025-09-04T14:28:39 EEST" name="init" finished-at="2025-09-04T14:28:39 EEST" duration-ms="4" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- init -->
-        <test-method signature="testLogin(java.lang.String,java.lang.String)[pri:1, instance:testWorkflows.TestAddStudentWorkflow@6c40365c]" started-at="2025-09-04T02:11:06 EEST" name="testLogin" data-provider="Admin Login credentials" finished-at="2025-09-04T02:11:12 EEST" duration-ms="6616" status="PASS">
+        <test-method signature="testLogin(java.lang.String,java.lang.String)[pri:1, instance:testWorkflows.TestStudentsWorkflow@7c9d8e2]" started-at="2025-09-04T14:28:39 EEST" name="testLogin" data-provider="Admin Login credentials" finished-at="2025-09-04T14:28:43 EEST" duration-ms="3956" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -29,40 +65,94 @@
             </param>
           </params>
           <reporter-output>
+            <line>
+              <![CDATA[Admin Logged in Successfully !]]>
+            </line>
           </reporter-output>
         </test-method> <!-- testLogin -->
-        <test-method signature="testAddStudentWorkflow(java.lang.String,int,java.lang.String,java.lang.String,int)[pri:2, instance:testWorkflows.TestAddStudentWorkflow@6c40365c]" started-at="2025-09-04T02:11:12 EEST" name="testAddStudentWorkflow" data-provider="Student Data" finished-at="2025-09-04T02:11:28 EEST" duration-ms="15822" status="PASS">
+        <test-method signature="testViewAllStudents()[pri:2, instance:testWorkflows.TestStudentsWorkflow@7c9d8e2]" started-at="2025-09-04T14:28:43 EEST" name="testViewAllStudents" finished-at="2025-09-04T14:28:46 EEST" duration-ms="3232" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Admin View All Student ]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- testViewAllStudents -->
+        <test-method signature="testSearchByName(java.lang.String)[pri:3, instance:testWorkflows.TestStudentsWorkflow@7c9d8e2]" started-at="2025-09-04T14:28:46 EEST" name="testSearchByName" data-provider="Name For Search" finished-at="2025-09-04T14:28:50 EEST" duration-ms="3354" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[Mai Fuad]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[26]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[09/04/2025]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[Grade 10]]>
-              </value>
-            </param>
-            <param index="4">
-              <value>
-                <![CDATA[20]]>
+                <![CDATA[Lana]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testAddStudentWorkflow -->
-      </class> <!-- testWorkflows.TestAddStudentWorkflow -->
+        </test-method> <!-- testSearchByName -->
+        <test-method signature="testEditStudent()[pri:4, instance:testWorkflows.TestStudentsWorkflow@7c9d8e2]" started-at="2025-09-04T14:28:50 EEST" name="testEditStudent" finished-at="2025-09-04T14:28:54 EEST" duration-ms="4586" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Admin Edit Student Data]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- testEditStudent -->
+        <test-method signature="testDeleteStudent(java.lang.String)[pri:5, instance:testWorkflows.TestStudentsWorkflow@7c9d8e2]" started-at="2025-09-04T14:28:54 EEST" name="testDeleteStudent" data-provider="Name For Delete" finished-at="2025-09-04T14:28:58 EEST" duration-ms="3904" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Anne]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDeleteStudent -->
+        <test-method signature="testViewStudentReport(java.lang.String)[pri:6, instance:testWorkflows.TestStudentsWorkflow@7c9d8e2]" started-at="2025-09-04T14:28:58 EEST" name="testViewStudentReport" data-provider="Name For Search" finished-at="2025-09-04T14:29:06 EEST" duration-ms="7823" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Lana]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Admin View Student Report]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- testViewStudentReport -->
+        <test-method signature="testPrintList()[pri:7, instance:testWorkflows.TestStudentsWorkflow@7c9d8e2]" started-at="2025-09-04T14:29:06 EEST" name="testPrintList" finished-at="2025-09-04T14:29:13 EEST" duration-ms="6461" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Navigated to Print Basic List page]]>
+            </line>
+            <line>
+              <![CDATA[Class selection input is displayed]]>
+            </line>
+            <line>
+              <![CDATA[Class selected: Grade 10]]>
+            </line>
+            <line>
+              <![CDATA[Copy button is displayed]]>
+            </line>
+            <line>
+              <![CDATA[CSV button is displayed]]>
+            </line>
+            <line>
+              <![CDATA[Excel button is displayed]]>
+            </line>
+            <line>
+              <![CDATA[PDF button is displayed]]>
+            </line>
+            <line>
+              <![CDATA[All print buttons clicked successfully (Copy, CSV, Excel, PDF)]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- testPrintList -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testWorkflows.TestStudentsWorkflow@7c9d8e2]" started-at="2025-09-04T14:29:13 EEST" name="tearDown" finished-at="2025-09-04T14:29:16 EEST" duration-ms="3510" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- testWorkflows.TestStudentsWorkflow -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
