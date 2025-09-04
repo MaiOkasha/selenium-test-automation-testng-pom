@@ -16,6 +16,7 @@ import java.util.NoSuchElementException;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
+import org.openqa.selenium.StaleElementReferenceException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -38,6 +39,7 @@ public class Employees_Section {
     public Employees_Section(WebDriver driver, Actions action) {
         this.driver = driver;
         this.action = action;
+        this.wait = new WebDriverWait(driver, Duration.ofSeconds(10)); 
     }
    
 //        aِdmin login page locators 
@@ -66,7 +68,14 @@ public class Employees_Section {
 		
 	}
 	
-	
+	public void All_EmployeeAlone() {
+		 driver.findElement(allemployees).click();
+
+	}
+	public void add_employee() {
+		   driver.findElement(addemployee).click();
+
+	}
 public void allemployee_page() {
 		
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
@@ -79,7 +88,20 @@ public void allemployee_page() {
 		 action.moveToElement(employesselement).click().perform(); 
 		 Reporter.log("Clicking All Employees");
 		 driver.findElement(allemployees).click();
-		
+	// Wait until menu is clickable
+//    wait.until(ExpectedConditions.elementToBeClickable(menu)).click();
+//
+//    // Wait until employees element is visible
+//    WebElement employesselement = wait.until(ExpectedConditions.visibilityOfElementLocated(employees));
+//
+//    // Now safely click using Actions
+//    action.moveToElement(employesselement).click().perform();
+//
+//    // Finally click All Employees
+//    WebElement allEmp = wait.until(ExpectedConditions.elementToBeClickable(allemployees));
+//    allEmp.click();
+//
+//    Reporter.log("Clicked All Employees page");
 	}
 	
 	
@@ -144,6 +166,8 @@ public void allemployee_page() {
 		 driver.findElement(submitbtn).click();
 //		 Thread.sleep(2000);
 //		 driver.findElement(AllEmp_view).click();
+//		 driver.navigate().refresh();
+
 		
 
 	}
@@ -165,13 +189,19 @@ public void allemployee_page() {
 	}
 
 	public void view_employee_info( ) throws InterruptedException {
-		allemployee_page();
+
+		 driver.findElement(allemployees).click();
+
+	
+		 Reporter.log("Clicking view button ");
+
+		 driver.findElement(Emp_view).click();
 		
-//		 Reporter.log("Clicking view button ");
-		driver.findElement(By.xpath("//div[@class='m-round'][.//span[text()=\"Beth Josephsen\"]]//*[@name='eview']")).click();
-//		 driver.findElement(AllEmp_view).click();
+
+		  
+		}
 		
-	}
+	
 	public boolean employee_view() {
 		 WebElement Getpdf=driver.findElement(By.xpath("//*[contains(text(),\" Get PDF\")]"));
 
@@ -180,8 +210,9 @@ public void allemployee_page() {
 	
 	
 	public void search_for_employye(String name) throws InterruptedException {
-		allemployee_page();
-		Thread.sleep(1000);
+//		allemployee_page();
+//		Thread.sleep(1000);
+		driver.findElement(allemployees).click();
 		 Reporter.log("Enering invalid name");
 		 driver.findElement(AllEmp_searchbox).sendKeys(name);
 		 Actions actions = new Actions(driver);
@@ -231,7 +262,7 @@ public void allemployee_page() {
 	}
 	
 	public void search_for_employye_with_invalid_data() {
-		allemployee_page();	
+		driver.findElement(allemployees).click();
 		 Reporter.log("Enering invalid name");
 		 driver.findElement(AllEmp_searchbox).sendKeys("aSAs");
 		 Actions actions = new Actions(driver);
@@ -266,31 +297,13 @@ public void allemployee_page() {
 		       
 		   }
  
- 	public void viewStudent(String Value) {
- 		WebElement viewButton = driver.findElement(By.xpath(
- 			    "//form[input[@value='" + Value +"']]//button[@name='sview']"
- 			));
- 		
- 	}
  	
- 	
-	public void editStudent(String Value) {
- 		WebElement editButton = driver.findElement(By.xpath(
- 			    "//form[input[@value='" + Value +"']]//button[@name='sedit']"
- 			));
- 		
- 	}
-	
-	public void DeleteStudent(String Value) {
- 		WebElement DeleteButton = driver.findElement(By.xpath(
- 			    "//form[input[@value='" + Value +"']]//button[@name='sedit']"
- 			));
- 		
- 	}
  
- 	public boolean isEmployeePresent(String Delete_empolyee) {
- 		 
- 		  List<WebElement> employees = driver.findElements(By.xpath("//div[contains(@class,'m-round')]//span[text()='" + Delete_empolyee +"']"));
+ 	public boolean isEmployeePresent(String empolyee) {
+
+ 		
+ 		
+ 		  List<WebElement> employees = driver.findElements(By.xpath("//div[contains(@class,'m-round')]//span[text()='" + empolyee +"']"));
  		    return !employees.isEmpty(); 
  		
  		
@@ -310,7 +323,7 @@ public void allemployee_page() {
 	 private By menu = By.xpath("//*[@id=\"mobile-collapse\"]");
 	 private By allemployees = By.xpath("//*[text()=\"All Employees\"]");
 	 private By AllEmp_searchbox = By.xpath("//*[@id=\"tags1\"]");
-	 private By AllEmp_view = By.xpath("//div[@class='m-round']//*[@name='eview']");
+	 private By Emp_view = By.xpath("//*[@name='eview']");
 	 private By AllEmp_edit = By.xpath("//form/button[2]");
 	 private By AllEmp_delete = By.xpath("//form/button[3]");
 	 private By dateofjoin = By.xpath("//input[@type='date' and @name='doa']");
@@ -531,17 +544,17 @@ public void allemployee_page() {
 	 
 	 
 	 public void All_Information(String name, String phoneNum, String rolef, String picturef, String date, String salaryf, String fatehrn, String genderf, String experiancef, String id, String religionf, String emalif, String educationf, String bloodf, String date_ofB, String homeAddress ) throws InterruptedException {
-		 	Reporter.log("clicking main menu");
-		   WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
-		    wait.until(ExpectedConditions.visibilityOfElementLocated(menu)).click();
-			driver.findElement(menu).click();
-			Reporter.log("Selecting Employee Section");
-		   WebElement employesselement=driver.findElement(employees);
-		   wait.until(ExpectedConditions.visibilityOfElementLocated(employees));
-		   action.moveToElement(employesselement).click().perform(); 
-			Reporter.log("Filling form");
-
-		   driver.findElement(addemployee).click();;
+//		 	Reporter.log("clicking main menu");
+//		   WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+//		    wait.until(ExpectedConditions.visibilityOfElementLocated(menu)).click();
+//			driver.findElement(menu).click();
+//			Reporter.log("Selecting Employee Section");
+//		   WebElement employesselement=driver.findElement(employees);
+//		   wait.until(ExpectedConditions.visibilityOfElementLocated(employees));
+//		   action.moveToElement(employesselement).click().perform(); 
+//			Reporter.log("Filling form");
+		 driver.findElement(allemployees).click();
+		   driver.findElement(addemployee).click();
 		   driver.findElement(employeename).sendKeys(name);
 		   driver.findElement(phone).sendKeys(phoneNum);
 		   driver.findElement(role).sendKeys(rolef);
@@ -567,7 +580,9 @@ public void allemployee_page() {
 		 Reporter.log("Clicking Submit");
 
 		 driver.findElement(submitbtn).click();
-		 Thread.sleep(500);
+//		 driver.findElement(allemployees).click();
+
+//		 Thread.sleep(500);
 		 
 	 }
 		 
@@ -578,15 +593,15 @@ public void allemployee_page() {
 		 private By print_button = By.xpath("//*[@id=\"btn\"]");
 		 
 	public void Job_letter() throws AWTException, InterruptedException {
-		Reporter.log("Clicking main menu");
-		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
-	    wait.until(ExpectedConditions.visibilityOfElementLocated(menu)).click();
-		driver.findElement(menu).click();
-		Reporter.log("Clicking Employee section");
-		WebElement employesselement=driver.findElement(employees);
-		   wait.until(ExpectedConditions.visibilityOfElementLocated(employees));
-		   action.moveToElement(employesselement).click().perform(); 
-		
+//		Reporter.log("Clicking main menu");
+//		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+//	    wait.until(ExpectedConditions.visibilityOfElementLocated(menu)).click();
+//		driver.findElement(menu).click();
+//		Reporter.log("Clicking Employee section");
+//		WebElement employesselement=driver.findElement(employees);
+//		   wait.until(ExpectedConditions.visibilityOfElementLocated(employees));
+//		   action.moveToElement(employesselement).click().perform(); 
+//		
 		   Reporter.log("Clicking Job letter section");
 		 driver.findElement(job_letter).click();
 		 Reporter.log("Selecting Employee");
@@ -649,14 +664,14 @@ public void allemployee_page() {
 	 private By Manage_login_Column_Username = By.xpath("//*[@class=\"dt-button buttons-columnVisibility active\"]//span[text()=\"Username\"]");
 	 
 	 public void Manage_login() throws InterruptedException, AWTException {
-		 	Reporter.log("Opeining Main Menu");
-			WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
-		    wait.until(ExpectedConditions.visibilityOfElementLocated(menu)).click();
-			driver.findElement(menu).click();
-			Reporter.log("Opeining clicking employee list");
-			WebElement employesselement=driver.findElement(employees);
-			   wait.until(ExpectedConditions.visibilityOfElementLocated(employees));
-			   action.moveToElement(employesselement).click().perform(); 
+//		 	Reporter.log("Opeining Main Menu");
+//			WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+//		    wait.until(ExpectedConditions.visibilityOfElementLocated(menu)).click();
+//			driver.findElement(menu).click();
+//			Reporter.log("Opeining clicking employee list");
+//			WebElement employesselement=driver.findElement(employees);
+//			   wait.until(ExpectedConditions.visibilityOfElementLocated(employees));
+//			   action.moveToElement(employesselement).click().perform(); 
 			
 			  Thread.sleep(2000); 
 			  Reporter.log("Opeining Manage logn section");
@@ -774,7 +789,27 @@ public void allemployee_page() {
 		    // Click the mouse
 		    robot.mousePress(InputEvent.BUTTON1_DOWN_MASK);
 		    robot.mouseRelease(InputEvent.BUTTON1_DOWN_MASK);
+		    
 		}
+	 
+	 
+	 public void safeClick(By locator, WebDriver driver, int timeoutSeconds) {
+		    WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(timeoutSeconds));
+		    int retries = 3;
+
+		    for (int i = 0; i < retries; i++) {
+		        try {
+		            WebElement element = wait.until(ExpectedConditions.elementToBeClickable(locator));
+		            element.click();
+		            return; // ✅ success
+		        } catch (StaleElementReferenceException e) {
+		            System.out.println("Stale element, retrying... Attempt " + (i + 1));
+		        }
+		    }
+		    throw new RuntimeException("Failed to click element after " + retries + " attempts.");
+		}
+
+	 
 		
 		  
 }

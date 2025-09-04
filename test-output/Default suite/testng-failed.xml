@@ -5,11 +5,11 @@
     <classes>
       <class name="testWorkflows.Employee_Test">
         <methods>
-          <include name="Search_with_invalid_Data"/>
           <include name="tearDown"/>
           <include name="setup"/>
-          <include name="Update_Emp_info"/>
           <include name="setUpEmployeeSection"/>
+          <include name="Login_As_employee"/>
+          <include name="Manage_login_Usernam_Password"/>
         </methods>
       </class> <!-- testWorkflows.Employee_Test -->
     </classes>

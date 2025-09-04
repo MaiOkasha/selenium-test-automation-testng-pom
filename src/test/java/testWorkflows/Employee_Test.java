@@ -52,7 +52,7 @@ public class Employee_Test extends TestBase {
 	
 	
 	
-//	@Test(priority = 4)
+	@Test(priority = 4)
 	public void search() throws InterruptedException {
 		test.search_for_employye("Jolene Rumsby");
 		Assert.assertTrue(test.check_search("Jolene Rumsby"));
@@ -72,11 +72,11 @@ public class Employee_Test extends TestBase {
 		Assert.assertTrue(test.check_search_invalid());
 		
 	}
-//	@Test(priority = 7)
+	@Test(priority = 7)
 	public void delete_emp_byname() throws InterruptedException {
-//		test.delete_Emp("Trudy Mullinger");
+		test.delete_Emp("Trudy Mullinger");
 		
-//		  Assert.assertTrue(test.isEmployeePresent("Jerrold Layland"),"employee exist");
+		  Assert.assertFalse(test.isEmployeePresent("Jerrold Layland"),"employee exist");
 		  
 		
 	}
@@ -97,7 +97,11 @@ public class Employee_Test extends TestBase {
 	}
 	 @Test(priority = 9)
 	    public void check_valid() {
-	    	test.allemployee_page();
+	    	test.All_EmployeeAlone();
+	    	
+	    	
+		 
+		 
 	    	Assert.assertTrue(test.isEmployeePresent("Will Bodicum"));
 			  Assert.assertTrue(test.isEmployeePresent("Sherwynd Doone"));
 			  Assert.assertTrue(test.isEmployeePresent("Paulina Brazelton"));
@@ -122,22 +126,22 @@ public class Employee_Test extends TestBase {
 	}
     @Test(priority = 11)
     public void check_invlaid() {
-    	test.allemployee_page();
+    	test.All_EmployeeAlone();
 		  Assert.assertTrue(test.isEmployeePresent("Sherwynd Doonedddddddddddddddd"));
 		  Assert.assertTrue(test.isEmployeePresent("Will Bodicumdddddddddddddddddd"));
     }
     
     @Test(priority = 12,dataProvider="AllInfoData_Form_Full_duplicated", dataProviderClass = pages.Employees_Section.class)
    	public void addEmployeewithAll_Information_dublicated(String name, String phoneNum, String rolef, String picturef, String date, String salaryf, String fatehrn, String genderf, String experiancef, String id, String religionf, String emalif, String educationf, String bloodf, String date_ofB, String homeAddress) throws InterruptedException  {
-   		
+    
    		test.All_Information(name,  phoneNum,  rolef,  picturef,  date,  salaryf, fatehrn,  genderf,  experiancef,  id,  religionf,  emalif,  educationf,  bloodf,date_ofB,homeAddress);
-
+   		
    		  
 
    	}
     @Test(priority=13)
     public void check_dublicated() {
-    	test.allemployee_page();
+    	test.All_EmployeeAlone();
     	  Assert.assertTrue(test.isEmployeePresent("Will Bodicum"));
  		  Assert.assertTrue(test.isEmployeePresent("Sherwynd Doone"));
  		  Assert.assertTrue(test.isEmployeePresent("Paulina Brazelton"));
@@ -145,12 +149,14 @@ public class Employee_Test extends TestBase {
 		 
     @Test(priority=14)
     public void Print_job_letter() throws AWTException, InterruptedException {
+  
     	test.Job_letter();
     	Assert.assertTrue(test.check_jobLetter());
     }
     
     @Test(priority=15)
     public void Manage_login_Usernam_Password() throws InterruptedException, AWTException {
+
     	test.Manage_login();
 
     }
