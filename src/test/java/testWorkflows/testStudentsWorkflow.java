@@ -69,15 +69,12 @@ public class TestStudentsWorkflow extends BaseTest {
 		searchByname.seachByName(name);
 		Thread.sleep(3000);
 
-		/*
-		 * // check at least one student card is displayed after search
-		 * Assert.assertTrue(driver.findElement(By.cssSelector("div.m-round")).
-		 * isDisplayed(), "No student cards displayed for search!");
-		 * 
-		 * // check the searched name appears on the page
-		 * Assert.assertTrue(driver.getPageSource().contains(name),
-		 * "Searched student name not found on page!");
-		 */
+		// check at least one student card is displayed after search
+		Assert.assertTrue(driver.findElement(By.cssSelector("div.m-round")).isDisplayed(),
+				"No student cards displayed for search!");
+
+		// check the searched name appears on the page
+		Assert.assertTrue(driver.getPageSource().contains(name), "Searched student name not found on page!");
 
 		Reporter.log("Search results for '" + name + "' displayed successfully");
 	}
@@ -90,16 +87,6 @@ public class TestStudentsWorkflow extends BaseTest {
 		searchByname.clickEditBtn();
 
 		Reporter.log("Admin Edit Student Data");
-
-		/*
-		 * WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
-		 * WebElement studentNameField = wait
-		 * .until(ExpectedConditions.visibilityOfElementLocated(searchByname.
-		 * studentNameLocator));
-		 * 
-		 * Assert.assertTrue(studentNameField.isDisplayed(),
-		 * "Edit Student form did not appear!");
-		 */
 		Reporter.log("Edit Student form appeared successfully");
 	}
 
@@ -138,22 +125,6 @@ public class TestStudentsWorkflow extends BaseTest {
 		Reporter.log("Student report for '" + name + "' appeared successfully");
 	}
 
-	/*
-	 * @Test(priority = 7) public void testPrintList() { studentSection.clickMenu();
-	 * studentSection.clickStudentsSection(); studentSection.clickPrintBasicList();
-	 * Reporter.log("Navigated to Print Basic List page");
-	 * 
-	 * Assert.assertTrue(driver.findElement(By.cssSelector(
-	 * "input#searchlist-selectized")).isDisplayed());
-	 * Reporter.log("Class selection input is displayed");
-	 * 
-	 * printList.selectClassName(); Reporter.log("Class selected: Grade 10");
-	 * 
-	 * printList.printInFormat();
-	 * Reporter.log("All print buttons clicked successfully (Copy, CSV, Excel, PDF)"
-	 * ); }
-	 */
-
 	@Test(priority = 7)
 	public void testPrintList() throws InterruptedException {
 		studentSection.clickStudentsSection();
@@ -181,7 +152,7 @@ public class TestStudentsWorkflow extends BaseTest {
 
 	@DataProvider(name = "Name For Search")
 	public Object[][] getNameData() {
-		return new Object[][] { { "Lana" } };
+		return new Object[][] { { "Dana" } };
 	}
 
 	@DataProvider(name = "Name For Delete")

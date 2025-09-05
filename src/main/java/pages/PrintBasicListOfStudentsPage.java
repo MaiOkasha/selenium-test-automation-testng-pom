@@ -13,15 +13,9 @@ public class PrintBasicListOfStudentsPage {
 	By coopyLocator = By.cssSelector("button.dt-button.buttons-copy");
 	By selectClassLocator = By.xpath("//input[@id='searchlist-selectized']");
 	private By csvLocator = By.xpath("//*[text()=\"CSV\"]");
-	 private By excelLocator = By.xpath("//*[text()=\"Excel\"]");
-	 private By pdfLocator = By.xpath("//*[text()=\"PDF\"]");
+	private By excelLocator = By.xpath("//*[text()=\"Excel\"]");
+	private By pdfLocator = By.xpath("//*[text()=\"PDF\"]");
 
-	/*
-	 * By coopyLocator = By.cssSelector("button.dt-button.buttons-copy"); By
-	 * csvLocator = By.xpath("//button[.//span[text()='CSV']]"); By excelLocator =
-	 * By.xpath("//button[.//span[text()='Excel']]"); By pdfLocator =
-	 * By.cssSelector("button.dt-button.buttons-pdf");
-	 */
 	public PrintBasicListOfStudentsPage(WebDriver driver) {
 		this.driver = driver;
 	}
@@ -33,20 +27,19 @@ public class PrintBasicListOfStudentsPage {
 		search.sendKeys("Grade 2");
 		search.sendKeys(Keys.RETURN);
 	}
-	
+
 	public void printFormat() throws InterruptedException {
-		 Thread.sleep(1000);
-		 driver.findElement(coopyLocator).click();
-		 Thread.sleep(1000);
-		 driver.findElement(csvLocator).click();
-		 Thread.sleep(1000);
-		 driver.findElement(excelLocator).click();
-		 Thread.sleep(1000);
-		 driver.findElement(pdfLocator).click();
-		 Thread.sleep(1000);
+		Thread.sleep(1000);
+		driver.findElement(coopyLocator).click();
+		Thread.sleep(1000);
+		driver.findElement(csvLocator).click();
+		Thread.sleep(1000);
+		driver.findElement(excelLocator).click();
+		Thread.sleep(1000);
+		driver.findElement(pdfLocator).click();
+		Thread.sleep(1000);
 	}
-	
-	
+
 	public void printList() throws InterruptedException {
 		selectClassName();
 		printFormat();

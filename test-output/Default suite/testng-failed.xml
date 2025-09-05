@@ -5,10 +5,10 @@
     <classes>
       <class name="testWorkflows.TestStudentsWorkflow">
         <methods>
-          <include name="tearDown"/>
           <include name="setUp"/>
-          <include name="testPrintList"/>
+          <include name="tearDown"/>
           <include name="init"/>
+          <include name="testSearchByName" invocation-numbers="0"/>
           <include name="testViewStudentReport" invocation-numbers="0"/>
         </methods>
       </class> <!-- testWorkflows.TestStudentsWorkflow -->

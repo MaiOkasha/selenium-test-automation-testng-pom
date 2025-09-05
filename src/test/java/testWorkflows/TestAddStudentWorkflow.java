@@ -1,5 +1,6 @@
 package testWorkflows;
 
+import org.testng.Reporter;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
@@ -31,22 +32,31 @@ public class TestAddStudentWorkflow extends BaseTest {
 	@Test(priority = 1, dataProvider = "Admin Login credentials")
 	public void testLogin(String email, String password) {
 		loginPage.login(email, password);
+		Reporter.log("Admin is logged In Sucessfully");
+
 	}
 
-	// First Test Case - TC _ St _ 001 - Add Student Workflow
+	// First Test Case - Add Student Workflow
 	@Test(priority = 2, dataProvider = "Student Data")
 	public void testAddStudentWorkflow(String studentName, int regNo, String className, String date, int discount) {
+		Reporter.log("Admin is in Dashboard Page");
 		studentSectionPage.clickMenu();
+		Reporter.log("Admin Click Menu ");
 		studentSectionPage.clickStudentsSection();
+		Reporter.log("Admin Click StudentTab");
 		studentSectionPage.clickAddNewStudent();
+		Reporter.log("Admin Click Add New ");
 		admissionFormPage.fillForm(studentName, regNo, className, date, discount);
+		Reporter.log("Admin Enter the required fields on Form");
 		admissionLetterPage.captureCredentials();
 		String username = admissionLetterPage.getUsername();
 		String password = admissionLetterPage.getPassword();
 		System.out.println(username);
 		System.out.println(password);
 		driver.navigate().to(baseUrl);
+		Reporter.log("Admin Logedd Out");
 		studentLoginPage.login(username, password);
+		Reporter.log("Student Logged In Successfully");
 	}
 
 	@DataProvider(name = "Student Data")

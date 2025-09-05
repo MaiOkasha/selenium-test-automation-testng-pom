@@ -57,40 +57,17 @@ public class SearchByNameFromAllStudentsPage {
 	public void getName() {
 		driver.findElement(nameLocator).getText();
 	}
-	
+
 	public void clickEditBtn() throws TimeoutException {
-        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
-        
-        // The wait.until() method itself throws TimeoutException,
-		// so the try-catch block must wrap this method call.
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
+
 		WebElement editBtn = wait.until(ExpectedConditions.elementToBeClickable(editBtnLocator));
 		editBtn.click();
+		driver.findElement(studentNameLocator).clear();
+		driver.findElement(studentNameLocator).sendKeys("Lana Mohammed");
 		System.out.println("Clicked 'Edit' button successfully.");
-    }
+	}
 
-	/*
-	 * public void clickEditBtn() throws InterruptedException { Thread.sleep(5000);
-	 * driver.findElement(editBtnLocator).click(); Thread.sleep(3000);
-	 * 
-	 * 
-	 * WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(40));
-	 * 
-	 * wait.ignoring(StaleElementReferenceException.class).until(driver -> {
-	 * driver.findElement(editBtnLocator).click(); return true; });
-	 * 
-	 * 
-	 * 
-	 * WebElement studentNameField =
-	 * wait.ignoring(StaleElementReferenceException.class) .until(d ->
-	 * d.findElement(studentNameLocator));
-	 * 
-	 * driver.findElement(editBtnLocator).clear(); Thread.sleep(3000);
-	 * 
-	 * driver.findElement(editBtnLocator).sendKeys(" Lana Mohammed");
-	 * Thread.sleep(3000);
-	 * 
-	 * driver.findElement(editBtnLocator).sendKeys(Keys.RETURN); }
-	 */
 	public void clickViewBtn() {
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
 
@@ -321,46 +298,5 @@ public class SearchByNameFromAllStudentsPage {
 		System.out.println("Deleted student successfully.");
 	}
 
-	/*
-	 * public void clickDeleteBtn() { WebDriverWait wait = new WebDriverWait(driver,
-	 * Duration.ofSeconds(20));
-	 * 
-	 * WebElement deleteBtn =
-	 * wait.until(ExpectedConditions.elementToBeClickable(deleteBtnLocator));
-	 * deleteBtn.click();
-	 * 
-	 * wait.until(ExpectedConditions.alertIsPresent());
-	 * 
-	 * driver.switchTo().alert().accept(); }
-	 */
-
-	/*
-	 * public void clickViewBtn() {
-	 * 
-	 * WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
-	 * WebElement viewBtn =
-	 * wait.until(ExpectedConditions.elementToBeClickable(viewBtnLocator));
-	 * viewBtn.click();
-	 * 
-	 * // driver.findElement(viewBtnLocator).click(); }
-	 */
-	/*
-	 * public void clickEditBtn() { WebDriverWait wait = new WebDriverWait(driver,
-	 * Duration.ofSeconds(40)); WebElement editBtn =
-	 * wait.until(ExpectedConditions.presenceOfElementLocated(editBtnLocator));
-	 * ((org.openqa.selenium.JavascriptExecutor)
-	 * driver).executeScript("arguments[1].click();", editBtn); }
-	 */
-
-	/*
-	 * public void clickEditBtn() { WebDriverWait wait = new WebDriverWait(driver,
-	 * Duration.ofSeconds(40)); WebElement editBtn =
-	 * wait.until(ExpectedConditions.visibilityOfElementLocated(editBtnLocator));
-	 * Actions actions = new Actions(driver);
-	 * actions.moveToElement(editBtn).click().perform();
-	 * 
-	 * }
-	 */
-	// Error Need to be fixed
-
+	
 }

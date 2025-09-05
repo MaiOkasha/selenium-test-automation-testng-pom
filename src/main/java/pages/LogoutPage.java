@@ -1,6 +1,5 @@
 package pages;
 
-
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
@@ -31,7 +30,7 @@ public class LogoutPage {
 
 	public void logout() throws InterruptedException {
 		clickMenu();
-		//Thread.sleep(2000);
+		// Thread.sleep(2000);
 
 		clickLogout();
 

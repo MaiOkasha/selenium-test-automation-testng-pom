@@ -11,7 +11,7 @@
       <![CDATA[Student cards are displayed successfully]]>
     </line>
     <line>
-      <![CDATA[Search results for 'Lana' displayed successfully]]>
+      <![CDATA[Search results for 'Dana' displayed successfully]]>
     </line>
     <line>
       <![CDATA[Admin Edit Student Data]]>
@@ -23,7 +23,7 @@
       <![CDATA[Admin View Student Report]]>
     </line>
     <line>
-      <![CDATA[Student report for 'Lana' appeared successfully]]>
+      <![CDATA[Student report for 'Dana' appeared successfully]]>
     </line>
     <line>
       <![CDATA[Navigated to Print Basic List page]]>
@@ -35,44 +35,32 @@
       <![CDATA[Class selected: Grade 10]]>
     </line>
     <line>
-      <![CDATA[Copy button is displayed]]>
-    </line>
-    <line>
-      <![CDATA[CSV button is displayed]]>
-    </line>
-    <line>
-      <![CDATA[Excel button is displayed]]>
-    </line>
-    <line>
-      <![CDATA[PDF button is displayed]]>
-    </line>
-    <line>
       <![CDATA[All print buttons clicked successfully (Copy, CSV, Excel, PDF)]]>
     </line>
   </reporter-output>
-  <suite started-at="2025-09-04T15:06:35 EEST" name="Default suite" finished-at="2025-09-04T15:07:15 EEST" duration-ms="39906">
+  <suite started-at="2025-09-05T00:52:34 EEST" name="Default suite" finished-at="2025-09-05T00:53:15 EEST" duration-ms="40508">
     <groups>
     </groups>
-    <test started-at="2025-09-04T15:06:35 EEST" name="Default test" finished-at="2025-09-04T15:07:15 EEST" duration-ms="39906">
+    <test started-at="2025-09-05T00:52:34 EEST" name="Default test" finished-at="2025-09-05T00:53:15 EEST" duration-ms="40508">
       <class name="testWorkflows.TestStudentsWorkflow">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:testWorkflows.TestStudentsWorkflow@7c9d8e2]" started-at="2025-09-04T15:06:35 EEST" name="setUp" finished-at="2025-09-04T15:06:40 EEST" duration-ms="5761" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testWorkflows.TestStudentsWorkflow@305b7c14]" started-at="2025-09-05T00:52:34 EEST" name="setUp" finished-at="2025-09-05T00:52:40 EEST" duration-ms="5601" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method is-config="true" signature="init()[pri:0, instance:testWorkflows.TestStudentsWorkflow@7c9d8e2]" started-at="2025-09-04T15:06:40 EEST" name="init" finished-at="2025-09-04T15:06:40 EEST" duration-ms="2" status="PASS">
+        <test-method is-config="true" signature="init()[pri:0, instance:testWorkflows.TestStudentsWorkflow@305b7c14]" started-at="2025-09-05T00:52:40 EEST" name="init" finished-at="2025-09-05T00:52:40 EEST" duration-ms="3" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- init -->
-        <test-method signature="testLogin(java.lang.String,java.lang.String)[pri:1, instance:testWorkflows.TestStudentsWorkflow@7c9d8e2]" started-at="2025-09-04T15:06:40 EEST" name="testLogin" data-provider="Admin Login credentials" finished-at="2025-09-04T15:06:45 EEST" duration-ms="4148" status="PASS">
+        <test-method signature="testLogin(java.lang.String,java.lang.String)[pri:1, instance:testWorkflows.TestStudentsWorkflow@305b7c14]" started-at="2025-09-05T00:52:40 EEST" name="testLogin" data-provider="Admin Login credentials" finished-at="2025-09-05T00:52:43 EEST" duration-ms="3476" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[badaha.22@gmail.com]]>
+                <![CDATA[maiokasha930@gmail.com]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[Aa00147235@@]]>
+                <![CDATA[iam123]]>
               </value>
             </param>
           </params>
@@ -82,7 +70,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- testLogin -->
-        <test-method signature="testViewAllStudents()[pri:2, instance:testWorkflows.TestStudentsWorkflow@7c9d8e2]" started-at="2025-09-04T15:06:45 EEST" name="testViewAllStudents" finished-at="2025-09-04T15:06:47 EEST" duration-ms="2555" status="PASS">
+        <test-method signature="testViewAllStudents()[pri:2, instance:testWorkflows.TestStudentsWorkflow@305b7c14]" started-at="2025-09-05T00:52:43 EEST" name="testViewAllStudents" finished-at="2025-09-05T00:52:45 EEST" duration-ms="1567" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Admin View All Student ]]>
@@ -92,21 +80,21 @@
             </line>
           </reporter-output>
         </test-method> <!-- testViewAllStudents -->
-        <test-method signature="testSearchByName(java.lang.String)[pri:3, instance:testWorkflows.TestStudentsWorkflow@7c9d8e2]" started-at="2025-09-04T15:06:47 EEST" name="testSearchByName" data-provider="Name For Search" finished-at="2025-09-04T15:06:51 EEST" duration-ms="4142" status="PASS">
+        <test-method signature="testSearchByName(java.lang.String)[pri:3, instance:testWorkflows.TestStudentsWorkflow@305b7c14]" started-at="2025-09-05T00:52:45 EEST" name="testSearchByName" data-provider="Name For Search" finished-at="2025-09-05T00:52:50 EEST" duration-ms="5366" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[Lana]]>
+                <![CDATA[Dana]]>
               </value>
             </param>
           </params>
           <reporter-output>
             <line>
-              <![CDATA[Search results for 'Lana' displayed successfully]]>
+              <![CDATA[Search results for 'Dana' displayed successfully]]>
             </line>
           </reporter-output>
         </test-method> <!-- testSearchByName -->
-        <test-method signature="testEditStudent()[pri:4, instance:testWorkflows.TestStudentsWorkflow@7c9d8e2]" started-at="2025-09-04T15:06:51 EEST" name="testEditStudent" finished-at="2025-09-04T15:06:55 EEST" duration-ms="3289" status="PASS">
+        <test-method signature="testEditStudent()[pri:4, instance:testWorkflows.TestStudentsWorkflow@305b7c14]" started-at="2025-09-05T00:52:50 EEST" name="testEditStudent" finished-at="2025-09-05T00:52:53 EEST" duration-ms="2127" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Admin Edit Student Data]]>
@@ -116,7 +104,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- testEditStudent -->
-        <test-method signature="testDeleteStudent(java.lang.String)[pri:5, instance:testWorkflows.TestStudentsWorkflow@7c9d8e2]" started-at="2025-09-04T15:06:55 EEST" name="testDeleteStudent" data-provider="Name For Delete" finished-at="2025-09-04T15:06:58 EEST" duration-ms="3092" status="PASS">
+        <test-method signature="testDeleteStudent(java.lang.String)[pri:5, instance:testWorkflows.TestStudentsWorkflow@305b7c14]" started-at="2025-09-05T00:52:53 EEST" name="testDeleteStudent" data-provider="Name For Delete" finished-at="2025-09-05T00:52:56 EEST" duration-ms="3088" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -127,11 +115,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testDeleteStudent -->
-        <test-method signature="testViewStudentReport(java.lang.String)[pri:6, instance:testWorkflows.TestStudentsWorkflow@7c9d8e2]" started-at="2025-09-04T15:06:58 EEST" name="testViewStudentReport" data-provider="Name For Search" finished-at="2025-09-04T15:07:05 EEST" duration-ms="7219" status="PASS">
+        <test-method signature="testViewStudentReport(java.lang.String)[pri:6, instance:testWorkflows.TestStudentsWorkflow@305b7c14]" started-at="2025-09-05T00:52:56 EEST" name="testViewStudentReport" data-provider="Name For Search" finished-at="2025-09-05T00:53:02 EEST" duration-ms="6890" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[Lana]]>
+                <![CDATA[Dana]]>
               </value>
             </param>
           </params>
@@ -140,11 +128,11 @@
               <![CDATA[Admin View Student Report]]>
             </line>
             <line>
-              <![CDATA[Student report for 'Lana' appeared successfully]]>
+              <![CDATA[Student report for 'Dana' appeared successfully]]>
             </line>
           </reporter-output>
         </test-method> <!-- testViewStudentReport -->
-        <test-method signature="testPrintList()[pri:7, instance:testWorkflows.TestStudentsWorkflow@7c9d8e2]" started-at="2025-09-04T15:07:05 EEST" name="testPrintList" finished-at="2025-09-04T15:07:11 EEST" duration-ms="6244" status="PASS">
+        <test-method signature="testPrintList()[pri:7, instance:testWorkflows.TestStudentsWorkflow@305b7c14]" started-at="2025-09-05T00:53:02 EEST" name="testPrintList" finished-at="2025-09-05T00:53:12 EEST" duration-ms="9155" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Navigated to Print Basic List page]]>
@@ -156,23 +144,11 @@
               <![CDATA[Class selected: Grade 10]]>
             </line>
             <line>
-              <![CDATA[Copy button is displayed]]>
-            </line>
-            <line>
-              <![CDATA[CSV button is displayed]]>
-            </line>
-            <line>
-              <![CDATA[Excel button is displayed]]>
-            </line>
-            <line>
-              <![CDATA[PDF button is displayed]]>
-            </line>
-            <line>
               <![CDATA[All print buttons clicked successfully (Copy, CSV, Excel, PDF)]]>
             </line>
           </reporter-output>
         </test-method> <!-- testPrintList -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testWorkflows.TestStudentsWorkflow@7c9d8e2]" started-at="2025-09-04T15:07:11 EEST" name="tearDown" finished-at="2025-09-04T15:07:15 EEST" duration-ms="3400" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testWorkflows.TestStudentsWorkflow@305b7c14]" started-at="2025-09-05T00:53:12 EEST" name="tearDown" finished-at="2025-09-05T00:53:15 EEST" duration-ms="3183" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
