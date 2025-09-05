@@ -6,9 +6,8 @@
       <class name="testWorkflows.AttendanceTest">
         <methods>
           <include name="setUp"/>
-          <include name="TC_AT_007_ViewClassWiseAttendanceReport"/>
-          <include name="TC_AT_006_SubmitEmployeeAttendance_FutureDate"/>
-          <include name="TC_AT_005_SubmitEmployeeAttendance_PastDate"/>
+          <include name="TC_AT_010_FilterStudentReport_ByDate"/>
+          <include name="TC_AT_011_FilterStudentReport_ByClass"/>
         </methods>
       </class> <!-- testWorkflows.AttendanceTest -->
     </classes>

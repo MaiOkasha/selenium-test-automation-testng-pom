@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -39,7 +39,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Default_suite" class="navigator-link">
-              <span class="suite-name border-passed">Default suite</span>
+              <span class="suite-name border-failed">Default suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -50,7 +50,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Default_suite" class="navigator-link ">
-                    <span>C:\Users\Admin\AppData\Local\Temp\testng-eclipse-1449290366\testng-customsuite.xml</span>
+                    <span>C:\Users\Admin\AppData\Local\Temp\testng-eclipse--1433217213\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -92,7 +92,26 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">14 methods,   14 passed</span>
+                    <span class="method-stats">14 methods, 2 failed,   12 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Default_suite" class="hide-methods failed suite-Default_suite"> (hide)</a> <!-- hide-methods failed suite-Default_suite -->
+                      <a href="#" panel-name="suite-Default_suite" class="show-methods failed suite-Default_suite"> (show)</a> <!-- show-methods failed suite-Default_suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Default_suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="testWorkflows.AttendanceTest" class="method navigator-link" hash-for-method="TC_AT_010_FilterStudentReport_ByDate">TC_AT_010_FilterStudentReport_ByDate</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="testWorkflows.AttendanceTest" class="method navigator-link" hash-for-method="TC_AT_011_FilterStudentReport_ByClass">TC_AT_011_FilterStudentReport_ByClass</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Default_suite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -148,16 +167,6 @@
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="testWorkflows.AttendanceTest" class="method navigator-link" hash-for-method="TC_AT_010_FilterStudentReport_ByDate">TC_AT_010_FilterStudentReport_ByDate</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="testWorkflows.AttendanceTest" class="method navigator-link" hash-for-method="TC_AT_011_FilterStudentReport_ByClass">TC_AT_011_FilterStudentReport_ByClass</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Default_suite" title="testWorkflows.AttendanceTest" class="method navigator-link" hash-for-method="TC_AT_012_FilterEmployeeReport_ByName">TC_AT_012_FilterEmployeeReport_ByName</a> <!-- method navigator-link -->
                       </span>
                       <br/>
@@ -183,6 +192,116 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Default_suite" class="panel Default_suite">
+          <div class="suite-Default_suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">testWorkflows.AttendanceTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC_AT_010_FilterStudentReport_ByDate">
+                  </a> <!-- TC_AT_010_FilterStudentReport_ByDate -->
+                  <span class="method-name">TC_AT_010_FilterStudentReport_ByDate</span>
+                  <div class="stack-trace">java.lang.AssertionError: Date filter failed! expected [04-09-25] but found [No data available in table]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1590)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:656)
+	at testWorkflows.AttendanceTest.TC_AT_010_FilterStudentReport_ByDate(AttendanceTest.java:135)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC_AT_011_FilterStudentReport_ByClass">
+                  </a> <!-- TC_AT_011_FilterStudentReport_ByClass -->
+                  <span class="method-name">TC_AT_011_FilterStudentReport_ByClass</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//table/tbody/tr[1]/td[5]&quot;}
+  (Session info: chrome=139.0.7258.128)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.20.0&apos;, revision: &apos;866c76ca80&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;20.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [a463bc6ca725fb608e6f01b161d0d2cc, findElement {using=xpath, value=//table/tbody/tr[1]/td[5]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 139.0.7258.128, chrome: {chromedriverVersion: 139.0.7258.154 (9e0d6b2b47f..., userDataDir: C:\Users\Admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52275}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52275/devtoo..., se:cdpVersion: 139.0.7258.128, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: a463bc6ca725fb608e6f01b161d0d2cc
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
+	at pages.AttendancePage.getFirstRowClass(AttendancePage.java:121)
+	at testWorkflows.AttendanceTest.TC_AT_011_FilterStudentReport_ByClass(AttendanceTest.java:146)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Default_suite-class-failed -->
           <div class="suite-Default_suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -254,20 +373,6 @@
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="TC_AT_010_FilterStudentReport_ByDate">
-                  </a> <!-- TC_AT_010_FilterStudentReport_ByDate -->
-                  <span class="method-name">TC_AT_010_FilterStudentReport_ByDate</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="TC_AT_011_FilterStudentReport_ByClass">
-                  </a> <!-- TC_AT_011_FilterStudentReport_ByClass -->
-                  <span class="method-name">TC_AT_011_FilterStudentReport_ByClass</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
                   <a name="TC_AT_012_FilterEmployeeReport_ByName">
                   </a> <!-- TC_AT_012_FilterEmployeeReport_ByName -->
                   <span class="method-name">TC_AT_012_FilterEmployeeReport_ByName</span>
@@ -292,7 +397,7 @@
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\Admin\AppData\Local\Temp\testng-eclipse-1449290366\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\Admin\AppData\Local\Temp\testng-eclipse--1433217213\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -343,61 +448,61 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(14);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'TC_AT_001_SubmitStudentAttendance_CurrentDate')
+data.setCell(0, 1, 'TC_AT_011_FilterStudentReport_ByClass')
 data.setCell(0, 2, 'testWorkflows.AttendanceTest')
-data.setCell(0, 3, 25339);
+data.setCell(0, 3, 15348);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'TC_AT_014_DownloadStudentReport')
+data.setCell(1, 1, 'TC_AT_001_SubmitStudentAttendance_CurrentDate')
 data.setCell(1, 2, 'testWorkflows.AttendanceTest')
-data.setCell(1, 3, 10079);
+data.setCell(1, 3, 13411);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'TC_AT_006_SubmitEmployeeAttendance_FutureDate')
+data.setCell(2, 1, 'TC_AT_014_DownloadStudentReport')
 data.setCell(2, 2, 'testWorkflows.AttendanceTest')
-data.setCell(2, 3, 7671);
+data.setCell(2, 3, 10398);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'TC_AT_002_SubmitStudentAttendance_PastDate')
+data.setCell(3, 1, 'TC_AT_004_SubmitEmployeeAttendance_CurrentDate')
 data.setCell(3, 2, 'testWorkflows.AttendanceTest')
-data.setCell(3, 3, 7549);
+data.setCell(3, 3, 8637);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'TC_AT_004_SubmitEmployeeAttendance_CurrentDate')
+data.setCell(4, 1, 'TC_AT_006_SubmitEmployeeAttendance_FutureDate')
 data.setCell(4, 2, 'testWorkflows.AttendanceTest')
-data.setCell(4, 3, 7511);
+data.setCell(4, 3, 8303);
 data.setCell(5, 0, 5)
-data.setCell(5, 1, 'TC_AT_003_SubmitStudentAttendance_FutureDate')
+data.setCell(5, 1, 'TC_AT_005_SubmitEmployeeAttendance_PastDate')
 data.setCell(5, 2, 'testWorkflows.AttendanceTest')
-data.setCell(5, 3, 7504);
+data.setCell(5, 3, 8132);
 data.setCell(6, 0, 6)
-data.setCell(6, 1, 'TC_AT_005_SubmitEmployeeAttendance_PastDate')
+data.setCell(6, 1, 'TC_AT_002_SubmitStudentAttendance_PastDate')
 data.setCell(6, 2, 'testWorkflows.AttendanceTest')
-data.setCell(6, 3, 7494);
+data.setCell(6, 3, 7806);
 data.setCell(7, 0, 7)
-data.setCell(7, 1, 'TC_AT_013_FilterEmployeeReport_ByDepartment')
+data.setCell(7, 1, 'TC_AT_003_SubmitStudentAttendance_FutureDate')
 data.setCell(7, 2, 'testWorkflows.AttendanceTest')
-data.setCell(7, 3, 6522);
+data.setCell(7, 3, 7650);
 data.setCell(8, 0, 8)
-data.setCell(8, 1, 'TC_AT_012_FilterEmployeeReport_ByName')
+data.setCell(8, 1, 'TC_AT_013_FilterEmployeeReport_ByDepartment')
 data.setCell(8, 2, 'testWorkflows.AttendanceTest')
-data.setCell(8, 3, 6250);
+data.setCell(8, 3, 7293);
 data.setCell(9, 0, 9)
-data.setCell(9, 1, 'TC_AT_010_FilterStudentReport_ByDate')
+data.setCell(9, 1, 'TC_AT_012_FilterEmployeeReport_ByName')
 data.setCell(9, 2, 'testWorkflows.AttendanceTest')
-data.setCell(9, 3, 5564);
+data.setCell(9, 3, 6581);
 data.setCell(10, 0, 10)
-data.setCell(10, 1, 'TC_AT_011_FilterStudentReport_ByClass')
+data.setCell(10, 1, 'TC_AT_010_FilterStudentReport_ByDate')
 data.setCell(10, 2, 'testWorkflows.AttendanceTest')
-data.setCell(10, 3, 5509);
+data.setCell(10, 3, 5426);
 data.setCell(11, 0, 11)
-data.setCell(11, 1, 'TC_AT_008_ViewStudentAttendanceReport')
+data.setCell(11, 1, 'TC_AT_007_ViewClassWiseAttendanceReport')
 data.setCell(11, 2, 'testWorkflows.AttendanceTest')
-data.setCell(11, 3, 4816);
+data.setCell(11, 3, 5101);
 data.setCell(12, 0, 12)
-data.setCell(12, 1, 'TC_AT_007_ViewClassWiseAttendanceReport')
+data.setCell(12, 1, 'TC_AT_009_ViewEmployeeAttendanceReport')
 data.setCell(12, 2, 'testWorkflows.AttendanceTest')
-data.setCell(12, 3, 4520);
+data.setCell(12, 3, 3952);
 data.setCell(13, 0, 13)
-data.setCell(13, 1, 'TC_AT_009_ViewEmployeeAttendanceReport')
+data.setCell(13, 1, 'TC_AT_008_ViewStudentAttendanceReport')
 data.setCell(13, 2, 'testWorkflows.AttendanceTest')
-data.setCell(13, 3, 3807);
+data.setCell(13, 3, 3427);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
@@ -435,59 +540,63 @@ return data;
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">TC_AT_001_SubmitStudentAttendance_CurrentDate</span>
-                <span class="method-start">34819 ms</span>
+                <span class="method-start">8834 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">TC_AT_002_SubmitStudentAttendance_PastDate</span>
-                <span class="method-start">60169 ms</span>
+                <span class="method-start">22280 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">TC_AT_003_SubmitStudentAttendance_FutureDate</span>
-                <span class="method-start">67721 ms</span>
+                <span class="method-start">30086 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">TC_AT_004_SubmitEmployeeAttendance_CurrentDate</span>
-                <span class="method-start">75238 ms</span>
+                <span class="method-start">37736 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">TC_AT_005_SubmitEmployeeAttendance_PastDate</span>
-                <span class="method-start">82752 ms</span>
+                <span class="method-start">46374 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">TC_AT_006_SubmitEmployeeAttendance_FutureDate</span>
-                <span class="method-start">90247 ms</span>
+                <span class="method-start">54507 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">TC_AT_007_ViewClassWiseAttendanceReport</span>
-                <span class="method-start">97918 ms</span>
+                <span class="method-start">62810 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">TC_AT_008_ViewStudentAttendanceReport</span>
-                <span class="method-start">102440 ms</span>
+                <span class="method-start">67947 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">TC_AT_009_ViewEmployeeAttendanceReport</span>
-                <span class="method-start">107256 ms</span>
+                <span class="method-start">71383 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">TC_AT_010_FilterStudentReport_ByDate</span>
-                <span class="method-start">111069 ms</span>
+                <span class="method-start">75335 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">TC_AT_011_FilterStudentReport_ByClass</span>
-                <span class="method-start">116635 ms</span>
+                <span class="method-start">80771 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">TC_AT_012_FilterEmployeeReport_ByName</span>
-                <span class="method-start">122144 ms</span>
+                <span class="method-start">96136 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">TC_AT_013_FilterEmployeeReport_ByDepartment</span>
-                <span class="method-start">128396 ms</span>
+                <span class="method-start">102717 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">TC_AT_014_DownloadStudentReport</span>
-                <span class="method-start">134922 ms</span>
+                <span class="method-start">110010 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
