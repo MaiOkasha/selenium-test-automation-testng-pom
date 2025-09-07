@@ -88,24 +88,7 @@ public class Employees_Section {
 		action.moveToElement(employesselement).click().perform();
 		Reporter.log("Clicking All Employees");
 		driver.findElement(allemployees).click();
-		// Wait until menu is clickable
-//    wait.until(ExpectedConditions.elementToBeClickable(menu)).click();
-//
-//    // Wait until employees element is visible
-//    WebElement employesselement = wait.until(ExpectedConditions.visibilityOfElementLocated(employees));
-//
-//    // Now safely click using Actions
-//    action.moveToElement(employesselement).click().perform();
-//
-//    // Finally click All Employees
-//    WebElement allEmp = wait.until(ExpectedConditions.elementToBeClickable(allemployees));
-//    allEmp.click();
-//
-//    Reporter.log("Clicked All Employees page");
-	}
-
-//	dont delete this line 
-//	String name, String phoneNum, String date, String rolef, String salaryf, String picturef,  String fatehrn, String id, String educationf, String genderf,  String religionf, String bloodf, String experiancef, String emalif,  String date_ofB, String homeAddress
+	
 	public void edit_emp_info() throws InterruptedException {
 		allemployee_page();
 
@@ -122,16 +105,14 @@ public class Employees_Section {
 		((JavascriptExecutor) driver).executeScript("arguments[0].value = arguments[1];", dateInput, dateValue);
 
 		Thread.sleep(1000);
-//		   driver.findElement(role).clear();
 		driver.findElement(role).sendKeys("Teacher");
 		driver.findElement(salary).clear();
 		driver.findElement(salary).sendKeys("8500");
 		String projectPath = System.getProperty("user.dir");
 		String filePath = projectPath + "\\assets_emp_photos\\me.jpg";
-//
+
 		WebElement upload = driver.findElement(By.xpath("//input[@type='file']"));
 		upload.sendKeys(filePath);
-//		   driver.findElement(Pictuer).sendKeys("D:\\Programming_learning\\Axsos accademy\\Automation\\Project\\Employees_Photos\\20.jpg");
 
 		driver.findElement(father).clear();
 		driver.findElement(father).sendKeys("Ali Badaha");
@@ -139,41 +120,31 @@ public class Employees_Section {
 		driver.findElement(national_id).sendKeys("108-532-1750");
 		driver.findElement(education).clear();
 		driver.findElement(education).sendKeys("Associate Degree");
-//		   driver.findElement(gender).clear();
 		driver.findElement(gender).sendKeys("Male");
 
 		WebElement relgionfield = driver.findElement(religon);
-//		 relgionfield.clear();
 		relgionfield.sendKeys("Islam");
 		relgionfield.sendKeys(Keys.RETURN);
-//		 driver.findElement(blood_group).clear();
 		driver.findElement(blood_group).sendKeys("A-");
 		driver.findElement(experiance).clear();
 		driver.findElement(experiance).sendKeys("11");
 		driver.findElement(email).clear();
 		driver.findElement(email).sendKeys("badaha.22@gmail.com");
-//		 driver.findElement(dateofbirth).clear();
 		driver.findElement(dateofbirth).sendKeys("9/13/1992");
 		driver.findElement(home_Address).clear();
 		driver.findElement(home_Address).sendKeys("Apt 1488");
-//		 Thread.sleep(1000);
 		Reporter.log("Clicking update button");
 		WebElement update = driver.findElement(submitbtn);
 		action.moveToElement(update);
 		driver.findElement(submitbtn).click();
-//		 Thread.sleep(2000);
-//		 driver.findElement(AllEmp_view).click();
-//		 driver.navigate().refresh();
 
 	}
 
 	public boolean checkupdate() {
 		WebElement empname = driver.findElement(employeename);
 		String employeeName = empname.getAttribute("value");
-//		System.out.println(employeeName);
 		WebElement empfathername = driver.findElement(father);
 		String father = empfathername.getAttribute("value");
-//		System.out.println(father);
 
 		return employeeName.contains("Ahmad Badaha") && father.contains("Ali Badaha");
 
@@ -196,8 +167,6 @@ public class Employees_Section {
 	}
 
 	public void search_for_employye(String name) throws InterruptedException {
-//		allemployee_page();
-//		Thread.sleep(1000);
 		driver.findElement(allemployees).click();
 		Reporter.log("Enering invalid name");
 		driver.findElement(AllEmp_searchbox).sendKeys(name);
@@ -299,7 +268,6 @@ public class Employees_Section {
 	@DataProvider(name = "BasicInfoData")
 	public static Object[][] getData() {
 		List<Object[]> data = new ArrayList<>();
-//		      String csvFilePath = "src/resources/data.csv";
 
 		try (BufferedReader bufferReader = new BufferedReader(new FileReader("Test_Data/Requried_Fields_Valid.csv"))) {
 			String line;
@@ -365,7 +333,6 @@ public class Employees_Section {
 	@DataProvider(name = "AllInfoData")
 	public static Object[][] getData2() {
 		List<Object[]> data = new ArrayList<>();
-//	      String csvFilePath = "src/resources/data.csv";
 
 		try (BufferedReader bufferReader = new BufferedReader(new FileReader("Test_Data/Form_Full_Valid.csv"))) {
 			String line;
@@ -375,12 +342,11 @@ public class Employees_Section {
 				String[] values = line.split(",");
 
 				String basePath = System.getProperty("user.dir"); // Project root
-				String picturePath = basePath + "/" + values[3].trim(); //
+				String picturePath = basePath + "/" + values[3].trim(); 
 
 				String name = values[0].trim();
 				String phoneNum = values[1].trim();
 				String rolef = values[2].trim();
-//	              String picturef = values[3].trim();
 				String date = values[4].trim();
 				String salaryf = values[5].trim();
 				String fatehrn = values[6].trim();
@@ -408,7 +374,6 @@ public class Employees_Section {
 	@DataProvider(name = "AllInfoData_Form_Full_invalid")
 	public static Object[][] getData3() {
 		List<Object[]> data = new ArrayList<>();
-//	      String csvFilePath = "src/resources/data.csv";
 
 		try (BufferedReader bufferReader = new BufferedReader(new FileReader("Test_Data/Form_Full_invalid.csv"))) {
 			String line;
@@ -417,13 +382,12 @@ public class Employees_Section {
 
 				String[] values = line.split(",");
 
-				String basePath = System.getProperty("user.dir"); // Project root
-				String picturePath = basePath + "/" + values[3].trim(); //
+				String basePath = System.getProperty("user.dir"); 
+				String picturePath = basePath + "/" + values[3].trim(); 
 
 				String name = values[0].trim();
 				String phoneNum = values[1].trim();
 				String rolef = values[2].trim();
-//	              String picturef = values[3].trim();
 				String date = values[4].trim();
 				String salaryf = values[5].trim();
 				String fatehrn = values[6].trim();
@@ -451,7 +415,6 @@ public class Employees_Section {
 	@DataProvider(name = "AllInfoData_Form_Full_duplicated")
 	public static Object[][] getData4() {
 		List<Object[]> data = new ArrayList<>();
-//	      String csvFilePath = "src/resources/data.csv";
 
 		try (BufferedReader bufferReader = new BufferedReader(
 				new FileReader("Test_Data/Form_Full_Valid_duplicated.csv"))) {
@@ -467,7 +430,6 @@ public class Employees_Section {
 				String name = values[0].trim();
 				String phoneNum = values[1].trim();
 				String rolef = values[2].trim();
-//	              String picturef = values[3].trim();
 				String date = values[4].trim();
 				String salaryf = values[5].trim();
 				String fatehrn = values[6].trim();
@@ -496,15 +458,6 @@ public class Employees_Section {
 			String salaryf, String fatehrn, String genderf, String experiancef, String id, String religionf,
 			String emalif, String educationf, String bloodf, String date_ofB, String homeAddress)
 			throws InterruptedException {
-//		 	Reporter.log("clicking main menu");
-//		   WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
-//		    wait.until(ExpectedConditions.visibilityOfElementLocated(menu)).click();
-//			driver.findElement(menu).click();
-//			Reporter.log("Selecting Employee Section");
-//		   WebElement employesselement=driver.findElement(employees);
-//		   wait.until(ExpectedConditions.visibilityOfElementLocated(employees));
-//		   action.moveToElement(employesselement).click().perform(); 
-//			Reporter.log("Filling form");
 		driver.findElement(allemployees).click();
 		driver.findElement(addemployee).click();
 		driver.findElement(employeename).sendKeys(name);
@@ -531,9 +484,7 @@ public class Employees_Section {
 		Reporter.log("Clicking Submit");
 
 		driver.findElement(submitbtn).click();
-//		 driver.findElement(allemployees).click();
 
-//		 Thread.sleep(500);
 
 	}
 
@@ -542,16 +493,7 @@ public class Employees_Section {
 	private By Search_employee = By.xpath("//*[@placeholder=\"Search Employee\"]");
 	private By print_button = By.xpath("//*[@id=\"btn\"]");
 
-	public void Job_letter() throws AWTException, InterruptedException {
-//		Reporter.log("Clicking main menu");
-//		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
-//	    wait.until(ExpectedConditions.visibilityOfElementLocated(menu)).click();
-//		driver.findElement(menu).click();
-//		Reporter.log("Clicking Employee section");
-//		WebElement employesselement=driver.findElement(employees);
-//		   wait.until(ExpectedConditions.visibilityOfElementLocated(employees));
-//		   action.moveToElement(employesselement).click().perform(); 
-//		
+	public void Job_letter() throws AWTException, InterruptedException {		
 		Reporter.log("Clicking Job letter section");
 		driver.findElement(job_letter).click();
 		Reporter.log("Selecting Employee");
@@ -569,21 +511,8 @@ public class Employees_Section {
 		clickAtPosition(1224, 726);
 		clickAtPosition(1224, 726);
 		Reporter.log("Printing Employee job letter");
-//			 ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", printButton);
-//				((JavascriptExecutor) driver).executeScript("arguments[0].click();", printButton);
-		Thread.sleep(2000);
-//				String mainWindow = driver.getWindowHandle();
 
-//			// Switch to the new window
-//			for (String handle : driver.getWindowHandles()) {
-//			    if (!handle.equals(mainWindow)) {
-//			        driver.switchTo().window(handle);
-//			        break;
-//			    }
-//			}
-//
-//			// Close the print window
-//			driver.close();
+		Thread.sleep(2000);
 		Reporter.log("Switching window ");
 
 	}
@@ -612,14 +541,6 @@ public class Employees_Section {
 			.xpath("//*[@class=\"dt-button buttons-columnVisibility active\"]//span[text()=\"Username\"]");
 
 	public void Manage_login() throws InterruptedException, AWTException {
-//		 	Reporter.log("Opeining Main Menu");
-//			WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
-//		    wait.until(ExpectedConditions.visibilityOfElementLocated(menu)).click();
-//			driver.findElement(menu).click();
-//			Reporter.log("Opeining clicking employee list");
-//			WebElement employesselement=driver.findElement(employees);
-//			   wait.until(ExpectedConditions.visibilityOfElementLocated(employees));
-//			   action.moveToElement(employesselement).click().perform(); 
 
 		Thread.sleep(2000);
 		Reporter.log("Opeining Manage logn section");
@@ -662,19 +583,10 @@ public class Employees_Section {
 		Thread.sleep(1000);
 		Reporter.log("Saving changes for Employee account ");
 		driver.findElement(Manage_login_save_button).click();
-//				 WebElement success=driver.findElement(By.xpath("//*[@class=\"toast-message\"]"));
-//				 action.moveToElement(success);
+
 		Thread.sleep(3000);
 
 	}
-//	 public boolean Check_username_changed() {
-//		 WebElement success=driver.findElement(By.xpath("//*[@class=\"toast-message\"]"));
-//			
-//			
-//			return success.isDisplayed();
-//			
-//		 
-//	 }
 
 	private By instute_name = By.xpath("//*[text()=\"Institute Name\"]");
 	private By Logout_button = By.xpath("//*[@href='logout.php' or @class=\"ti-lock\"]/i");
@@ -688,7 +600,6 @@ public class Employees_Section {
 		actions.moveToElement(instute).click().perform();
 		instute.click();
 		Reporter.log("Logging Out");
-//		 action.click();
 		Thread.sleep(2000);
 		WebElement logout = driver.findElement(Logout_button);
 
@@ -735,7 +646,7 @@ public class Employees_Section {
 			try {
 				WebElement element = wait.until(ExpectedConditions.elementToBeClickable(locator));
 				element.click();
-				return; // ✅ success
+				return; 
 			} catch (StaleElementReferenceException e) {
 				System.out.println("Stale element, retrying... Attempt " + (i + 1));
 			}
