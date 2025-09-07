@@ -61,9 +61,7 @@ public class ClassesPage {
 	private By edit_class_teacher = By.xpath("//*[@id=\"searchlist\"]");
 	private By update_button = By.xpath("//*[@id=\"submitBtn\"]");
 
-//	 This method to click edit on class you want 
 	public void Edit_class() throws InterruptedException {
-//		 	WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
 
 		WebElement editIcon = driver
 				.findElement(By.xpath("//h6[contains(text(),'Grade 4')]/a/i[contains(@class,'ti-pencil')]"));
@@ -72,10 +70,7 @@ public class ClassesPage {
 		driver.findElement(edit_class_name).sendKeys("Grad 13");
 		driver.findElement(edit_class_fees).clear();
 		driver.findElement(edit_class_fees).sendKeys("242");
-//		    driver.findElement(class_teacher_dropdown).sendKeys("");;
-//		    driver.findElement(class_teacher_dropdown).sendKeys(Keys.RETURN);
 		driver.findElement(update_button).click();
-		// Assert that the updated class "Grad 13" exists on the page
 		WebElement editedClass = driver.findElement(By.xpath("//h6[contains(text(),'Grad 13')]"));
 		Assert.assertNotNull(editedClass, "Class name was not updated to 'Grad 6'.");
 		System.out.println(editedClass);
@@ -123,7 +118,6 @@ public class ClassesPage {
 		wait.until(ExpectedConditions.visibilityOfElementLocated(menu)).click();
 		driver.findElement(menu).click();
 		driver.findElement(classes).click();
-//		    driver.findElement(classes).click();
 
 		driver.findElement(allclasses).click();
 
@@ -138,7 +132,6 @@ public class ClassesPage {
 		;
 		driver.findElement(class_teacher_dropdown).sendKeys(Keys.RETURN);
 		driver.findElement(create_button).click();
-//		    wait.until(ExpectedConditions.visibilityOfElementLocated(adde_button_in_allclasses));
 
 	}
 }
