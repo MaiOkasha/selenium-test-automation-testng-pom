@@ -28,18 +28,14 @@ public class ClassesPage {
 	private Actions action;
 	private WebDriverWait wait;
 
-//    constructor
 	public ClassesPage(WebDriver driver) {
 		this.driver = driver;
-//         PageFactory.initElements(driver, this);
 	}
 
-//        aِdmin login page locators 
 	private By username = By.xpath("//*[@id=\"username\"]");
 	private By password = By.xpath("//*[@id=\"password\"]");
 	private By loginbtn = By.xpath("//*[@id=\"submit\"]");
 
-//	 login page method
 	public void login(String user, String pass) throws InterruptedException {
 
 		driver.findElement(username).sendKeys(user);
@@ -49,13 +45,11 @@ public class ClassesPage {
 
 	}
 
-//	 All Classes page  locators 
 	private By menu = By.xpath("//*[@id=\"mobile-collapse\"]");
 	private By classes = By.xpath("//*[text()=\"Classes\"]");
 	private By allclasses = By.xpath("//*[text()=\"All Classes\"]");
 	private By adde_button_in_allclasses = By.xpath("//*[@class=\"ti-plus\"]");
 
-//	 Edit class section
 	private By edit_class_name = By.xpath("//*[@placeholder=\"Class Name\"]");
 	private By edit_class_fees = By.xpath("//*[@placeholder=\"Monthly Fees\"]");
 	private By edit_class_teacher = By.xpath("//*[@id=\"searchlist\"]");
@@ -76,7 +70,6 @@ public class ClassesPage {
 		System.out.println(editedClass);
 	}
 
-//	 This method delete any class you want  
 	public void delete_class() throws InterruptedException {
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
 
@@ -86,20 +79,16 @@ public class ClassesPage {
 		WebElement confirmButton = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(
 				"//div[contains(@class,'modal-footer')]//button[contains(text(),'Yes') or contains(text(),'Delete')]")));
 		confirmButton.click();
-		// Assert that the delete class "Grad 13" exists on the page
 		WebElement deletedClass = driver.findElement(By.xpath("//h6[contains(text(),'Grad 13')]"));
 		Assert.assertNotNull(deletedClass, "Class name was not updated to 'Grad 6'.");
 		System.out.println(deletedClass);
 	}
 
-//   Add New Class page Locators
 	private By class_name = By.xpath("//*[@id=\"classname\"]");
 	private By fees = By.xpath("//*[@name=\"fees\"]");
-//	 private By class_teacher = By.xpath("//*[@name=\"teacher\"]");
 	private By class_teacher_dropdown = By.xpath("//*[@placeholder=\"Select*\"]");
 	private By create_button = By.xpath("//*[@id=\"submitBtn\"]");
 
-//	 data provider to fill in class form 
 	@DataProvider(name = "class_Data")
 	public static Object[][] loginData() {
 		return new Object[][] { { "Grade 1", "300", "Arlinda Deshon" }, { "Grade 2", "500", "Alysa Aimeric" },
@@ -112,7 +101,6 @@ public class ClassesPage {
 		};
 	}
 
-//	 this method to navigate to all classes 
 	public void allclasses() {
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
 		wait.until(ExpectedConditions.visibilityOfElementLocated(menu)).click();
