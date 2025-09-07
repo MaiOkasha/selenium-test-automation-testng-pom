@@ -29,18 +29,14 @@ public class Subjects_Page {
     private Actions action;
     private WebDriverWait wait;
     
-//    constructor
     public Subjects_Page(WebDriver driver) {
     	 this.driver = driver;
-//         PageFactory.initElements(driver, this);
     }
    
-//        aِdmin login page locators 
 	 private By username = By.xpath("//*[@id=\"username\"]");
 	 private By password = By.xpath("//*[@id=\"password\"]");
 	 private By loginbtn = By.xpath("//*[@id=\"submit\"]");
 	 
-//	 login page method
 	 public void login(String user,String pass) throws InterruptedException {
 
 		   driver.findElement(username).sendKeys(user);
@@ -49,17 +45,12 @@ public class Subjects_Page {
 		
 		}
 	 
-	 
-	 
-	 
-//	 All Subjects page  locators 
 	 private By menu = By.xpath("//*[@id=\"mobile-collapse\"]");
 	 private By subjects = By.xpath("//*[@id=\"subjects\"]/a/span[2]");
 	 private By classes_With_Subjects = By.xpath("//*[text()=\"Classes With Subjects\"]");
 	 private By assign_subject_button = By.xpath("//*[@class=\"ti-plus\"]");
 	 private By edit_subject = By.xpath("//h6[contains(text(),'Grade 4')]/a/i[contains(@class,'ti-pencil')]");
 	 
-//	 Create Subject section
 	 private By select_class_List = By.xpath("//*[@placeholder=\"Select*\"]");
 	 private By Subject_name = By.xpath("//*[@placeholder=\"Name Of Subject\"]");
 	 private By marks = By.xpath("//*[@name=\"marks1\"]");
@@ -68,7 +59,6 @@ public class Subjects_Page {
 	 private By assign_subjects_btn = By.xpath("//*[@class=\"btn bg-c-yellow\"]");
 	 
 	 
-//	 update Subject section
 	 private By select_class_update = By.xpath("//*[@id=\"searchlist\"]");
 	 private By Subject_name_update = By.xpath("//*[@placeholder=\"Name Of Subject\"]");
 	 private By marks_update = By.xpath("//*[@name=\"marks1\"]");
@@ -78,7 +68,6 @@ public class Subjects_Page {
 
 	 
 	 
-//	 This method to click edit on class you want 
 	 public void Edit_subject() throws InterruptedException {
 
 
@@ -94,7 +83,6 @@ public class Subjects_Page {
 	 
 	 	 
 	
-//	 data provider to fill in class form 
 	 @DataProvider(name = "Subjects_Data")
 	    public static Object[][] loginData() {
 	        return new Object[][]{
@@ -116,7 +104,6 @@ public class Subjects_Page {
 	        };
 	 }
 	 
-//	 this method to navigate to all subjects 
 	 public void allSubjects() {
 		 WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
 		    wait.until(ExpectedConditions.visibilityOfElementLocated(menu)).click();
