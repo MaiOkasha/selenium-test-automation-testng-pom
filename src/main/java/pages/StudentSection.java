@@ -25,9 +25,7 @@ public class StudentSection {
 	By promoteStudentsLocator = By.xpath("//*[@id=\"promotions\"]/a/span[2]");
 	By manageLoginTab = By.xpath("//*[@id=\"promotions\"]/a/span[2]");
 	By printBasicListLocator = By.xpath("//span[@class='pcoded-mtext' and text()='Print Basic List']");
-	// *[@id="promotions"]/a/span[2]
-	// By promoteTabLocator = By.xpath("//*[@id=\"promotions\"]/a/span[2]"); the
-	// path for manageLogin
+
 
 	public StudentSection(WebDriver driver, Actions action) {
 		this.driver = driver;
@@ -54,13 +52,7 @@ public class StudentSection {
 		allStudentsTab.click();
 	}
 
-	/*
-	 * public void clickPrintBasicList() { WebDriverWait wait = new
-	 * WebDriverWait(driver, Duration.ofSeconds(30)); WebElement printBasicListTab =
-	 * wait.until(ExpectedConditions.elementToBeClickable(printBasicListLocator));
-	 * printBasicListTab.click(); }
-	 */
-
+	
 	public void clickPrintBasicList() {
 
 		clickMenu();
@@ -80,14 +72,7 @@ public class StudentSection {
 		}
 	}
 
-	/*
-	 * for mouse hover on the tap public void clickAllStudents() { WebDriverWait
-	 * wait = new WebDriverWait(driver, Duration.ofSeconds(30)); WebElement
-	 * allStudentsTab =
-	 * wait.until(ExpectedConditions.elementToBeClickable(allStudentLocator));
-	 * Actions actions = new Actions(driver);
-	 * actions.moveToElement(allStudentsTab).click().perform(); }
-	 */
+	
 
 	public void clickAddNewStudent() {
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));
@@ -102,25 +87,6 @@ public class StudentSection {
 
 	}
 
-	// Add for the other if needed
-
-	/*
-	 * public void clickAddNewStudent() {
-	 * driver.findElement(addNewStudentLocator).click(); }
-	 */
-
-	/*
-	 * public void clickAllStudents() { WebElement allStudentsTab =
-	 * driver.findElement(allStudentLocator); WebDriverWait wait = new
-	 * WebDriverWait(driver, Duration.ofSeconds(30));
-	 * wait.until(ExpectedConditions.visibilityOfElementLocated(allStudentLocator));
-	 * driver.findElement(allStudentLocator).click();
-	 * 
-	 * //Or //WebElement promoteTab = driver.findElement(manageLoginTab);
-	 * //action.moveToElement(promoteTab).click().perform();
-	 * 
-	 * }
-	 */
 
 	public void clickPromoteLogin() {
 		WebElement promoteTab = driver.findElement(manageLoginTab);
