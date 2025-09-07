@@ -1,0 +1,14 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="AllWorkflowsSuite">
+  <test name="EskoolyWorkflowTests">
+    <classes>
+			<class name="testWorkflows.Subjects_Test" />
+			<class name="testWorkflows.Classes_Test" />
+			<class name="testWorkflows.TestAddStudentWorkflow" />
+			<class name="testWorkflows.TestStudentsWorkflow" />
+			<class name="testWorkflows.AttendanceTest" />
+			<class name="testWorkflows.Employee_Test" />
+
+    </classes>
+  </test>
+</suite>
