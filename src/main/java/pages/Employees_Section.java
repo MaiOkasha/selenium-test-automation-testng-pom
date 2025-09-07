@@ -41,7 +41,6 @@ public class Employees_Section {
 		this.wait = new WebDriverWait(driver, Duration.ofSeconds(10));
 	}
 
-//        aِdmin login page locators 
 	private By username = By.xpath("//*[@id=\"username\"]");
 	private By password = By.xpath("//*[@id=\"password\"]");
 	private By loginbtn = By.xpath("//*[@id=\"submit\"]");
@@ -172,7 +171,6 @@ public class Employees_Section {
 		driver.findElement(AllEmp_searchbox).sendKeys(name);
 		Actions actions = new Actions(driver);
 
-		// Move to the button, press arrow down, then enter
 		Reporter.log("Clicking username from List");
 		actions.sendKeys(Keys.ARROW_DOWN).sendKeys(Keys.ARROW_DOWN).sendKeys(Keys.ENTER).build().perform();
 
@@ -200,7 +198,6 @@ public class Employees_Section {
 		driver.findElement(AllEmp_searchbox).sendKeys("Ahmad Badaha");
 		Actions actions = new Actions(driver);
 
-		// Move to the button, press arrow down, then enter
 		Reporter.log("Clicking username from List");
 		actions.sendKeys(Keys.ARROW_DOWN).sendKeys(Keys.ARROW_DOWN).sendKeys(Keys.ENTER).build().perform();
 
@@ -212,7 +209,6 @@ public class Employees_Section {
 		driver.findElement(AllEmp_searchbox).sendKeys("aSAs");
 		Actions actions = new Actions(driver);
 
-		// Move to the button, press arrow down, then enter
 		Reporter.log("Clicking username from List");
 		actions.sendKeys(Keys.ARROW_DOWN).sendKeys(Keys.ARROW_DOWN).sendKeys(Keys.ENTER).build().perform();
 
@@ -244,7 +240,6 @@ public class Employees_Section {
 
 	}
 
-//	 employeePage Basic information locators 
 	private By menu = By.xpath("//*[@id=\"mobile-collapse\"]");
 	private By allemployees = By.xpath("//*[text()=\"All Employees\"]");
 	private By AllEmp_searchbox = By.xpath("//*[@id=\"tags1\"]");
@@ -255,7 +250,6 @@ public class Employees_Section {
 	private By dateofbirth = By.xpath("//input[@type='date' and @name='dob']");
 	private By All_button = By.xpath("//*[@class=\"btn b-link\"]");
 
-//	 add new employee page locators
 	private By employees = By.xpath("//*[text()=\"Employees\"]");
 	private By addemployee = By.xpath("//*[@id=\"addnewteacher\"]");
 	private By employeename = By.xpath("//*[@id=\"tname\"]");
@@ -314,7 +308,6 @@ public class Employees_Section {
 
 	}
 
-//	 employeePage Other Information
 
 	private By father = By.xpath("//*[@placeholder=\"Father / Husband Name\"]");
 	private By gender = By.xpath("//*[@name=\"gender\"]");
@@ -326,7 +319,6 @@ public class Employees_Section {
 	private By blood_group = By.xpath("//*[@name=\"blood\"]");
 	private By date_of_birth = By.xpath("//*[@name=\"dob\"]");
 	private By home_Address = By.xpath("//*[@placeholder=\"Home Address\"]");
-//	 buttons
 	private By submitbtn = By.xpath("//*[@id=\"submitBtn\"]");
 	private By restbtn = By.xpath("//*[@type=\"reset\"]");
 
@@ -488,7 +480,6 @@ public class Employees_Section {
 
 	}
 
-//	   job letter  page locators 
 	private By job_letter = By.xpath("//*[@id=\"jobletter\"]/a/span[2]");
 	private By Search_employee = By.xpath("//*[@placeholder=\"Search Employee\"]");
 	private By print_button = By.xpath("//*[@id=\"btn\"]");
@@ -501,7 +492,6 @@ public class Employees_Section {
 		driver.findElement(Search_employee).sendKeys("Trudy Mullinger");
 		Actions actions = new Actions(driver);
 
-		// Move to the button, press arrow down, then enter
 
 		actions.sendKeys(Keys.ARROW_DOWN).sendKeys(Keys.ARROW_DOWN).sendKeys(Keys.ENTER).build().perform();
 		Thread.sleep(2000);
@@ -522,7 +512,6 @@ public class Employees_Section {
 		return printButton.isDisplayed();
 	}
 
-//	 Manage login  page locators 
 	private By Manage_login = By.xpath("//*[@id=\"elogin\"]/a/span[2]");
 	private By Manage_login_Username = By.xpath("//*[@placeholder=\"Username\"]");
 	private By Manage_login_password = By.xpath("//*[@placeholder=\"Password\"]");
@@ -572,7 +561,6 @@ public class Employees_Section {
 		driver.findElement(Search_employee).sendKeys("Ahmad Badaha");
 		Actions actions = new Actions(driver);
 
-		// Move to the button, press arrow down, then enter
 
 		actions.sendKeys(Keys.ARROW_DOWN).sendKeys(Keys.ARROW_DOWN).sendKeys(Keys.ENTER).build().perform();
 		Reporter.log("Changing Username and password of  Employee account ");
