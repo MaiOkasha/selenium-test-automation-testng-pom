@@ -12,4 +12,5 @@ Here you can find sample video recordings from automated test executions:
 |----------------|------------|
 | Successful Test Execution 1 | [Watch Video](https://app.screencast.com/sJjRV0NgymgX6) |
 | Successful Test Execution 2 | [Watch Video](https://app.screencast.com/YOUR-SECOND-LINK) |
+| Successful Test Execution 3 | [Watch Video](https://app.screencast.com/lM3LlcidpJpGx) |
 
