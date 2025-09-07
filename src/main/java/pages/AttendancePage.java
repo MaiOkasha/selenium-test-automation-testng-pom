@@ -64,10 +64,7 @@ public class AttendancePage {
 		WebElement classField = driver.findElement(classDropdown);
 		classField.sendKeys(className);
 		classField.sendKeys(Keys.ENTER);
-		/*
-		 * classField.click(); WebElement gradeField = driver.findElement(selectGrade);
-		 * gradeField.click();
-		 */
+		
 	}
 
 	public void submitAttendance() {
