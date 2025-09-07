@@ -23,8 +23,6 @@ import org.testng.annotations.DataProvider;
 import dev.failsafe.internal.util.Assert;
 import pages.Subjects_Page;
 
-//import Automation_Project.Employees_Section;
-
 public class Subjects_Test extends BaseTest{
 	
 	
@@ -42,7 +40,6 @@ public class Subjects_Test extends BaseTest{
 		
 		test1.login("badaha.22@gmail.com","Aa00147235@@");
 		test1.allSubjects();
-	//	test1.Edit_subject();
 		
 		}
 
