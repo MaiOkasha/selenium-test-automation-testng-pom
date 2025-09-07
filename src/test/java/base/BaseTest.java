@@ -9,7 +9,6 @@ import org.testng.annotations.BeforeClass;
 public class BaseTest {
 
 	protected WebDriver driver;
-    protected Actions action;
 	protected String baseUrl = "https://www.eskooly.com/bb/signin.php";
 
 	@BeforeClass
@@ -22,7 +21,6 @@ public class BaseTest {
 	@AfterClass
 	public void tearDown() throws InterruptedException {
 	    if (driver != null) {
-	        Thread.sleep(3000);
 	        driver.quit();
 	    }
 	}
